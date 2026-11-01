@@ -35,7 +35,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/32b5fa524e542a
 | --- | --- | --- | --- |
 | Исследовательская модель GRA, 6 файлов | `gra-research-program/00…50` | [methodology/research-program/](../../methodology/research-program/README.md) | Текущая версия |
 | Логика курса (RFC дней 1–4) | `2026-10-12-rfc-days-1-3-logic.md` | `education/…/course-logic.md` | Текущая версия (v0.3) |
-| День 1: колода, сценарий, обоснование, стандарт слайда | `2026-10-14-day1-*`, `2026-10-07-day1-rationale-and-method-653.md`, `2026-10-15-day1-slide-standard-and-gate-677.md` | `education/…/day-01/` | Текущие версии |
+| День 1: колода, сценарий, обоснование, стандарт слайда | `2026-10-14-day1-presentation-gamma.md`, `2026-10-14-day1-lecturer-script.md`, `2026-10-07-day1-rationale-and-method-653.md`, `2026-10-15-day1-slide-standard-and-gate-677.md` | `education/…/day-01/` | Текущие версии |
 | День 2: колода, сценарий, обоснование | `2026-10-30-day2-{presentation-gamma,lecturer-script,rationale-and-method}.md` | `education/…/day-02/` | Текущие версии |
 | День 3: колода, сценарий, обоснование, стандарт слайда | `2026-11-02-day3-{presentation-gamma,lecturer-script,rationale-and-method,slide-standard-and-gate}.md` | `education/…/day-03/` | Текущие версии |
 | День 4: колода, сценарий, промпты изображений | `2026-11-03-day4-{presentation-gamma-v5,lecturer-script-v5,image-prompts-v5-couturier-constructor}.md` | `education/…/day-04/` | Вариант 5 — текущий |

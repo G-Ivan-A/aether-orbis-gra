@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you refer to GRA, please cite it as below. GRA is a research framework in development, not a validated method."
+title: "GRA — Gravity Reputation Architecture"
+type: software
+authors:
+  - family-names: Gulienko
+    given-names: Ivan
+repository-code: "https://github.com/G-Ivan-A/aether-orbis-gra"
+url: "https://github.com/G-Ivan-A/aether-orbis-gra"
+license: MIT
+version: "0.1.0"
+date-released: "2026-11-01"
+keywords:
+  - reputation
+  - reputation engineering
+  - network analysis
+  - research methodology
+  - design science research

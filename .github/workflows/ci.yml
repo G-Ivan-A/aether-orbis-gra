@@ -1,0 +1,23 @@
+# CI aether-orbis-gra: documentation contract (frontmatter, naming, links,
+# structure, placeholders) and unit tests of the validator itself.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  docs:
+    name: Docs and structure
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate repository documentation contract
+        run: python3 tools/validate_repo.py
+      - name: Unit tests of the validator
+        run: python3 -m unittest discover -s tests -v

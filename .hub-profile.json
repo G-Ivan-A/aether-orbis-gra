@@ -1,0 +1,30 @@
+{
+  "profile_version": "1.0",
+  "archetype": "D",
+  "environment": "local",
+  "secondary_environments": [],
+  "project_specific_directories": [
+    {
+      "path": "methodology",
+      "reason": "Body of the GRA research model (L3): theory, taxonomy, decision framework, practice and open questions moved from the Hub research/reputation-technologies/gra-research-program by issue #1; ADR-001."
+    },
+    {
+      "path": "education",
+      "reason": "Catalog of educational courses built on GRA (Technograd course 'Introduction to reputation engineering'); moving the course here was explicitly permitted by the author in issue #1; ADR-001."
+    },
+    {
+      "path": "tests",
+      "reason": "Unit tests of the local tools (tools/validate_repo.py, tools/import_from_hub.py) run by .github/workflows/validate.yml; the HTOM genome has no tests/ home and the tests are not product code."
+    }
+  ],
+  "project_name": "aether-orbis-gra",
+  "target_type": "HTOM",
+  "stack": "all",
+  "phase": 0,
+  "hub_url": "https://github.com/G-Ivan-A/hybrid-Intelligence-lab",
+  "last_sync": {
+    "hub_commit": "32b5fa524e542af23c1a8e67c919bd66d5f4e399",
+    "date": "2026-11-01",
+    "scope": "research/reputation-technologies (current documents only), templates/htom"
+  }
+}

@@ -136,6 +136,8 @@ def check_frontmatter(root: Path, report: Report) -> None:
 def check_naming(root: Path, report: Report) -> None:
     rules: list[tuple[str, re.Pattern[str], str]] = [
         ("docs/analysis", DAILY, "YYYY-MM-DD-name.md"),
+        ("docs/audit", DAILY, "YYYY-MM-DD-name.md"),
+        ("docs/history", DAILY, "YYYY-MM-DD-name.md"),
         ("docs/rfc", MONTHLY, "YYYY-MM-name.md or YYYY-name.md"),
         ("docs/adr", ADR, "YYYY-MM-adr-NNN-name.md"),
     ]

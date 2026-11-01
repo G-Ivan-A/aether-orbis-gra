@@ -1,0 +1,42 @@
+# CI aether-orbis-gra.
+#
+# 1. The Hub HTOM genome check (tools/validate-repository-structure.sh, copied
+#    from templates/htom of the Hub): required genome files, AGENTS.md bootstrap
+#    contract, top-level directory classification against .hub-profile.json.
+# 2. The local documentation contract (tools/validate_repo.py): frontmatter,
+#    naming, relative links and anchors, placeholders.
+# 3. Unit tests of the local tools (validator and Hub import tool).
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  structure:
+    name: Repository structure and documentation contract
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate shell syntax
+        run: bash -n tools/*.sh
+
+      - name: Validate repository structure (Hub HTOM genome)
+        run: ./tools/validate-repository-structure.sh
+
+      - name: Validate documentation contract
+        run: python3 tools/validate_repo.py
+
+      - name: Unit tests of the local tools
+        run: python3 -m unittest discover -s tests -v

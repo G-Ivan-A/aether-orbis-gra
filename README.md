@@ -1,6 +1,35 @@
+---
+status: draft
+version: 0.2
+updated: 2026-11-01
+temperature: 0.1
+type: overview
+---
+
 # GRA — Gravity Reputation Architecture
 
 **Aether Orbis Ecosystem · Reputation Technologies**
+
+> **Статус: исследовательский концептуальный фреймворк в разработке, развивающийся в методологию.**
+> Методология не завершена: формальные параметры, измерения и эмпирическая
+> проверка впереди. GRA дополняет принятые практики измерения репутации и
+> коммуникаций, а не заменяет их.
+>
+> **English:** [overview for universities and professional organisations](docs/overview.en.md).
+
+## Навигация
+
+| Уровень | Документ | О чём |
+| --- | --- | --- |
+| L1 | [Видение](docs/vision.md) | Зачем GRA, для кого, чем она не является |
+| L2 | [Концепция](docs/concept.md) | Конструкты, модели-гипотезы, граница GRA |
+| L3 | [Методология](docs/methodology.md) | Форма разработки, процедура проверки, статусы утверждений |
+| L4 | [Дорожная карта](docs/roadmap.md) | Ступени зрелости, треки, партнёрства |
+
+Также: [карта документации](docs/README.md) · [история проекта](docs/history.md) ·
+[глоссарий](docs/glossary.md) · [источники](docs/sources-registry.md) ·
+[решения (ADR)](docs/adr/README.md) · [исследовательская модель](methodology/README.md) ·
+[курсы](education/README.md) · [как участвовать](CONTRIBUTING.md).
 
 GRA (Gravity Reputation Architecture) — авторская исследовательская концепция и разрабатываемая методология анализа репутационных, социальных и информационных связей на основе графовых моделей, вероятностного анализа и аналогий с физическими закономерностями.
 

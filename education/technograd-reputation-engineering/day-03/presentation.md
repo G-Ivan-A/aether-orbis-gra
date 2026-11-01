@@ -22,7 +22,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 - [стандарт слайда и гейт-проверка Дня 3](slide-standard-and-gate.md) — мета-анализ Дней 1–2, паттерн фаундера, правило удачного слайда и чеклист;
 - [RFC v0.3, раздел Дня 3](../course-logic.md#день-3-выбираю-фильтруем-узлы-для-действия) — идея дня, артефакт, гипотезы Г3-1…Г3-3 и логика слайдов;
 - [обоснование и метод Дня 3](rationale-and-method.md) — теория заинтересованных сторон, точка влияния и аудитория, источники; разбор кейса 1 в нём написан до RFC v0.3, поэтому колода опирается на него только в части теории;
-- [обоснование и метод Дня 2](../module-02/rationale-and-method.md) — статусы `VERIFIED`, `PARTIAL`, `CONFLICT` и реестр кейса 1, на котором стоит День 3.
+- [обоснование и метод Дня 2](../day-02/rationale-and-method.md) — статусы `VERIFIED`, `PARTIAL`, `CONFLICT` и реестр кейса 1, на котором стоит День 3.
 
 ## Как читать
 
@@ -141,7 +141,7 @@ Architecture photo: a monochrome concrete atrium seen from above, ten pale squar
 Fashion editorial photo: a man aged 40–50 in a charcoal tailored three-piece suit, seen in calm three-quarter view beside a white plinth, resting one hand on a small open brass sieve, monochrome palette, the brass rim as the only gold color spot, a thin gold vertical line in the background grid, art deco restraint, no office or meeting scene, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [исследование лектора по открытым данным: промпт, журнал поиска, разбор по GRA](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md); [страница курса и лектора на Технограде, 10.2026](https://technograd.moscow/event_page_new?669#programm_event); [статус GRA и семь guardrails](../module-01/rationale-and-method.md#gra-как-guardrails-статус-и-семь-ограничителей) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [исследование лектора по открытым данным: промпт, журнал поиска, разбор по GRA](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md); [страница курса и лектора на Технограде, 10.2026](https://technograd.moscow/event_page_new?669#programm_event); [статус GRA и семь guardrails](../day-01/rationale-and-method.md#gra-как-guardrails-статус-и-семь-ограничителей) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 3. Четыре дня: Вижу → Собираю → Выбираю → Действую
 
@@ -167,7 +167,7 @@ Fashion editorial photo: a man aged 40–50 in a charcoal tailored three-piece s
 Symbol-graphic composition: four large geometric modules in a strict horizontal row on white, graphite circle, deep blue square, graphite triangle and deep blue hexagon, joined by thin constructivist lines, the third module outlined and lit with a single gold accent and a small gold funnel shape inside it, generous white space, flat vector, art deco proportions, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [программа курса на Технограде](https://technograd.moscow/event_page_new?669#programm_event); [логика Дня 3 в RFC v0.3](../course-logic.md#день-3-выбираю-фильтруем-узлы-для-действия); [связь Дня 1 с Днями 2–4](../module-01/rationale-and-method.md#связь-с-днями-24) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [программа курса на Технограде](https://technograd.moscow/event_page_new?669#programm_event); [логика Дня 3 в RFC v0.3](../course-logic.md#день-3-выбираю-фильтруем-узлы-для-действия); [связь Дня 1 с Днями 2–4](../day-01/rationale-and-method.md#связь-с-днями-24) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 4. Маршрут вечера: от реестра к выбору
 
@@ -193,7 +193,7 @@ Symbol-graphic composition: four large geometric modules in a strict horizontal 
 Architecture photo: three monochrome concrete archways in a row along a pale gallery, each arch narrower than the previous one like the stages of a funnel, a single thin gold line running along the floor through all three toward a lit doorway, constructivist rhythm, strict grid, generous white space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [программа Дня 3 на Технограде](https://technograd.moscow/event_page_new?669#programm_event); [покрытие программы Дня 3 в RFC v0.3](../course-logic.md#день-3-выбираю-фильтруем-узлы-для-действия); [кейс 1 Дня 2](../module-02/rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [программа Дня 3 на Технограде](https://technograd.moscow/event_page_new?669#programm_event); [покрытие программы Дня 3 в RFC v0.3](../course-logic.md#день-3-выбираю-фильтруем-узлы-для-действия); [кейс 1 Дня 2](../day-02/rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 5. Внутренние и внешние факторы влияния
 
@@ -217,7 +217,7 @@ Architecture photo: three monochrome concrete archways in a row along a pale gal
 Art photo: a monochrome still life of ten white paper luggage tags hanging on thin threads in front of a pale concrete wall, seven of them fading into shadow and three caught by a narrow beam of warm light with gold strings, soft directional light, constructivist spacing, generous white space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [мост ко Дню 3 в обосновании Дня 2](../module-02/rationale-and-method.md#мост-ко-дню-3); [идея Дня 3: влияние — свойство связи](../course-logic.md#день-3-выбираю-фильтруем-узлы-для-действия) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [мост ко Дню 3 в обосновании Дня 2](../day-02/rationale-and-method.md#мост-ко-дню-3); [идея Дня 3: влияние — свойство связи](../course-logic.md#день-3-выбираю-фильтруем-узлы-для-действия) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 6. Статусы Дня 2 становятся критериями
 
@@ -244,7 +244,7 @@ Art photo: a monochrome still life of ten white paper luggage tags hanging on th
 Typographic scheme on white background: three vertical columns of paper-tag shapes, the first column solid graphite tags, the second half-transparent tags with dashed light-grey edges, the third tags split diagonally into amber and muted red halves, each column ending in a different thin constructivist arrow toward a single gold frame on the right, art deco block diagram, strict grid, generous white space, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [статусы данных: PARTIAL и CONFLICT вместо усреднённых метрик](../module-02/rationale-and-method.md#статусы-данных-partial-и-conflict-вместо-усреднённых-метрик); [статус → действие или отказ](rationale-and-method.md#статус--действие-или-отказ); [гейт для выводов ИИ-агентов](../../../methodology/research-program/30-decision-framework.md#5-гейт-для-выводов-ии-агентов) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [статусы данных: PARTIAL и CONFLICT вместо усреднённых метрик](../day-02/rationale-and-method.md#статусы-данных-partial-и-conflict-вместо-усреднённых-метрик); [статус → действие или отказ](rationale-and-method.md#статус--действие-или-отказ); [гейт для выводов ИИ-агентов](../../../methodology/research-program/30-decision-framework.md#5-гейт-для-выводов-ии-агентов) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 7. 20 визиток: кому первые письма?
 
@@ -268,7 +268,7 @@ Typographic scheme on white background: three vertical columns of paper-tag shap
 Art photo: twenty blank white business cards laid in a loose grid on a dark graphite stone surface, seen from directly above, a thin gold wire bending around five of them like the edge of a funnel, soft side light with long shadows, constructivist order, generous negative space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [кейс 1 Дня 1: досье или карта связей](../module-01/rationale-and-method.md#кейс-1-приоритетный-производитель-консервов-досье-или-карта-связей); [кейс 1 в программе GRA](../../../methodology/research-program/40-practice-and-cases.md#кейс-1-b2b-производитель-консервов-надёжные-оптовые-партнёры); [20 визиток и ключ разбора](lecturer-script.md#б2-20-визиток-с-выставки) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [кейс 1 Дня 1: досье или карта связей](../day-01/rationale-and-method.md#кейс-1-приоритетный-производитель-консервов-досье-или-карта-связей); [кейс 1 в программе GRA](../../../methodology/research-program/40-practice-and-cases.md#кейс-1-b2b-производитель-консервов-надёжные-оптовые-партнёры); [20 визиток и ключ разбора](lecturer-script.md#б2-20-визиток-с-выставки) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 8. Сеть «Х»: десять узлов, два-три разговора
 
@@ -292,7 +292,7 @@ Art photo: twenty blank white business cards laid in a loose grid on a dark grap
 Typographic scheme on white background: an abstract network map of ten geometric nodes of different sizes around one central deep blue node, every connecting line carrying a small paper tag in graphite, dashed grey or split amber, a narrow gold bracket at the right edge with room for only three nodes, art deco and constructivist layout, strict grid, generous white space, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [реестр кейса 1 Дня 2](../module-02/rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече); [слайд 2 Дня 3 в RFC v0.3](../course-logic.md#день-3-выбираю-фильтруем-узлы-для-действия); [десять узлов кейса 1](lecturer-script.md#б1-десять-узлов-вокруг-сети-х) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [реестр кейса 1 Дня 2](../day-02/rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече); [слайд 2 Дня 3 в RFC v0.3](../course-logic.md#день-3-выбираю-фильтруем-узлы-для-действия); [десять узлов кейса 1](lecturer-script.md#б1-десять-узлов-вокруг-сети-х) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 9. 🗳 Кому звоним первым?
 
@@ -456,7 +456,7 @@ Art photo: a monochrome installation of dozens of small grey loudspeaker cones m
 Architecture photo: a monochrome pedestrian bridge of concrete and steel spanning between two plain building blocks, the bridge railing traced by a single thin gold line, flat overcast light, strong horizontal geometry, constructivist composition, generous white space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [точка влияния и аудитория](rationale-and-method.md#точка-влияния-и-аудитория); [узлы и контуры](../../../methodology/research-program/40-practice-and-cases.md#13-узлы-и-контуры); [реестр кейса 1 Дня 2](../module-02/rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [точка влияния и аудитория](rationale-and-method.md#точка-влияния-и-аудитория); [узлы и контуры](../../../methodology/research-program/40-practice-and-cases.md#13-узлы-и-контуры); [реестр кейса 1 Дня 2](../day-02/rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 16. Внутренний узел: финансовый директор
 
@@ -552,7 +552,7 @@ Typographic scheme on white background: one monumental graphite square standing 
 Art photo: two sheets of white paper on a dark graphite table, one sheet folded open and one torn diagonally, placed edge to edge so their lines do not match, a single brass paperclip joining them at the seam as the only warm accent, soft directional light, constructivist arrangement, generous negative space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [статус → действие или отказ](rationale-and-method.md#статус--действие-или-отказ); [CONFLICT по открытости матрицы в кейсе 1 Дня 2](../module-02/rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече); [пакет из 8 утверждений и ключ разбора](../module-02/lecturer-script.md#приложение-б-пакет-из-8-утверждений-о-сети-х-и-ключ-разбора) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [статус → действие или отказ](rationale-and-method.md#статус--действие-или-отказ); [CONFLICT по открытости матрицы в кейсе 1 Дня 2](../day-02/rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече); [пакет из 8 утверждений и ключ разбора](../day-02/lecturer-script.md#приложение-б-пакет-из-8-утверждений-о-сети-х-и-ключ-разбора) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 20. Кейс 2: видео без даты
 
@@ -575,7 +575,7 @@ Art photo: two sheets of white paper on a dark graphite table, one sheet folded 
 Art photo: a vintage film reel and a short strip of unspooled film lying on a pale concrete surface, the frames blank and overexposed, a thin brass ring placed on the strip as the only warm accent, soft overhead light with long shadows, constructivist arrangement, generous negative space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [кейс 2 Дня 2: PARTIAL по видео](../module-02/rationale-and-method.md#кейс-2-deep-tech-на-новых-материалах-partial-по-видео-блокирует-преждевременное-действие); [кейс 2 Дня 3](rationale-and-method.md#кейс-2-deep-tech-стартап-к-стратегу--через-заказчика-и-эксперта-а-не-через-видео) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [кейс 2 Дня 2: PARTIAL по видео](../day-02/rationale-and-method.md#кейс-2-deep-tech-на-новых-материалах-partial-по-видео-блокирует-преждевременное-действие); [кейс 2 Дня 3](rationale-and-method.md#кейс-2-deep-tech-стартап-к-стратегу--через-заказчика-и-эксперта-а-не-через-видео) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 21. Точка влияния — не аудитория
 
@@ -703,7 +703,7 @@ Symbol-graphic composition: a large graphite grid of identical small squares on 
 Typographic scheme on white background: twenty small graphite rectangles in four rows on the left, three thin constructivist channels leading groups of them to the sides into pale grey trays, five rectangles flowing through a narrow gold funnel on the right, three of them already in gold frames and two waiting behind a thin gold line, art deco block diagram, strict grid, generous white space, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [20 визиток и ключ разбора](lecturer-script.md#б2-20-визиток-с-выставки); [цифры кейса 1 — признак того, что компания работает](../course-logic.md#4-цифры-кейса-1-признак-того-что-компания-работает); [иски и реестры — маркер активности](../module-02/rationale-and-method.md#иски-и-реестры-маркер-активности-а-не-форензик-анализ) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [20 визиток и ключ разбора](lecturer-script.md#б2-20-визиток-с-выставки); [цифры кейса 1 — признак того, что компания работает](../course-logic.md#4-цифры-кейса-1-признак-того-что-компания-работает); [иски и реестры — маркер активности](../day-02/rationale-and-method.md#иски-и-реестры-маркер-активности-а-не-форензик-анализ) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 26. Кого пока не трогаем и почему
 
@@ -827,7 +827,7 @@ Fashion editorial photo: a woman aged 30–40 in a tailored graphite coat over a
 Architecture photo: a monochrome glass facade of a modern building seen at a calm angle, all panes clear and evenly lit so the empty interior is openly visible, one vertical mullion picked out with a thin gold line, soft daylight, strict grid, constructivist geometry, generous white space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [условие сбора: только открытые источники](../module-02/rationale-and-method.md#условие-сбора-только-открытые-источники); [этика и право](../../../methodology/research-program/40-practice-and-cases.md#17-этика-и-право); [решение по этике сбора](../course-logic.md#решения-по-кейсу-1-источникам-этике-и-структуре-кейсов-issue-671-пункты-1316) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [условие сбора: только открытые источники](../day-02/rationale-and-method.md#условие-сбора-только-открытые-источники); [этика и право](../../../methodology/research-program/40-practice-and-cases.md#17-этика-и-право); [решение по этике сбора](../course-logic.md#решения-по-кейсу-1-источникам-этике-и-структуре-кейсов-issue-671-пункты-1316) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 31. Одна карта за три вечера
 
@@ -849,7 +849,7 @@ Architecture photo: a monochrome glass facade of a modern building seen at a cal
 Symbol-graphic composition: three translucent layers of the same abstract network map stacked in perspective on white, the bottom layer with many graphite nodes, the middle layer with small tags on the lines, the top layer with only three nodes outlined in gold, thin constructivist lines connecting the layers vertically, flat vector, art deco proportions, generous white space, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [мост ко Дню 4](rationale-and-method.md#мост-ко-дню-4); [связь Дня 1 с Днями 2–4](../module-01/rationale-and-method.md#связь-с-днями-24); [главная мысль Дня 2](../module-02/rationale-and-method.md#главная-мысль-дня) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [мост ко Дню 4](rationale-and-method.md#мост-ко-дню-4); [связь Дня 1 с Днями 2–4](../day-01/rationale-and-method.md#связь-с-днями-24); [главная мысль Дня 2](../day-02/rationale-and-method.md#главная-мысль-дня) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 32. Полярность −1 или «?»: гармония или эклектика?
 

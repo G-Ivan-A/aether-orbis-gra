@@ -94,7 +94,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 Ссылки `[650:X]` ведут на проверенные записи
 [исследования #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md),
 раздел «Источники», ссылки `[653:X]` — на раздел «Источники»
-[обоснования Дня 1](../../education/technograd-reputation-engineering/module-01/rationale-and-method.md#источники).
+[обоснования Дня 1](../../education/technograd-reputation-engineering/day-01/rationale-and-method.md#источники).
 Там приведены библиография, страницы, цитаты и статусы. Модуль использует
 `[650:Г1]`, `[650:Г2]`, `[650:Г3]`, `[650:Г5]`, `[650:Г6]`, `[650:Г8]`,
 `[650:Г9]`, `[650:Г10]`, `[650:Г11]`, `[650:Г12]`, `[650:Г13]`, `[650:Г16]`,

@@ -11,7 +11,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 # Имидж-технологии: введение, отчёт об исследовании и карта чтения
 
 > **Модуль.** Это файл `00-introduction.md` модуля
-> [`education/technograd-reputation-engineering/module-04/resources/image-technologies/`](README.md).
+> [`education/technograd-reputation-engineering/day-04/resources/image-technologies/`](README.md).
 > Модуль оформлен по **Reference Research Pattern** — по
 > [RFC: Reference Research Pattern](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/docs/rfc/2026-07-17-rfc-reference-research-pattern.md)
 > и [`standards/research-standard.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/standards/research-standard.md).

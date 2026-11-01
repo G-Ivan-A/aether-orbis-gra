@@ -863,7 +863,7 @@ Tall narrow vertical banner photograph, one continuous uninterrupted scene filli
 
 **Вход:** `[CITY]` = Paris; `[DESIGNER_DNA]` = Dior: a Bar jacket with a nipped waist, a full New Look tulle skirt, cannage quilting on a small top-handle bag; `[BASE_COLOR_1]` = deep navy #132A4A; `[BASE_COLOR_2]` = forest green #0A4D3C; `[ART_OBJECT_TYPE]` = blown-glass floral sculpture of unfurling petals in deep wine red #720E1E.
 
-**Ожидаемый выход:** вертикальный баннер: женщина 38 лет в полный рост идёт по эспланаде с ар-деко Парижа при ярком утреннем свете. На ней жакет Bar глубокого синего цвета и юбка New Look цвета лесной зелени, на талии и лацкане золото. Справа стоит стеклянная скульптура винного цвета, сзади умеренная массовка в боке, текста в кадре нет. Все четыре пункта чек-листа выполнены. Полный эталон — слайд 1, вариант А в [конструкторе промптов Дня 4 v5](../module-04/image-prompts.md).
+**Ожидаемый выход:** вертикальный баннер: женщина 38 лет в полный рост идёт по эспланаде с ар-деко Парижа при ярком утреннем свете. На ней жакет Bar глубокого синего цвета и юбка New Look цвета лесной зелени, на талии и лацкане золото. Справа стоит стеклянная скульптура винного цвета, сзади умеренная массовка в боке, текста в кадре нет. Все четыре пункта чек-листа выполнены. Полный эталон — слайд 1, вариант А в [конструкторе промптов Дня 4 v5](../day-04/image-prompts.md).
 
 #### 🔁 Разбор ошибок 4.2
 
@@ -889,4 +889,4 @@ Tall narrow vertical banner photograph, one continuous uninterrupted scene filli
 
 ## Источники для лектора
 
-Презентации последних версий: [День 1](../module-01/presentation.md), [День 2](../module-02/presentation.md), [День 3](../module-03/presentation.md), [День 4 v5](../module-04/presentation.md). Сценарии: [День 1](../module-01/lecturer-script.md), [День 2](../module-02/lecturer-script.md), [День 3](../module-03/lecturer-script.md), [День 4 v5](../module-04/lecturer-script.md). Логика курса: [RFC Дней 1–3](../course-logic.md).
+Презентации последних версий: [День 1](../day-01/presentation.md), [День 2](../day-02/presentation.md), [День 3](../day-03/presentation.md), [День 4 v5](../day-04/presentation.md). Сценарии: [День 1](../day-01/lecturer-script.md), [День 2](../day-02/lecturer-script.md), [День 3](../day-03/lecturer-script.md), [День 4 v5](../day-04/lecturer-script.md). Логика курса: [RFC Дней 1–3](../course-logic.md).

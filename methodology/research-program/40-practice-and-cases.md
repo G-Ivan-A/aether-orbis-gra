@@ -22,7 +22,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 > проработанные для текущей методологии и перенесены в
 > [архив](#архив-кейсов-не-использовать). Вместо них — три сквозных кейса курса,
 > «свой кейс» слушателя и Промпт-фреймер Дня 1. Как кейсы стоят в эфире Дня 1 —
-> в [SSOT Дня 1](../../education/technograd-reputation-engineering/module-01/rationale-and-method.md#сквозные-кейсы).
+> в [SSOT Дня 1](../../education/technograd-reputation-engineering/day-01/rationale-and-method.md#сквозные-кейсы).
 
 ## Как устроены сквозные кейсы
 
@@ -146,7 +146,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 ### 1.5. Как кейс стоит в эфире Дня 1
 
 Слоты 27–40 и 40–54, слайды 10–17
-([SSOT Дня 1](../../education/technograd-reputation-engineering/module-01/rationale-and-method.md#поминутный-тайминг)):
+([SSOT Дня 1](../../education/technograd-reputation-engineering/day-01/rationale-and-method.md#поминутный-тайминг)):
 
 - **Ситуация.** Региональная сеть на 25 магазинов прислала запрос цен. Через три
   недели — встреча с её коммерческим директором. Старые лекала: досье на сеть,

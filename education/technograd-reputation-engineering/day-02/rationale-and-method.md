@@ -32,7 +32,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 Опоры комплекта:
 
 - [RFC v0.3](../course-logic.md) — слайды, гипотезы дня, условие сбора, guardrails;
-- [SSOT Дня 1](../module-01/rationale-and-method.md) — стиль, механики вовлечения, значки статуса;
+- [SSOT Дня 1](../day-01/rationale-and-method.md) — стиль, механики вовлечения, значки статуса;
 - [рамка решений](../../../methodology/research-program/30-decision-framework.md) — запрещённые формулировки F1–F10, процедура S1–S7, гейт ИИ G1–G6;
 - [исследование #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md) — источники Д1–Д13 и Н1–Н13, промпты D2-1…D2-3.
 
@@ -561,7 +561,7 @@ flowchart LR
 
 ## Источники
 
-Ссылки вида `[650:X]` ведут на проверенные записи [исследования #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md). Там библиография, страницы, цитаты и статусы проверки. Ссылки `[653:X]` — на [источники Дня 1](../module-01/rationale-and-method.md#источники). Ниже — сводка источников Дня 2 и записи комплекта. Переводы цитат наши.
+Ссылки вида `[650:X]` ведут на проверенные записи [исследования #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md). Там библиография, страницы, цитаты и статусы проверки. Ссылки `[653:X]` — на [источники Дня 1](../day-01/rationale-and-method.md#источники). Ниже — сводка источников Дня 2 и записи комплекта. Переводы цитат наши.
 
 | ID | Источник | Язык | Цитата или факт, на который опирается День 2 | Статус |
 | --- | --- | --- | --- | --- |

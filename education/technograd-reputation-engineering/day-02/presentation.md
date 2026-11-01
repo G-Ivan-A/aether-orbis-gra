@@ -22,7 +22,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 - [колода Дня 2 с полями «Главный вывод», «Связь» и «Формат и время»](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-30-day2-presentation.md) — методическая основа слайдов 5–28, сверка с программой и промпты П1–П4;
 - [обоснование и метод Дня 2](rationale-and-method.md) — определения, статусы, кейсы и источники;
 - [исследование лектора по открытым данным](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) — источник слайда 2;
-- [стандарт слайда Дня 1](../module-01/slide-standard-and-gate.md) — правило удачного слайда и чеклист, по которым собрана эта колода.
+- [стандарт слайда Дня 1](../day-01/slide-standard-and-gate.md) — правило удачного слайда и чеклист, по которым собрана эта колода.
 
 ## Как читать
 
@@ -135,7 +135,7 @@ Architecture photo: a long monochrome archive hall with tall concrete shelving r
 Fashion editorial photo: a man aged 40–50 in a charcoal double-breasted jacket, seen in calm three-quarter view beside a white plinth, holding a small blank paper luggage tag on a gold string, monochrome palette, the gold string as the only color spot, a thin gold vertical line in the background grid, art deco restraint, no office or business scene, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [исследование лектора по открытым данным: промпт, журнал поиска, разбор по GRA](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md); [страница курса и лектора на Технограде, 10.2026](https://technograd.moscow/event_page_new?669#programm_event); [статус GRA и семь guardrails](../module-01/rationale-and-method.md#gra-как-guardrails-статус-и-семь-ограничителей) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [исследование лектора по открытым данным: промпт, журнал поиска, разбор по GRA](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md); [страница курса и лектора на Технограде, 10.2026](https://technograd.moscow/event_page_new?669#programm_event); [статус GRA и семь guardrails](../day-01/rationale-and-method.md#gra-как-guardrails-статус-и-семь-ограничителей) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 3. Четыре дня: Вижу → Собираю → Выбираю → Действую
 
@@ -160,7 +160,7 @@ Fashion editorial photo: a man aged 40–50 in a charcoal double-breasted jacket
 Symbol-graphic composition: four large geometric modules in a strict horizontal row on white, graphite circle, deep blue square, graphite triangle and deep blue hexagon, joined by thin constructivist lines, the second module outlined and lit with a single gold accent, generous white space, flat vector, art deco proportions, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [программа курса на Технограде](https://technograd.moscow/event_page_new?669#programm_event); [логика Дней 1–3 и мост ко Дню 2](../course-logic.md#день-2-собираю-проверяем-основания-связей); [связь Дня 1 с Днями 2–4](../module-01/rationale-and-method.md#связь-с-днями-24) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [программа курса на Технограде](https://technograd.moscow/event_page_new?669#programm_event); [логика Дней 1–3 и мост ко Дню 2](../course-logic.md#день-2-собираю-проверяем-основания-связей); [связь Дня 1 с Днями 2–4](../day-01/rationale-and-method.md#связь-с-днями-24) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 4. Маршрут вечера: от упоминания к основанию
 
@@ -208,7 +208,7 @@ Architecture photo: three monochrome concrete archways in a row along a pale gal
 Art photo: a monochrome still life of six white paper sheets suspended on a single thin gold thread in front of a pale concrete wall, the first sheets dense with a faint printed texture and the last ones almost blank and translucent, soft directional light, constructivist spacing, generous white space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [почему Дню 2 нужны провенанс и статусы](rationale-and-method.md#почему-дню-2-нужны-провенанс-и-статусы); [мост Дня 1: связь с Днями 2–4](../module-01/rationale-and-method.md#связь-с-днями-24) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [почему Дню 2 нужны провенанс и статусы](rationale-and-method.md#почему-дню-2-нужны-провенанс-и-статусы); [мост Дня 1: связь с Днями 2–4](../day-01/rationale-and-method.md#связь-с-днями-24) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 6. Карта Дня 1: у половины стрелок пока нет основания
 
@@ -230,7 +230,7 @@ Art photo: a monochrome still life of six white paper sheets suspended on a sing
 Typographic scheme on white background: an abstract network map of seven geometric nodes of different sizes joined by thin graphite lines, a small paper tag hanging on every line, half of the tags solid graphite and half empty with dashed light-grey outlines, one gold node at the centre as the single focus, art deco and constructivist layout, strict grid, generous white space, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [мост от Дня 1: связь с Днями 2–4](../module-01/rationale-and-method.md#связь-с-днями-24); [кейс 1 Дня 2](rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [мост от Дня 1: связь с Днями 2–4](../day-01/rationale-and-method.md#связь-с-днями-24); [кейс 1 Дня 2](rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 7. 🗳 Мониторинг показал 72% позитивных упоминаний сети «Х». Этого достаточно для первого письма?
 

@@ -40,7 +40,7 @@ DOMAIN = "research/reputation-technologies"
 DEBUG = os.environ.get("GRA_IMPORT_DEBUG") == "1"
 
 COURSE = "education/technograd-reputation-engineering"
-IMAGE = f"{COURSE}/module-04/resources/image-technologies"
+IMAGE = f"{COURSE}/day-04/resources/image-technologies"
 HISTORY = (
     "founders-vision-and-framework.ru", "white-paper.en", "framework-standard.en",
     "executive-summary.ru-en", "glossary.ru-en",
@@ -48,20 +48,20 @@ HISTORY = (
 # Hub path relative to DOMAIN -> path in this repository.
 MAPPING: dict[str, str] = {
     "2026-10-12-rfc-days-1-3-logic.md": f"{COURSE}/course-logic.md",
-    "2026-10-14-day1-presentation-gamma.md": f"{COURSE}/module-01/presentation.md",
-    "2026-10-14-day1-lecturer-script.md": f"{COURSE}/module-01/lecturer-script.md",
-    "2026-10-07-day1-rationale-and-method-653.md": f"{COURSE}/module-01/rationale-and-method.md",
-    "2026-10-15-day1-slide-standard-and-gate-677.md": f"{COURSE}/module-01/slide-standard-and-gate.md",
-    "2026-10-30-day2-presentation-gamma.md": f"{COURSE}/module-02/presentation.md",
-    "2026-10-30-day2-lecturer-script.md": f"{COURSE}/module-02/lecturer-script.md",
-    "2026-10-30-day2-rationale-and-method.md": f"{COURSE}/module-02/rationale-and-method.md",
-    "2026-11-02-day3-presentation-gamma.md": f"{COURSE}/module-03/presentation.md",
-    "2026-11-02-day3-lecturer-script.md": f"{COURSE}/module-03/lecturer-script.md",
-    "2026-11-02-day3-rationale-and-method.md": f"{COURSE}/module-03/rationale-and-method.md",
-    "2026-11-02-day3-slide-standard-and-gate.md": f"{COURSE}/module-03/slide-standard-and-gate.md",
-    "2026-11-03-day4-presentation-gamma-v5.md": f"{COURSE}/module-04/presentation.md",
-    "2026-11-03-day4-lecturer-script-v5.md": f"{COURSE}/module-04/lecturer-script.md",
-    "2026-11-03-day4-image-prompts-v5-couturier-constructor.md": f"{COURSE}/module-04/image-prompts.md",
+    "2026-10-14-day1-presentation-gamma.md": f"{COURSE}/day-01/presentation.md",
+    "2026-10-14-day1-lecturer-script.md": f"{COURSE}/day-01/lecturer-script.md",
+    "2026-10-07-day1-rationale-and-method-653.md": f"{COURSE}/day-01/rationale-and-method.md",
+    "2026-10-15-day1-slide-standard-and-gate-677.md": f"{COURSE}/day-01/slide-standard-and-gate.md",
+    "2026-10-30-day2-presentation-gamma.md": f"{COURSE}/day-02/presentation.md",
+    "2026-10-30-day2-lecturer-script.md": f"{COURSE}/day-02/lecturer-script.md",
+    "2026-10-30-day2-rationale-and-method.md": f"{COURSE}/day-02/rationale-and-method.md",
+    "2026-11-02-day3-presentation-gamma.md": f"{COURSE}/day-03/presentation.md",
+    "2026-11-02-day3-lecturer-script.md": f"{COURSE}/day-03/lecturer-script.md",
+    "2026-11-02-day3-rationale-and-method.md": f"{COURSE}/day-03/rationale-and-method.md",
+    "2026-11-02-day3-slide-standard-and-gate.md": f"{COURSE}/day-03/slide-standard-and-gate.md",
+    "2026-11-03-day4-presentation-gamma-v5.md": f"{COURSE}/day-04/presentation.md",
+    "2026-11-03-day4-lecturer-script-v5.md": f"{COURSE}/day-04/lecturer-script.md",
+    "2026-11-03-day4-image-prompts-v5-couturier-constructor.md": f"{COURSE}/day-04/image-prompts.md",
     "2026-10-24-handout-materials-master-prompt-registry-days-1-4.md": f"{COURSE}/handouts/prompt-and-handout-registry.md",
     "2026-10-30-day1-osint-pipeline-design.md": f"{COURSE}/handouts/osint-pipeline-design.md",
     "exp/day1-osint-709/2026-10-30-ten-company-example.md": f"{COURSE}/handouts/ten-company-example.md",

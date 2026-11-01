@@ -125,7 +125,7 @@ flowchart LR
 ## Как модуль связан с Днём 1 курса
 
 SSOT Дня 1 —
-[обоснование и метод](../../education/technograd-reputation-engineering/module-01/rationale-and-method.md),
+[обоснование и метод](../../education/technograd-reputation-engineering/day-01/rationale-and-method.md),
 [презентация](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-07-day1-presentation-653.md)
 и [сценарий лектора](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-07-day1-lecturer-script-653.md).
 Эти документы не пересказывают модуль, а ссылаются на него. В аудитории

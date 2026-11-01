@@ -53,6 +53,16 @@ ADR = re.compile(r"^\d{4}-\d{2}-adr-\d{3}-[a-z0-9]+(-[a-z0-9]+)*(\.[a-z]{2}(-[a-
 
 # Canonical top-level directories of a Hub spoke (core + docs/education homes).
 CANONICAL_TOP_DIRS = {".github", "docs", "tools", "tests", "ai-rules", "ops", "standards", "examples", "experiments"}
+ARCHETYPES = {"A", "B", "C", "D"}
+ENVIRONMENTS = {"local", "gigacode", "serverless"}
+# Required sections of /AGENTS.md (Hub standards/agents-md-bootstrap-standard.md).
+AGENTS_SECTIONS = (
+    "scope", "hard_rules", "forbidden", "guidelines", "hybrid_work", "project_specific_rules",
+    "routing", "artifact_homes", "issue_levels", "missing_tags", "context_scope", "validation",
+    "models", "escalation",
+)
+AGENTS_WARN_TOKENS = 4000
+AGENTS_HARD_TOKENS = 8000
 
 LINK_RE = re.compile(r"(?<!!)\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)|!\[[^\]]*\]\(([^)\s]+)\)")
 PLACEHOLDER_RE = re.compile(r"\{\{[a-z_]+\}\}")
@@ -250,15 +260,32 @@ def check_structure(root: Path, report: Report) -> None:
             continue
         if child.name not in CANONICAL_TOP_DIRS and child.name not in declared:
             report.fail(f"structure: top-level directory '{child.name}' is neither canonical nor declared in .hub-profile.json")
+    if profile.get("archetype") not in ARCHETYPES:
+        report.fail(f"structure: archetype must be one of {sorted(ARCHETYPES)}")
+    envs = [profile.get("environment", "local")] + list(profile.get("secondary_environments", []))
+    for env in envs:
+        if env not in ENVIRONMENTS:
+            report.fail(f"structure: environment '{env}' must be one of {sorted(ENVIRONMENTS)}")
     agents = root / "AGENTS.md"
-    if agents.is_file():
-        text = agents.read_text(encoding="utf-8")
-        for key in ("archetype", "environment"):
-            value = profile.get(key)
-            if value and f"- {key}: `{value}`" not in text:
-                report.fail(f"structure: AGENTS.md does not mirror .hub-profile.json {key}={value}")
-    else:
+    if not agents.is_file():
         report.fail("structure: AGENTS.md is missing")
+        return
+    text = agents.read_text(encoding="utf-8")
+    for key in ("archetype", "environment"):
+        value = profile.get(key)
+        if value and f"- {key}: `{value}`" not in text:
+            report.fail(f"structure: AGENTS.md does not mirror .hub-profile.json {key}={value}")
+    for section in AGENTS_SECTIONS:
+        if f"<{section}>" not in text or f"</{section}>" not in text:
+            report.fail(f"structure: AGENTS.md misses required section <{section}>")
+    meta = read_frontmatter(text) or {}
+    if meta.get("status") != "canonical" or meta.get("entrypoint") != "true":
+        report.fail("structure: AGENTS.md frontmatter needs status: canonical and entrypoint: true")
+    tokens = len(text) // 4
+    if tokens > AGENTS_HARD_TOKENS:
+        report.fail(f"structure: AGENTS.md is ~{tokens} tokens, above the {AGENTS_HARD_TOKENS} hard limit")
+    elif tokens > AGENTS_WARN_TOKENS:
+        print(f"warning: AGENTS.md is ~{tokens} tokens (soft limit {AGENTS_WARN_TOKENS})", file=sys.stderr)
 
 
 def check_placeholders(root: Path, report: Report) -> None:

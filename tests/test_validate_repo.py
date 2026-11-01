@@ -15,7 +15,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
 import validate_repo  # noqa: E402
 
 FM = "---\nstatus: draft\nversion: 0.1\nupdated: 2026-11-01\ntemperature: 0.1\n---\n\n"
-AGENTS = FM + "# AGENTS\n\n- archetype: `C`\n- environment: `local`\n"
+SECTIONS = "".join(f"<{name}>\n</{name}>\n" for name in validate_repo.AGENTS_SECTIONS)
+AGENTS = (
+    FM.replace("status: draft", "status: canonical").replace("---\n\n", "entrypoint: true\n---\n\n", 1)
+    + "# AGENTS\n\n- archetype: `C`\n- environment: `local`\n\n" + SECTIONS
+)
 
 
 class Fixture:
@@ -101,6 +105,21 @@ class ValidateRepoTest(unittest.TestCase):
     def test_agents_must_mirror_profile(self) -> None:
         self.fx.write("AGENTS.md", AGENTS.replace("`C`", "`B`"))
         self.assertTrue(any("does not mirror" in e for e in self.fx.errors("structure")))
+
+    def test_agents_required_sections_and_entrypoint(self) -> None:
+        self.fx.write("AGENTS.md", AGENTS.replace("<routing>", "").replace("entrypoint: true\n", ""))
+        errors = self.fx.errors("structure")
+        self.assertTrue(any("<routing>" in e for e in errors), errors)
+        self.assertTrue(any("entrypoint: true" in e for e in errors), errors)
+
+    def test_closed_profile_vocabulary(self) -> None:
+        self.fx.write(".hub-profile.json", json.dumps({
+            "profile_version": "1.0", "archetype": "E", "environment": "cloud",
+            "project_specific_directories": [],
+        }))
+        errors = self.fx.errors("structure")
+        self.assertTrue(any("archetype must be one of" in e for e in errors), errors)
+        self.assertTrue(any("environment 'cloud'" in e for e in errors), errors)
 
     def test_placeholders(self) -> None:
         self.fx.write("docs/a.md", FM + "Project {{project_name}}\n`{{ok_in_code}}`\n")

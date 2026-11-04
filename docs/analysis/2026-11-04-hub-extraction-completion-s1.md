@@ -58,7 +58,7 @@ related_issues:
 
 | # | Пункт | Готово, когда (RFC) | Сделано | Доказательство | Статус |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Ш2.1 Закрепить плавающие ссылки | `grep` на `hybrid-Intelligence-lab/blob/main/research/reputation-technologies` пуст, ссылки на `PIN_SHA` отвечают 200 | `tools/import_from_hub.py --commit` доимпортировал 35 файлов на `48ebe52`. Все 167 ссылок закреплены (число совпадает с полем `spoke_floating` перечня Хаба `gra-inventory.tsv`). Ссылки вне домена остаются на `main`: эти пути Хаб не удаляет | `grep` пуст; [проба 62 уникальных URL](../../experiments/probe-pin-sha-links.log): 0 ответов кроме 200; [сверка диффа](../../experiments/check-reimport-diff.log): 35 файлов изменены только в `source` и в 167 ссылках, 0 прочих правок; тест `FloatingHubLinksTest` | done |
+| 1 | Ш2.1 Закрепить плавающие ссылки | поиск ссылок `blob/main` на `research/reputation-technologies` Хаба пуст, ссылки на `PIN_SHA` отвечают 200 | `tools/import_from_hub.py --commit` доимпортировал 35 файлов на `48ebe52`. Все 167 ссылок закреплены (число совпадает с полем `spoke_floating` перечня Хаба `gra-inventory.tsv`). Ссылки вне домена остаются на `main`: эти пути Хаб не удаляет | `grep` пуст; [проба 62 уникальных URL](../../experiments/probe-pin-sha-links.log): 0 ответов кроме 200; [сверка диффа](../../experiments/check-reimport-diff.log): 35 файлов изменены только в `source` и в 167 ссылках, 0 прочих правок; тест `FloatingHubLinksTest` | done |
 | 2 | Ш2.2 Документ цитат и провенанс | Документ в `education/`, якоря указывают на те же строки копий, `exp/quotes-711/` перенесён как провенанс | [Документ цитат](../../education/technograd-reputation-engineering/handouts/course-quotes-days-1-4-alce.md) доимпортирован. 66 якорей на колоды спицы пересчитаны картой строк (difflib) старой и новой копии. 399 ссылок на источники #650 закреплены на `PIN_SHA` (Q-3 без ответа). 13 файлов `exp/quotes-711/` лежат в [провенансе](../../education/technograd-reputation-engineering/handouts/course-quotes-provenance/README.md) с манифестом SHA-256 и не исполняются | [Проверка якорей](../../experiments/verify-quote-anchors.log): 465 ссылок на строки, 0 ошибок; тест `QuoteAnchorsTest`: цитата есть на строке якоря, а сдвиг якорей на 10 строк ловится для всех 66 | done |
 | 3 | Ш2.3 Бэклог спицы | `ops/backlog.md` существует | [ops/backlog.md](../../ops/backlog.md) в формате инструкции Хаба; `ops/` объявлен в `.hub-profile.json`, ссылка — в `AGENTS.md` | `validate_repo.py` (структура, ссылки), `validate-repository-structure.sh` | done |
 | 4 | Ш3.1, сторона спицы | B-230, B-231, B-233 в бэклоге с полем «Источник» | Строки приняты с ID Хаба. «Источник» — permalink строки бэклога Хаба на `PIN_SHA` (`#L800`, `#L801`, `#L803`). Ссылки на домен заменены копиями спицы | Ссылки проверены: строки 800, 801, 803 файла `ops/backlog.md` Хаба на `48ebe52` — это B-230, B-231, B-233 | done |
@@ -70,7 +70,8 @@ related_issues:
 Как проверить локально:
 
 ```bash
-grep -rn 'hybrid-Intelligence-lab/blob/main/research/reputation-technologies' . --exclude-dir=.git  # пусто
+# [-] вместо дефиса: иначе сама эта строка попала бы в поиск
+grep -rn 'hybrid-Intelligence-lab/blob/main/research/reputation[-]technologies' . --exclude-dir=.git  # пусто
 python3 tools/validate_repo.py && ./tools/validate-repository-structure.sh
 python3 -m unittest discover -s tests -v
 bash experiments/probe_pin_sha_links.sh    # сеть: HEAD каждого уникального URL на PIN_SHA

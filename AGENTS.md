@@ -93,7 +93,7 @@ This repository is the SSOT of the GRA project (methodology in development and t
 </routing>
 
 <artifact_homes>
-An artifact lives in the home of its execution. Agent contracts live in `ai-rules/`, process contracts in `ops/`, reusable norms in `standards/` (none are needed yet; create them only with an ADR). Team decisions live in `docs/adr/`; audits and focus-group reviews live in `docs/audit/`; local governance stays in `AI_GOVERNANCE.md`. Project-specific homes (`methodology/`, `education/`, `tests/`) are declared in `.hub-profile.json`. Fundamental and cross-project research remains in `research/` of the Hub.
+An artifact lives in the home of its execution. Agent contracts live in `ai-rules/`, process contracts in `ops/`, reusable norms in `standards/` (none are needed yet; create them only with an ADR). Team decisions live in `docs/adr/`; audits and focus-group reviews live in `docs/audit/`; local governance stays in `AI_GOVERNANCE.md`. Project-specific homes (`methodology/`, `education/`, `tests/`, `experiments/`) and `ops/` with the project backlog `ops/backlog.md` are declared in `.hub-profile.json`. Fundamental and cross-project research remains in `research/` of the Hub.
 </artifact_homes>
 
 <issue_levels>

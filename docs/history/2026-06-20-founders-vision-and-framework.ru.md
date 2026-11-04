@@ -5,7 +5,7 @@ updated: 2026-10-10
 temperature: 0.2
 type: external-analysis
 scope: repo-wide
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-06-20-founders-vision-and-framework.ru.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-06-20-founders-vision-and-framework.ru.md"
 ---
 
 # Репутационные технологии: от видения фаундера к международному стандарту GRA
@@ -35,7 +35,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 Hub. Спутниковые документы — стандарт (EN), white paper (EN), executive summary (RU+EN) и
 терминологический словарь (RU↔EN) — вынесены в отдельные файлы этого же домена и связаны ссылками.
 
-Навигация по домену — в [README.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/README.md). Сводка для руководителей —
+Навигация по домену — в [README.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/README.md). Сводка для руководителей —
 в [executive summary](2026-06-20-executive-summary.ru-en.md). Полный словарь терминов —
 в [glossary](2026-06-20-glossary.ru-en.md).
 

@@ -5,7 +5,7 @@ updated: 2026-10-22
 temperature: 0.4
 type: research
 scope: reputation-technologies
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/image-technologies/30-decision-framework.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/image-technologies/30-decision-framework.md"
 ---
 
 # Имидж-технологии: рамка решений — векторы и аналитические маркеры

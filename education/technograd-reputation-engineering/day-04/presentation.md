@@ -4,12 +4,12 @@ version: 0.3
 updated: 2026-10-22
 temperature: 0.4
 scope: reputation-engineering-course-day4
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-11-03-day4-presentation-gamma-v5.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-day4-presentation-gamma-v5.md"
 ---
 
 # День 4. Презентация для Gamma, вариант 5: карта гипотез имидж-технологий
 
-Это пятый вариант блока имидж-технологий Дня 4 курса «Введение в репутационный инжиниринг». Он собран по issue #697: к структуре [варианта 4](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-11-03-day4-presentation-gamma-v4.md) применены все замены утверждённого [RFC v5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md) из issue #695, а выводы осей и легенды взяты из PDF-эталона «Карта гипотез, а не инструкция». Опора — исследовательский модуль [`image-technologies`](resources/image-technologies/00-introduction.md). Файл целиком передаётся в Gamma.app или в другой ИИ-генератор презентаций. Речь лектора к каждому слайду — в [сценарии лектора, вариант 5](lecturer-script.md).
+Это пятый вариант блока имидж-технологий Дня 4 курса «Введение в репутационный инжиниринг». Он собран по issue #697: к структуре [варианта 4](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-day4-presentation-gamma-v4.md) применены все замены утверждённого [RFC v5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md) из issue #695, а выводы осей и легенды взяты из PDF-эталона «Карта гипотез, а не инструкция». Опора — исследовательский модуль [`image-technologies`](resources/image-technologies/00-introduction.md). Файл целиком передаётся в Gamma.app или в другой ИИ-генератор презентаций. Речь лектора к каждому слайду — в [сценарии лектора, вариант 5](lecturer-script.md).
 
 Колода раскладывает образ на четыре оси — **цвет, форму, стиль и аксессуары** — и на каждой оси показывает три технологии с профессиональной опорой: книгой, учебной программой школы или экспериментом. Карточки технологий взяты из [таксономии модуля](resources/image-technologies/20-taxonomy.md), интерпретации и маркеры — из [рамки решений](resources/image-technologies/30-decision-framework.md), сборка — из [практики модуля](resources/image-technologies/40-practice-and-cases.md). Технологии описаны без векторов и без кейсов курса. Два вектора применяются к ним отдельно, на слайдах интерпретации:
 

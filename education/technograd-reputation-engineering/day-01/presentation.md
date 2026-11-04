@@ -4,7 +4,7 @@ version: 0.2
 updated: 2026-10-15
 temperature: 0.3
 scope: reputation-engineering-course-day1
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-10-14-day1-presentation-gamma.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-14-day1-presentation-gamma.md"
 ---
 
 # День 1. Презентация для Gamma: 33 слайда, каждый понятен без лектора
@@ -17,7 +17,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 
 - эта презентация;
 - [сценарий лектора](lecturer-script.md) — речь к каждому слайду, тайминг, План Б и Промпт-фреймер для чата;
-- [исследование лектора по открытым данным](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) — источник слайда 2;
+- [исследование лектора по открытым данным](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) — источник слайда 2;
 - [стандарт слайда и гейт-проверка](slide-standard-and-gate.md) — правило удачного слайда, сравнение с исходной Gamma-презентацией, слоганы и чеклист;
 - [обоснование и метод Дня 1](rationale-and-method.md) — определения, кейсы и источники.
 
@@ -131,7 +131,7 @@ Architecture photo: a monochrome concrete staircase rising into soft white light
 Fashion editorial photo: a man aged 40–50 in a charcoal tailored suit, seen in calm profile against a plain white wall, monochrome palette, a single amber pocket square as the only color spot, a thin gold vertical line in the background grid, art deco restraint, no office or business scene, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [исследование лектора по открытым данным: промпт, журнал поиска, разбор по GRA](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md); [страница курса и лектора на Технограде, 10.2026](https://technograd.moscow/event_page_new?669#programm_event); [статус GRA и семь guardrails](rationale-and-method.md#gra-как-guardrails-статус-и-семь-ограничителей) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [исследование лектора по открытым данным: промпт, журнал поиска, разбор по GRA](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md); [страница курса и лектора на Технограде, 10.2026](https://technograd.moscow/event_page_new?669#programm_event); [статус GRA и семь guardrails](rationale-and-method.md#gra-как-guardrails-статус-и-семь-ограничителей) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 3. Репутация — это система сигналов
 
@@ -154,7 +154,7 @@ Fashion editorial photo: a man aged 40–50 in a charcoal tailored suit, seen in
 Architecture photo: four monochrome concrete facades meeting at one corner under a pale sky, each facade with a different rhythm of windows like four signal channels, one narrow gold strip of light where they meet, constructivist composition, strict grid, white space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: исходная Gamma-презентация «Репутационный инжиниринг», стр. 2 — вложение issue #677; [Fombrun о репутации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#г12-fombrun-1996) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: исходная Gamma-презентация «Репутационный инжиниринг», стр. 2 — вложение issue #677; [Fombrun о репутации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#г12-fombrun-1996) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 4. Обещаемое должно совпадать с подтверждаемым
 
@@ -173,7 +173,7 @@ Architecture photo: four monochrome concrete facades meeting at one corner under
 Fashion editorial photo: a woman aged 35–45 in a structured black coat standing beside a white plinth, half of the frame in sharp focus and half softly blurred to show the gap between promise and proof, monochrome palette, a thin amber line on the coat lapel as the only color spot, a fine gold rule dividing the frame, no office or street scene, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: исходная Gamma-презентация «Репутационный инжиниринг», стр. 3 — вложение issue #677; [Barnett, Jermier, Lafferty об образе и репутации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#г13-barnett-jermier--lafferty-2006) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: исходная Gamma-презентация «Репутационный инжиниринг», стр. 3 — вложение issue #677; [Barnett, Jermier, Lafferty об образе и репутации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#г13-barnett-jermier--lafferty-2006) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 5. Три контура управления репутацией
 
@@ -331,7 +331,7 @@ Architecture photo: four monochrome concrete steps rising left to right in a min
 Typographic scheme on white background: three large circular stations connected by one thin graphite line running left to right, the final station a small abstract network silhouette, one gold dot marking the start, art deco and constructivist block diagram, strict grid, generous white space, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [программа Дня 1 на Технограде](https://technograd.moscow/event_page_new?669#programm_event); [тайминг Дня 1 в сценарии лектора](lecturer-script.md#тайминг-и-план-б); [сегментация и сигнализация по Mayer и Moreno](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#п4-mayer--moreno-2003-принципы-мультимедиа-для-слайдов) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [программа Дня 1 на Технограде](https://technograd.moscow/event_page_new?669#programm_event); [тайминг Дня 1 в сценарии лектора](lecturer-script.md#тайминг-и-план-б); [сегментация и сигнализация по Mayer и Moreno](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#п4-mayer--moreno-2003-принципы-мультимедиа-для-слайдов) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 12. 20 визиток: кому написать первыми?
 
@@ -376,7 +376,7 @@ Fashion editorial photo: a woman aged 30–40 in a monochrome tailored jacket ho
 Typographic scheme on white background: two monumental abstract letterforms rendered as pure geometric blocks, one in graphite and one in deep blue, a thin gold vertical line between them, art deco proportions, constructivist grid, generous white space, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [правило 35–70% Peer Instruction](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#п1-crouch--mazur-2001-peer-instruction) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [правило 35–70% Peer Instruction](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#п1-crouch--mazur-2001-peer-instruction) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 14. Вопрос вечера: кто решает в сети?
 
@@ -442,7 +442,7 @@ Architecture photo: several dense circular courtyards seen from above in a monoc
 Symbol-graphic composition: three large geometric modules in a row — a graphite rectangle, a deep blue translucent sheet with partly dashed lines, and a graphite circle — connected by thin constructivist lines, one gold rail running beneath the middle module as a guardrail, generous white space, flat vector, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: ^[1] [Tow Center: восемь ИИ-поисковиков плохо цитируют новости, CJR](https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php); [исследование Tow Center и другие цифры Дня 1](rationale-and-method.md#почему-переходить-от-образа-к-связям-нужно-сейчас); [как снижать ошибки ИИ: документация Anthropic](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#н7-anthropic-документация-reduce-hallucinations) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: ^[1] [Tow Center: восемь ИИ-поисковиков плохо цитируют новости, CJR](https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php); [исследование Tow Center и другие цифры Дня 1](rationale-and-method.md#почему-переходить-от-образа-к-связям-нужно-сейчас); [как снижать ошибки ИИ: документация Anthropic](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#н7-anthropic-документация-reduce-hallucinations) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 17. От публикаций к связям
 
@@ -464,7 +464,7 @@ Symbol-graphic composition: three large geometric modules in a row — a graphit
 Architecture photo: three monochrome stone steps ascending left to right in a minimalist gallery, the first step carrying a folded newspaper-like white sheet, the last step crossed by fine lines forming an abstract network, a thin gold line tracing the network, generous white space, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [Fombrun о репутации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#г12-fombrun-1996); [Barnett, Jermier, Lafferty о различии образа и репутации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#г13-barnett-jermier--lafferty-2006) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [Fombrun о репутации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#г12-fombrun-1996); [Barnett, Jermier, Lafferty о различии образа и репутации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#г13-barnett-jermier--lafferty-2006) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 18. Доверие — валюта решений
 

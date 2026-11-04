@@ -4,7 +4,7 @@ version: 0.1
 updated: 2026-10-15
 temperature: 0.3
 scope: reputation-engineering-course-day2
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-10-30-day2-presentation-gamma.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-30-day2-presentation-gamma.md"
 ---
 
 # День 2. Презентация для Gamma: 28 слайдов, каждый понятен без лектора
@@ -13,15 +13,15 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 
 Каждый слайд читается сам по себе: шапка, надзаголовок, крупный заголовок, эпиграф, вводный абзац, три смысловые карточки и вывод. Карточки идут в одном порядке: **Контекст → Цель, Проблема или Вопрос → Решение или Действие**. Слушатель, который пропустил речь лектора, понимает слайд по тексту на экране.
 
-Колода собрана по решению фаундера в issue #679: в начало добавлены четыре вводных слайда по образцу Дня 1 — обложка, лектор со статусами, карта курса и карта дня. Слайды 5–28 — это слайды 1–24 [колоды Дня 2](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-30-day2-presentation.md) в той же последовательности: бывший слайд N стал слайдом N + 4. Их тезисы, цепочка «потому что → поэтому», два голосования и одна проба промпта перенесены без изменения смысла; заголовки бывших слайдов сохранены.
+Колода собрана по решению фаундера в issue #679: в начало добавлены четыре вводных слайда по образцу Дня 1 — обложка, лектор со статусами, карта курса и карта дня. Слайды 5–28 — это слайды 1–24 [колоды Дня 2](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-30-day2-presentation.md) в той же последовательности: бывший слайд N стал слайдом N + 4. Их тезисы, цепочка «потому что → поэтому», два голосования и одна проба промпта перенесены без изменения смысла; заголовки бывших слайдов сохранены.
 
 Комплект Дня 2:
 
 - эта презентация;
 - [сценарий лектора](lecturer-script.md) — речь к каждому слайду, тайминг на 90 минут, План Б, Промпт-разведчик и пакет из 8 утверждений для пробы;
-- [колода Дня 2 с полями «Главный вывод», «Связь» и «Формат и время»](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-30-day2-presentation.md) — методическая основа слайдов 5–28, сверка с программой и промпты П1–П4;
+- [колода Дня 2 с полями «Главный вывод», «Связь» и «Формат и время»](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-30-day2-presentation.md) — методическая основа слайдов 5–28, сверка с программой и промпты П1–П4;
 - [обоснование и метод Дня 2](rationale-and-method.md) — определения, статусы, кейсы и источники;
-- [исследование лектора по открытым данным](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) — источник слайда 2;
+- [исследование лектора по открытым данным](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) — источник слайда 2;
 - [стандарт слайда Дня 1](../day-01/slide-standard-and-gate.md) — правило удачного слайда и чеклист, по которым собрана эта колода.
 
 ## Как читать
@@ -135,7 +135,7 @@ Architecture photo: a long monochrome archive hall with tall concrete shelving r
 Fashion editorial photo: a man aged 40–50 in a charcoal double-breasted jacket, seen in calm three-quarter view beside a white plinth, holding a small blank paper luggage tag on a gold string, monochrome palette, the gold string as the only color spot, a thin gold vertical line in the background grid, art deco restraint, no office or business scene, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [исследование лектора по открытым данным: промпт, журнал поиска, разбор по GRA](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md); [страница курса и лектора на Технограде, 10.2026](https://technograd.moscow/event_page_new?669#programm_event); [статус GRA и семь guardrails](../day-01/rationale-and-method.md#gra-как-guardrails-статус-и-семь-ограничителей) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [исследование лектора по открытым данным: промпт, журнал поиска, разбор по GRA](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md); [страница курса и лектора на Технограде, 10.2026](https://technograd.moscow/event_page_new?669#programm_event); [статус GRA и семь guardrails](../day-01/rationale-and-method.md#gra-как-guardrails-статус-и-семь-ограничителей) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 3. Четыре дня: Вижу → Собираю → Выбираю → Действую
 
@@ -184,7 +184,7 @@ Symbol-graphic composition: four large geometric modules in a strict horizontal 
 Architecture photo: three monochrome concrete archways in a row along a pale gallery, each arch slightly brighter than the previous one, a single thin gold line running along the floor through all three toward a lit doorway, constructivist rhythm, strict grid, generous white space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [программа Дня 2 на Технограде](https://technograd.moscow/event_page_new?669#programm_event); [проверка колоды на соответствие программе](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-30-day2-presentation.md#проверка-на-соответствие-программе); [кейс 1 Дня 2](rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [программа Дня 2 на Технограде](https://technograd.moscow/event_page_new?669#programm_event); [проверка колоды на соответствие программе](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-30-day2-presentation.md#проверка-на-соответствие-программе); [кейс 1 Дня 2](rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 5. Мониторинг ресурсов, работа с данными
 
@@ -253,7 +253,7 @@ Typographic scheme on white background: an abstract network map of seven geometr
 Typographic scheme on white background: one monumental abstract percentage-like geometric block in graphite on the left, two tall empty choice panels in graphite and deep blue on the right, a thin gold vertical line dividing the composition, art deco proportions, constructivist grid, generous white space, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [правило 35–70% Peer Instruction](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#п1-crouch--mazur-2001-peer-instruction) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [правило 35–70% Peer Instruction](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#п1-crouch--mazur-2001-peer-instruction) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 8. Вопрос вечера: на чём держится утверждение, на которое мы опираемся?
 
@@ -301,7 +301,7 @@ Fashion editorial photo: a woman aged 35–45 in a structured ivory blouse and g
 Symbol-graphic composition: three large numbered-like geometric cards in a row, graphite, deep blue and graphite, connected by a thin constructivist arrow, and a tall white registry sheet on the right with five ruled rows and one gold tag pinned to its corner, generous white space, flat vector, strict grid, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [реестр источников курса: происхождение данных и статусы](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#д-происхождение-данных-честные-статусы-и-измерение-день-2); [программа Дня 2 на Технограде](https://technograd.moscow/event_page_new?669#programm_event) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [реестр источников курса: происхождение данных и статусы](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#д-происхождение-данных-честные-статусы-и-измерение-день-2); [программа Дня 2 на Технограде](https://technograd.moscow/event_page_new?669#programm_event) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 10. Мониторинг — точка отсчёта: он отвечает «сколько», но не «кто и откуда знает»
 
@@ -346,7 +346,7 @@ Architecture photo: a monochrome glass facade reflecting hundreds of identical s
 Typographic scheme on white background: two clean lines on an abstract chart without numbers, an amber line rising steadily to the upper right and a graphite line flattening into a plateau, thin constructivist axes, one small gold point where the lines part, art deco proportions, strict grid, generous white space, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [Heuer, психология разведывательного анализа](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#д3-heuer-r-j-jr-psychology-of-intelligence-analysis); [почему Дню 2 нужны провенанс и статусы](rationale-and-method.md#почему-дню-2-нужны-провенанс-и-статусы) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [Heuer, психология разведывательного анализа](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#д3-heuer-r-j-jr-psychology-of-intelligence-analysis); [почему Дню 2 нужны провенанс и статусы](rationale-and-method.md#почему-дню-2-нужны-провенанс-и-статусы) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 12. 140 упоминаний сети «Х» — 9 независимых источников
 
@@ -368,7 +368,7 @@ Typographic scheme on white background: two clean lines on an abstract chart wit
 Symbol-graphic composition: a wide field of many small graphite cards on the left compressing into nine neat stacks on the right, one stack much taller than the others, a half-transparent tag with a dashed outline beside it, thin constructivist guide lines, a single gold accent on the tallest stack, generous white space, flat vector, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [принципы AMEC](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#д7-amec-barcelona-principles-40); [почему не усреднять](rationale-and-method.md#почему-не-усреднять); [метрики со статусами](rationale-and-method.md#метрики-со-статусами) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [принципы AMEC](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#д7-amec-barcelona-principles-40); [почему не усреднять](rationale-and-method.md#почему-не-усреднять); [метрики со статусами](rationale-and-method.md#метрики-со-статусами) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 13. Происхождение: кто, когда и через чьи руки
 
@@ -391,7 +391,7 @@ Symbol-graphic composition: a wide field of many small graphite cards on the lef
 Architecture photo: a long colonnade of six monochrome stone arches receding into soft light, a paper tag hanging in each arch, the nearest tag dense and the farthest almost blank, one thin gold line running back along the floor from the last arch to the first, constructivist perspective, generous white space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [цепочка происхождения: где теряется основание](rationale-and-method.md#цепочка-происхождения-где-теряется-основание); [шкала A–F × 1–6](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#д5-us-army-fm-2-223-fm-34-52-human-intelligence-collector-operations-appendix-b); [модель W3C PROV](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#д1-w3c-prov-dm-the-prov-data-model) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [цепочка происхождения: где теряется основание](rationale-and-method.md#цепочка-происхождения-где-теряется-основание); [шкала A–F × 1–6](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#д5-us-army-fm-2-223-fm-34-52-human-intelligence-collector-operations-appendix-b); [модель W3C PROV](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#д1-w3c-prov-dm-the-prov-data-model) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 14. 🗳 Пресс-релиз «сеть ищет местных производителей» и пост в чате «матрица закрыта до весны». Чему верить?
 
@@ -416,7 +416,7 @@ Architecture photo: a long colonnade of six monochrome stone arches receding int
 Typographic scheme on white background: two tall abstract source cards facing each other, one graphite with a dense printed pattern and one deep blue with a rough edge, a single line between them carrying a paper tag split diagonally into an amber half and a muted red half, art deco proportions, constructivist grid, generous white space, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [кейс 1 Дня 2](rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече); [правило 35–70% Peer Instruction](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#п1-crouch--mazur-2001-peer-instruction) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [кейс 1 Дня 2](rationale-and-method.md#кейс-1-умные-холодные-продажи-conflict-по-открытости-матрицы-меняет-подготовку-к-встрече); [правило 35–70% Peer Instruction](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#п1-crouch--mazur-2001-peer-instruction) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 15. PARTIAL и CONFLICT вместо среднего балла
 
@@ -486,7 +486,7 @@ Fashion editorial photo: a man aged 35–45 in a long graphite overcoat, standin
 Architecture photo: a monochrome library interior with tall shelves, a stack of white cards being sorted into three neat columns on a long stone table, some cards carrying small paper tags and some without, one gold tag catching the light, constructivist lines of the shelving, generous white space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [ALCE: генерация с цитированием](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#н4-gao-et-al-2023-alce-генерация-с-цитированием); [ИИ на Дне 2](rationale-and-method.md#ии-на-дне-2-первичная-кластеризация-и-охота-на-галлюцинации) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [ALCE: генерация с цитированием](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#н4-gao-et-al-2023-alce-генерация-с-цитированием); [ИИ на Дне 2](rationale-and-method.md#ии-на-дне-2-первичная-кластеризация-и-охота-на-галлюцинации) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 18. 🤖 Промпт-разведчик: разложите сведения о сети «Х» по статусам
 
@@ -536,7 +536,7 @@ Typographic scheme on white background: a large abstract chat window frame besid
 Typographic scheme on white background: a fragment of an abstract registry with four ruled rows, each row marked on the margin by a short muted red stroke and a thin gold correction line, a pencil-like geometric bar resting beside the sheet, art deco and constructivist layout, strict grid, generous white space, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [гейт для выводов ИИ-агентов](../../../methodology/research-program/30-decision-framework.md#5-гейт-для-выводов-ии-агентов); [guardrails для промптов](../course-logic.md#gra-как-guardrails-модель-для-промптов); [как снижать ошибки ИИ](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#н7-anthropic-документация-reduce-hallucinations); [ключ разбора](lecturer-script.md#приложение-б-пакет-из-8-утверждений-о-сети-х-и-ключ-разбора) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [гейт для выводов ИИ-агентов](../../../methodology/research-program/30-decision-framework.md#5-гейт-для-выводов-ии-агентов); [guardrails для промптов](../course-logic.md#gra-как-guardrails-модель-для-промптов); [как снижать ошибки ИИ](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#н7-anthropic-документация-reduce-hallucinations); [ключ разбора](lecturer-script.md#приложение-б-пакет-из-8-утверждений-о-сети-х-и-ключ-разбора) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 20. Что оцифровывать первым: сначала «почему», потом «сколько»
 
@@ -558,7 +558,7 @@ Typographic scheme on white background: a fragment of an abstract registry with 
 Symbol-graphic composition: on the left a soft cluster of overlapping graphite speech-bubble shapes, in the middle their thin threads converging into one clear gold key-like shape, on the right a precise grid of small deep blue columns, a gentle left-to-right flow, constructivist structure, generous white space, flat vector, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [качественные и количественные данные](rationale-and-method.md#качественные-и-количественные-данные-что-оцифровывать-первым); [Fetters, Curry, Creswell о смешанных методах](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#д8-fetters-m-d-curry-l-a-creswell-j-w-achieving-integration-in-mixed-methods-designs) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [качественные и количественные данные](rationale-and-method.md#качественные-и-количественные-данные-что-оцифровывать-первым); [Fetters, Curry, Creswell о смешанных методах](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#д8-fetters-m-d-curry-l-a-creswell-j-w-achieving-integration-in-mixed-methods-designs) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 21. Контрастный кейс 3: «7 из 12 клиентов пришли из клуба»
 

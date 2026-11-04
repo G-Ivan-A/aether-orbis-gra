@@ -4,7 +4,7 @@ version: 0.1
 updated: 2026-10-15
 temperature: 0.2
 scope: reputation-engineering-course-day1
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-10-15-day1-slide-standard-and-gate-677.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-15-day1-slide-standard-and-gate-677.md"
 ---
 
 # День 1. Стандарт слайда и гейт-проверка: мета-анализ эталона Gamma и паттерна фаундера
@@ -15,7 +15,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 
 - [Gamma-презентация Дня 1](presentation.md) — 33 слайда, только текст слайдов, промпты иллюстраций и подвалы;
 - [сценарий лектора](lecturer-script.md) — речь к каждому слайду, тайминг, План Б и Промпт-фреймер для чата;
-- [исследование лектора по открытым данным](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) — метод курса, применённый к самому лектору; источник слайда 2;
+- [исследование лектора по открытым данным](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) — метод курса, применённый к самому лектору; источник слайда 2;
 - этот документ — мета-анализ, стандарт слайда, варианты слогана и гейт-проверка;
 - [обоснование и метод Дня 1](rationale-and-method.md) — определения, кейсы, этика и источники; на него опираются все файлы комплекта.
 
@@ -130,7 +130,7 @@ GRA не отрицает классические методы: она рабо
 
 ## 7. Гейт-проверка
 
-Результат выдаётся, только если выполнены все правила. Правила проверяет скрипт [`check-day1-677.py`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/exp/day1-rebuild-677/check-day1-677.py); то, что скрипт проверить не может, проверено чтением и отмечено отдельно.
+Результат выдаётся, только если выполнены все правила. Правила проверяет скрипт [`check-day1-677.py`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/exp/day1-rebuild-677/check-day1-677.py); то, что скрипт проверить не может, проверено чтением и отмечено отдельно.
 
 - [x] **Мета-анализ.** Паттерн фаундера выведен из задач за 7 дней и слов фаундера в чате, искажения постановки названы и разрешены (разделы 1–3). *Проверено чтением.*
 - [x] **Исследование лектора.** Файл `2026-10-14-day1-lecturer-gra-research.md` есть: итоговый промпт, полный результат поиска, статусы, масса, дистанция и полярность; только открытые данные. *Скрипт: файл и разделы на месте.*

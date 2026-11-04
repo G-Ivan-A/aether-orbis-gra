@@ -1,0 +1,69 @@
+=== Т3-1 | https://www.bebr.ufl.edu/sites/default/files/Centrality%20in%20Social%20Networks.pdf | PDF, p. 219
+ommunication, a point with relatively high degree is somehow “in the thick of things”. We can speculate, therefore, that writers who have defined point centrality in terms of degree are responding to the visibility or the potential for activity in communication of such points. As the process of communication goes on in a social network, a person who is in a position that permits direct contact with many others should begin to see himself and be seen by thos
+
+=== Т3-2 | https://www.bebr.ufl.edu/sites/default/files/Centrality%20in%20Social%20Networks.pdf | PDF, p. 221 (OCR: "comnlunication_" = "communication.")
+ibility Of persons occupying such positions for the main- tenance of communications and Cohn and Marriott (1958) emphasized their potential as coordinators of group processes. Regardless of emphasis, a point that falls on the communication paths between other points exhibits a potential for control of their communication. It is this potential for control that defines the centrality of these points. === PAGE 8 222 Linton C. Freeman Figure 3. The ten geodesics from the graph of Figure 2. +_I P2 I. PI P3 2. --p3 PI 3. -
+
+=== Т4 | https://snap.stanford.edu/class/cs224w-readings/burt00capital.pdf | PDF, p. 1
+ted empirical evidence on the social capital of structural holes, and the contradiction between network closure and structural holes can be resolved in a more general network model of social capital. Brokerage across structural holes is the source of value added, but closure can be critical to realizing the value buried in structural holes. SOCIAL CAPITAL METAPHOR The two arguments are grounded in the same social capital metaphor, so it is useful to begin wi
+
+=== Т5-1 | https://snap.stanford.edu/class/cs224w-readings/cha10influence.pdf | PDF, p. 1 (Abstract)
+easures of influence: indegree, retweets, and mentions. Based on these measures, we investigate the dynamics of user influence across topics and time. We make several interesting observations. First, popular users who have high indegree are not necessarily influential in terms of spawning retweets or mentions. Second, most influential users can hold significant influence over a variety of topics. Third, influence is not gained spontaneously or accidentally, but th
+
+=== Т5-2 | https://snap.stanford.edu/class/cs224w-readings/cha10influence.pdf | PDF, p. 4
+ads to similar results. This means that, in general, users who get mentioned often also get retweeted often, and vice versa. Indegree, however, was not related to the other measures. We conclude that the most connected users are not necessarily the most influential when it comes to engaging one’s audience in conversations and having one’s messages spread. Discussion of methodology Normalizing retweets and mentions by total tweets would yield a different measure
+
+=== E4 | https://archive.org/download/johannes-ittens-the-art-of-color/Johannes%20Ittens%20%E2%80%93%20THE%20ART%20OF%20COLOR_djvu.txt | p. 32 (chapter 'Subjective Timbre'), Itten, The Art of Color, New York: Van Nostrand Reinhold, 1973 printing
+Every woman should know what colors are becoming to her; these will always be her subjective colors and their complements.
+
+=== E6 | https://api.crossref.org/works/10.1002/col.5080060210 | Abstract
+On this scale every color has three attributes: warm or cool, soft or hard, and clear or grayish, which correlate with the notation hue, value, and chroma.
+
+=== E8 | https://api.crossref.org/works/10.1177/1474704918802412 | Abstract
+For men rating women, we found a small, statistically significant effect
+
+=== E9 | https://urss.ru/cgi-bin/db.pl?lang=Ru&blang=ru&page=Book&id=325972 | Аннотация (URSS book page id=325972)
+Исследование дает соответствующий научный материал, относящийся к так называемым зрительным иллюзиям и их воздействию на психологию восприятия.
+
+=== E11 | https://www.3dbody.tech/cap/papers/2020/2022sokolowski.pdf | Abstract, p. 1 of paper (Proc. 3DBODY.TECH 2020)
+By understanding shape, manufacturers can have a better idea of how to design, fit and grade products for this market throughout a size range, as opposed to relying on only 2D measurements or linear grading rules from a sample size.
+
+=== E13 | https://api.openalex.org/works/doi:10.1068/i0405 | Abstract
+We have examined the claim that these effects apply only for 2-dimensional figures in an experiment with 3-D cylinders and find no support for the notion that horizontal lines would be 'fattening' on clothes.
+
+=== E15 | https://eksmo.ru/book/zolotye-pravila-stilya-dress-kod-uspeshnoy-zhenshchiny-ITD816396/ | Аннотация (bullet list, eksmo.ru book page)
+формула для расчета вашего персонального коэффициента консервативности – в зависимости от вашей сферы деятельности, занимаемой должности и уровня встречи или мероприятия.
+
+=== E18 | https://api.crossref.org/works/10.1086/674870 | Abstract
+A series of studies demonstrates that people confer higher status and competence to nonconforming rather than conforming individuals.
+
+=== E19 | https://gwern.net/doc/sociology/1957-simmel.pdf | p. 541, ABSTRACT (AJS 62(6), May 1957)
+Fashion is a form of imitation and so of social equalization, but, paradoxically, in changing incessantly, it differentiates one time from another and one social stratum from another.
+
+=== E21 | https://publications.mgcafe.uky.edu/sites/publications.ca.uky.edu/files/FCS2347.pdf | p. 4, section on design principles (Emphasis paragraph)
+A well-planned outfit calls attention first to one area, while other areas support the central theme.
+
+=== E22 | https://api.crossref.org/works/10.1509/jmkg.74.4.015 | Abstract
+Wealthy consumers low in need for status want to associate with their own kind and pay a premium for quiet goods only they can recognize.
+
+=== E23 | https://api.crossref.org/works/10.1086/674870 | Abstract
+An investigation of boundary conditions demonstrates that the positive inferences disappear when the observer is unfamiliar with the environment, when the nonconforming behavior is depicted as unintentional, and in the absence of expected norms and shared standards of formal conduct.
+
+=== E24 | https://api.crossref.org/works/10.1024/1421-0185/a000059 | Abstract
+Thus, glasses affect how we perceive the faces of the people wearing them and, in accordance with an old stereotype, they can lower how attractive, but increase how intelligent and trustworthy people wearing them appear. These effects depend on the kind of glasses worn.
+
+=== E5 | https://github.com/user-attachments/files/33784962/kodeks_stilya.pdf | страница PDF-файла 23 (переносы со служебным знаком склеены)
+д увеличительным стеклом. Поэтому, верно определить персональный природный колорит — первейший этап в работе над собой. Правильно подобранный цвет должен быть фоном для вашей внешности, а не наоборот. Цветотипы. Принципы подбора подходящих оттенков Природный колорит или цветотип определяется оттенком кожи, а также цве
+
+=== E10 | https://github.com/user-attachments/files/33784962/kodeks_stilya.pdf | страница PDF-файла 33 (переносы со служебным знаком склеены)
+поисках одежды, которая идеально подойдет по крою и размеру, следует разобраться в особенностях женского телосложения. Тип фигуры, конечно, не объясняет множества индивидуальных особенностей тела, но прекрасно ориентирует в выборе основных элементов кроя, а также в подборе идеальных материалов. У женщин различают четыре типа фигур по силуэту: прямоугольный, приталенный, полуФприталенный и округлый. Типы фигуры
+
+=== E14 | https://github.com/user-attachments/files/33784962/kodeks_stilya.pdf | страница PDF-файла 50 (переносы со служебным знаком склеены)
+КОДЕКС СТИЛЯ 50 «Вечная классика». Рекомендации для классичес− кого стиля Как правило, деловая мода базируется на классическом стиле. Классика — это действительно золотая середина, которая является основой деловой моды. И очень важно понимать, что на с
+
+=== E16 | https://github.com/user-attachments/files/33784962/kodeks_stilya.pdf | страница PDF-файла 52 (переносы со служебным знаком склеены)
+52 ческий и натуральный стили . Каждый из них отличается своеобразием и некоторыми принципиальными моментами. Так вот, для каждого из этих стилей характерен свой соответствующий типаж внешности. Наверное, многие сталкивались с такой ситуацией, когда вы приходите в магазин, берёте достаточно романтичную блузку —
+
+=== E20 | https://github.com/user-attachments/files/33784962/kodeks_stilya.pdf | страница PDF-файла 47 (переносы со служебным знаком склеены)
+тствовали по своим формам к форме лица . Вы спросите: где лицо и где обувь или сумка? Почему это важно? Дело в том, что когда мы смотрим на человека, мы видим его одновременно всего и сразу — от макушки до пяток и оцениваем его в комплексе. Поэтому, важно создать гармонию линий в цельном образе, выбрав подобные по формам аксессуары. Округлые лица Если у вас
+

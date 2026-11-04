@@ -5,7 +5,7 @@ updated: 2026-10-22
 temperature: 0.3
 type: research
 scope: reputation-technologies
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/image-technologies/50-open-research.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/image-technologies/50-open-research.md"
 ---
 
 # Имидж-технологии: открытые вопросы, отклонения и источники
@@ -46,7 +46,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 | Трубецкова — отдельный метод по книгам | карточка 3.9 |
 | GRA-разметка VERIFIED / PARTIAL / CONFLICT / ? для каждой технологии | таблица «GRA-разметка» и «Профиль статусов» в каждой из 47 карточек; логика — [`10-theory.md`](10-theory.md#8-gra-разметка-достоверности-утверждений) |
 | GRA не диктует выбор образа | правило разметки в `20-taxonomy.md` и `10-theory.md`; проверка терминов модели сбора данных в чекере RFC |
-| RFC: обоснование, таблица замен, визуальные правила | [RFC к презентации v5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md) |
+| RFC: обоснование, таблица замен, визуальные правила | [RFC к презентации v5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md) |
 | Колода v4 не перегенерирована | файл v4 в PR не изменён |
 | Полные URL | все ссылки модуля и RFC — полные адреса; проверка — чекер RFC |
 
@@ -64,7 +64,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 | Интерпретация через гармонию и контраст | [`30-decision-framework.md`](30-decision-framework.md) |
 | Четыре аналитических маркера как управленческие выводы | `30-decision-framework.md`, таблицы «Аналитические маркеры» |
 | Три сценария сборки на кейсах курса | [`40-practice-and-cases.md`](40-practice-and-cases.md) |
-| Колода Gamma v4 | [`2026-11-03-day4-presentation-gamma-v4.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-11-03-day4-presentation-gamma-v4.md) |
+| Колода Gamma v4 | [`2026-11-03-day4-presentation-gamma-v4.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-day4-presentation-gamma-v4.md) |
 
 **Вне постановки.** Сценарий лектора к v4 и v5 постановки не запрашивают. Колода самостоятельна: каждый слайд читается без речи лектора.
 

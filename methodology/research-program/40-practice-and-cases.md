@@ -5,7 +5,7 @@ updated: 2026-10-10
 temperature: 0.6
 type: research
 scope: reputation-technologies
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/gra-research-program/40-practice-and-cases.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/gra-research-program/40-practice-and-cases.md"
 ---
 
 # Практика: сквозные кейсы курса, Промпт-фреймер Дня 1 и протокол соисследователя
@@ -175,7 +175,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 - **Охота на галлюцинации (40–51).** ИИ-досье из 8 строк на вымышленного
   оптовика: ошибки в строках 2, 4, 5, 6, 7 тех же пяти типов, что и в версии
   0.2. Текст — в
-  [сценарии лектора](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-07-day1-lecturer-script-653.md).
+  [сценарии лектора](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-07-day1-lecturer-script-653.md).
 - **Репутационный капитал (51–54).** Во что у производителя конвертируется
   доверие: отсрочка от поставщика сырья, рекомендация сопоставщика, партнёр,
   который не просит демпинга, потому что ценит стабильность.

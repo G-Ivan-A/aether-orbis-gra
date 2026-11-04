@@ -86,6 +86,14 @@ class ValidateRepoTest(unittest.TestCase):
         self.assertTrue(any("missing anchor '#nope'" in e for e in errors))
         self.assertTrue(any("broken relative link: missing.md" in e for e in errors))
 
+    def test_line_anchor_must_name_existing_lines(self) -> None:
+        self.fx.write("docs/b.md", FM + "один\nдва\n")  # 9 lines: 7 of frontmatter and blank line, 2 of text
+        self.fx.write("docs/a.md", FM + "[ok](b.md#L9) [range](b.md#L2-L9) [far](b.md#L10) [back](b.md#L5-L3)\n")
+        errors = self.fx.errors("links")
+        self.assertEqual(len(errors), 2, errors)
+        self.assertTrue(any("'#L10' is not an ascending range within 1..9" in e for e in errors))
+        self.assertTrue(any("'#L5-L3' is not an ascending range within 1..9" in e for e in errors))
+
     def test_links_in_code_are_ignored(self) -> None:
         self.fx.write("docs/a.md", FM + "```\n[x](nowhere.md)\n```\n`[y](nowhere.md)`\n")
         self.assertEqual(self.fx.errors("links"), [])

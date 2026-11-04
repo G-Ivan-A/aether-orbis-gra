@@ -4,7 +4,7 @@ version: 0.1
 updated: 2026-10-15
 temperature: 0.3
 scope: reputation-engineering-course-day1
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-10-14-day1-lecturer-script.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-14-day1-lecturer-script.md"
 ---
 
 # День 1. Сценарий лектора к Gamma-презентации: речь к 33 слайдам
@@ -14,7 +14,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 Связанные документы:
 
 - [Gamma-презентация Дня 1](presentation.md) — 33 слайда, текст, иллюстрации и подвалы;
-- [исследование лектора по открытым данным](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) — журнал поиска к слайду 2;
+- [исследование лектора по открытым данным](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) — журнал поиска к слайду 2;
 - [стандарт слайда и гейт-проверка](slide-standard-and-gate.md) — правила, по которым собраны презентация и сценарий;
 - [обоснование и метод Дня 1](rationale-and-method.md) — определения, кейсы, этика и источники.
 
@@ -32,7 +32,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 ## Перед эфиром
 
 1. Открыть Gamma-презентацию в режиме докладчика и проверить, что подвалы видны на всех 33 слайдах.
-2. Открыть во второй вкладке [исследование лектора по открытым данным](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) — оно понадобится на слайде 2.
+2. Открыть во второй вкладке [исследование лектора по открытым данным](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) — оно понадобится на слайде 2.
 3. Открыть в третьей вкладке [веб-архив Internet Archive](https://web.archive.org/) с сайтом любой знакомой сети — для показа на слайде 23.
 4. Скопировать текст Промпта-фреймера из [приложения А](#приложение-а-промпт-фреймер-для-чата), чтобы на слайде 24 отправить его в чат одним сообщением.
 5. Подготовить готовый черновик карты сети «Х» с одной стрелкой без основания — для Плана Б на слайде 24.

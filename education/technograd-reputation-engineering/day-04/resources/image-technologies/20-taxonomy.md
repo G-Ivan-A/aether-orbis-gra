@@ -5,7 +5,7 @@ updated: 2026-10-22
 temperature: 0.3
 type: research
 scope: reputation-technologies
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/image-technologies/20-taxonomy.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/image-technologies/20-taxonomy.md"
 ---
 
 # Имидж-технологии: таксономия, пулы и карточки технологий
@@ -15,7 +15,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 > Критерии «что считается технологией» и уровни опоры **Э / К / П / А** — в
 > [`10-theory.md`](10-theory.md#1-что-считается-технологией).
 > Версия 0.2 выполняет #695: глубокий поиск по источникам США, Италии, Франции и России, не менее шести технологий на оси, GRA-разметка каждого утверждения и выбор двух-трёх принципиально разных технологий на ось для презентации. Изменения колоды не вносятся сюда напрямую: они описаны в
-> [RFC к презентации v5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md).
+> [RFC к презентации v5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md).
 
 ## Как отбирались технологии
 

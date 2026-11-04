@@ -14,20 +14,38 @@ adapts them for an external reader:
   issue, executor decisions, deviations from the task statement, appeals,
   version-by-issue changelogs) are removed - their history stays in the Hub;
 * links to Hub files that were imported become relative links; links to other
-  Hub files stay absolute ``blob/main`` URLs; links to Hub issues and pull
-  requests are unlinked (the label text stays) because tasks and PRs are not
-  transferred.
+  files of the GRA domain are pinned to the imported commit (``blob/<sha>``),
+  because the Hub removes the domain from ``main`` (Hub RFC #721, step 2) and
+  GitHub answers 404 for a removed ``blob/main`` path but 200 for a SHA
+  permalink; links to the rest of the Hub (rules, standards) stay ``main``;
+  links to Hub issues and pull requests are unlinked (the label text stays)
+  because tasks and PRs are not transferred;
+* line anchors ``#Lnnn`` into imported files are recomputed for the copies in
+  this repository (the Hub line numbers do not match after sections are
+  dropped and the frontmatter is cleaned - case of Hub issue #711); the label
+  ``<file>, строка N`` is renamed accordingly. A line that has no copy keeps a
+  Hub permalink at the imported commit;
+* directories listed in PROVENANCE (the builder and data of the quotes list)
+  are copied as data: Markdown is converted as above, other text files only
+  get ``blob/main`` -> ``blob/<sha>``; every file is listed with the SHA-256
+  of the Hub original in ``provenance-manifest.tsv``. Hub code is never
+  executed here.
 
 Usage (re-runnable while the course is still being delivered):
 
-    git clone --depth 1 https://github.com/G-Ivan-A/hybrid-Intelligence-lab /tmp/hub
-    python3 tools/import_from_hub.py --hub /tmp/hub
+    git clone https://github.com/G-Ivan-A/hybrid-Intelligence-lab /tmp/hub
+    git -C /tmp/hub checkout <PIN_SHA>
+    python3 tools/import_from_hub.py --hub /tmp/hub --commit <PIN_SHA>
+
+The last import used PIN_SHA from ``.hub-profile.json -> last_sync``.
 
 Set GRA_IMPORT_DEBUG=1 to trace every rewritten link and removed section.
 """
 from __future__ import annotations
 
 import argparse
+import difflib
+import hashlib
 import os
 import posixpath
 import re
@@ -75,7 +93,16 @@ MAPPING: dict[str, str] = {
         "40-practice-and-cases", "50-open-research")},
     # Stage I (June 2026) documents: historical context for an external reader.
     **{f"2026-06-20-{n}.md": f"docs/history/2026-06-20-{n}.md" for n in HISTORY},
+    # Quotes of days 1-4 (Hub issue #711), created after the first snapshot
+    # 32b5fa5; imported by Hub RFC #721, step 2.2 (issue #3 here).
+    "2026-11-01-course-quotes-days-1-4-alce.md": f"{COURSE}/handouts/course-quotes-days-1-4-alce.md",
 }
+# Hub directories (relative to DOMAIN) copied as provenance data, not as
+# documents: the builder and the inputs of the quotes list.
+PROVENANCE = {
+    "exp/quotes-711": f"{COURSE}/handouts/course-quotes-provenance",
+}
+PROVENANCE_MANIFEST = "provenance-manifest.tsv"
 # Directory links (tree/main/...) that have an imported equivalent.
 DIR_MAPPING = {
     "gra-research-program": "methodology/research-program/README.md",
@@ -88,6 +115,28 @@ HISTORY_BANNER = (
     "> расхождения этого текста с ними перечислены в [docs/history.md](../history.md#известные-расхождения).\n"
     "> Current GRA wording lives in the L1–L4 documents; known discrepancies are listed in docs/history.md.\n"
 )
+
+# Banner inserted after the first H1 of a document that is generated in the Hub
+# by a builder kept here only as provenance.
+GENERATED_BANNER = (
+    "> **Перенесено из Хаба.** Файл собран в Хабе построителем из каталога\n"
+    "> [course-quotes-provenance/](course-quotes-provenance/README.md) (провенанс, здесь не\n"
+    "> исполняется). При переносе якоря строк `#Lnnn` пересчитаны по копиям материалов\n"
+    "> в этом репозитории; ссылки на файлы, которые остались в Хабе (каталог источников\n"
+    "> #650 и другие), закреплены на коммите Хаба из поля `source`.\n"
+)
+PROVENANCE_BANNER = (
+    "> **Провенанс.** Копия каталога Хаба на коммите из поля `source`. Код Хаба в\n"
+    "> этом репозитории не исполняется: файлы сохранены как данные, по которым\n"
+    "> собран [список цитат](../course-quotes-days-1-4-alce.md). Команды ниже\n"
+    "> относятся к дереву Хаба. Единственная правка текстовых файлов — ссылки\n"
+    "> `blob/main` заменены ссылками на тот же коммит; SHA-256 оригиналов — в\n"
+    "> [`provenance-manifest.tsv`](provenance-manifest.tsv).\n"
+)
+BANNERS = {
+    f"{COURSE}/handouts/course-quotes-days-1-4-alce.md": GENERATED_BANNER,
+    f"{COURSE}/handouts/course-quotes-provenance/README.md": PROVENANCE_BANNER,
+}
 
 KEEP_FIELDS = ("status", "version", "updated", "temperature", "type", "scope")
 # A level-2+ heading whose text matches starts a section that documents task
@@ -111,8 +160,12 @@ RENAME_HEADING = {"КРИТИЧЕСКАЯ АППЕЛЯЦИЯ": "Ключевые
 HEADING = re.compile(r"^(#{1,6})\s+(.*?)\s*$")
 FENCE = re.compile(r"^\s*(```|~~~)")
 LINK = re.compile(r"(!?)\[([^\]]*)\]\(([^)\s]+)((?:\s+\"[^\"]*\")?)\)")
-HUB_FILE = re.compile(re.escape(HUB_URL) + r"/(blob|tree)/main/([^)#?\s]+)(?:\?[^)#\s]*)?(#[^)\s]*)?")
+HUB_FILE = re.compile(re.escape(HUB_URL) + r"/(blob|tree)/main/([^)#?\s]+)(\?[^)#\s]*)?(#[^)\s]*)?")
 HUB_TASK = re.compile(re.escape(HUB_URL) + r"/(?:issues|pull)/\d+[^)\s]*")
+LINE_ANCHOR = re.compile(r"^#L(\d+)(?:-L(\d+))?$")
+LINE_LABEL = re.compile(r"^(?P<name>[^,\[\]]+), строка (?P<line>\d+)$")
+# Hub line -> line of the copy, per repository path of the copy.
+LineMaps = dict[str, dict[int, int]]
 
 
 def debug(msg: str) -> None:
@@ -169,16 +222,77 @@ def target_for(hub_path: str) -> str | None:
     if not path.startswith(DOMAIN + "/"):
         return None
     inner = path[len(DOMAIN) + 1:]
+    for hub_dir, local_dir in PROVENANCE.items():
+        if inner == hub_dir:
+            return f"{local_dir}/README.md"
+        if inner.startswith(hub_dir + "/"):
+            return local_dir + inner[len(hub_dir):]
     return MAPPING.get(inner) or DIR_MAPPING.get(inner)
 
 
-def rewrite_links(body: str, own_target: str, own_hub_dir: str) -> str:
+def in_domain(hub_path: str) -> bool:
+    return hub_path == DOMAIN or hub_path.startswith(DOMAIN + "/")
+
+
+def display_name(target: str) -> str:
+    """Short name of a repository file for link labels (course files without the course prefix)."""
+    return target[len(COURSE) + 1:] if target.startswith(COURSE + "/") else target
+
+
+def remap_line_anchor(anchor: str, target: str, line_maps: LineMaps | None) -> str | None:
+    """Translate ``#Lnnn[-Lmmm]`` of a Hub file into the line numbers of its copy.
+
+    Returns the anchor unchanged when it is not a line anchor and None when a
+    line has no counterpart in the copy (it was in a dropped section).
+    """
+    match = LINE_ANCHOR.match(anchor)
+    if not match or line_maps is None:
+        return anchor
+    lines = [int(n) for n in match.groups() if n]
+    if target not in line_maps and not target.endswith(".md"):
+        return anchor  # provenance data file: copied line for line
+    mapping = line_maps.get(target, {})
+    if any(n not in mapping for n in lines):
+        return None
+    return "#" + "-".join(f"L{mapping[n]}" for n in lines)
+
+
+def relabel(label: str, hub_path: str, target: str, old: str, new: str) -> str:
+    """Rename ``<hub file>, строка N`` labels after a line anchor was recomputed."""
+    match = LINE_LABEL.match(label)
+    if not match or match.group("name") != posixpath.basename(hub_path):
+        return label
+    old_line, new_line = LINE_ANCHOR.match(old), LINE_ANCHOR.match(new)
+    if not old_line or not new_line or match.group("line") != old_line.group(1):
+        return label
+    return f"{display_name(target)}, строка {new_line.group(1)}"
+
+
+def rewrite_links(
+    body: str, own_target: str, own_hub_dir: str, commit: str = "main", line_maps: LineMaps | None = None,
+) -> str:
+    """Rewrite Hub links of one document.
+
+    ``commit`` pins links to domain files that are not imported; ``line_maps``
+    (Hub line -> copy line per copy) recomputes ``#Lnnn`` anchors into copies.
+    """
     own_dir = posixpath.dirname(own_target)
 
     def local(target: str, anchor: str) -> str:
         if target == own_target:
             return anchor or "#"
         return posixpath.relpath(target, own_dir) + anchor
+
+    def to_copy(bang: str, label: str, title: str, hub_path: str, mapped: str, anchor: str,
+                pinned: str) -> str:
+        new_anchor = remap_line_anchor(anchor, mapped, line_maps)
+        if new_anchor is None:
+            debug(f"{own_target}: line {anchor} of {hub_path} has no copy, keep {pinned}")
+            return f"{bang}[{label}]({pinned}{title})"
+        if new_anchor != anchor:
+            label = relabel(label, hub_path, mapped, anchor, new_anchor)
+            debug(f"{own_target}: {hub_path}{anchor} -> {mapped}{new_anchor}")
+        return f"{bang}[{label}]({local(mapped, new_anchor)}{title})"
 
     def replace(match: re.Match[str]) -> str:
         bang, label, url, title = match.groups()
@@ -187,20 +301,27 @@ def rewrite_links(body: str, own_target: str, own_hub_dir: str) -> str:
             return label
         hub = HUB_FILE.fullmatch(url)
         if hub:
-            mapped = target_for(hub.group(2))
+            kind, hub_path, query, anchor = hub.group(1), hub.group(2), hub.group(3) or "", hub.group(4) or ""
+            pinned = f"{HUB_URL}/{kind}/{commit}/{hub_path}{query}{anchor}"
+            mapped = target_for(hub_path)
             if mapped:
-                return f"{bang}[{label}]({local(mapped, hub.group(3) or '')}{title})"
+                return to_copy(bang, label, title, hub_path, mapped, anchor, pinned)
+            if in_domain(hub_path.rstrip("/")):
+                debug(f"{own_target}: pin {url} -> {pinned}")
+                return f"{bang}[{label}]({pinned}{title})"
             return match.group(0)
         if re.match(r"^[a-z]+:|^#", url):
             return match.group(0)
         # Relative link inside the Hub: resolve against the source directory.
         path, _, anchor = url.partition("#")
         hub_path = posixpath.normpath(posixpath.join(own_hub_dir, path))
+        anchor = f"#{anchor}" if anchor else ""
+        kind = "tree" if path.endswith("/") or "." not in posixpath.basename(path) else "blob"
+        ref = commit if in_domain(hub_path) else "main"
+        absolute = f"{HUB_URL}/{kind}/{ref}/{hub_path}{anchor}"
         mapped = target_for(hub_path)
         if mapped:
-            return f"{bang}[{label}]({local(mapped, '#' + anchor if anchor else '')}{title})"
-        kind = "tree" if path.endswith("/") or "." not in posixpath.basename(path) else "blob"
-        absolute = f"{HUB_URL}/{kind}/main/{hub_path}" + (f"#{anchor}" if anchor else "")
+            return to_copy(bang, label, title, hub_path, mapped, anchor, absolute)
         debug(f"{own_target}: relative {url} -> {absolute}")
         return f"{bang}[{label}]({absolute}{title})"
 
@@ -234,35 +355,109 @@ def add_banner(body: str, banner: str) -> str:
     return banner + "\n" + body
 
 
-def convert(text: str, hub_rel: str, target: str, commit: str) -> str:
+def convert(text: str, hub_rel: str, target: str, commit: str, line_maps: LineMaps | None = None) -> str:
     lines, body = split_frontmatter(text)
     body = drop_sections(body, target)
-    body = rewrite_links(body, target, posixpath.dirname(f"{DOMAIN}/{hub_rel}"))
+    body = rewrite_links(body, target, posixpath.dirname(f"{DOMAIN}/{hub_rel}"), commit, line_maps)
     body = rename_path_labels(body)
     frontmatter = clean_frontmatter(lines, hub_rel, commit)
     if target.startswith("docs/history/"):
         body = add_banner(body, HISTORY_BANNER)
         # Stage I wording is replaced by the L1-L4 documents of this repository.
         frontmatter = re.sub(r"(?m)^status:.*$", "status: superseded", frontmatter)
+    if target in BANNERS:
+        body = add_banner(body, BANNERS[target])
     return frontmatter + body.rstrip("\n") + "\n"
+
+
+def build_line_map(source: str, copy: str, hub_rel: str, target: str, commit: str) -> dict[int, int]:
+    """Map 1-based lines of a Hub file to the lines of its converted copy.
+
+    The Hub lines get the same line-local rewrites as the copy (links, path
+    labels), then both sides are aligned with difflib. Equal lines map
+    directly; a changed block of the same size maps line by line when the two
+    lines are still similar. Lines of dropped sections stay unmapped.
+    """
+    hub_dir = posixpath.dirname(f"{DOMAIN}/{hub_rel}")
+    left = [rename_path_labels(rewrite_links(line, target, hub_dir, commit)) for line in source.splitlines()]
+    right = copy.splitlines()
+    mapping: dict[int, int] = {}
+    matcher = difflib.SequenceMatcher(None, left, right, autojunk=False)
+    for tag, i1, i2, j1, j2 in matcher.get_opcodes():
+        if tag == "equal" or (tag == "replace" and i2 - i1 == j2 - j1):
+            for k in range(i2 - i1):
+                if tag == "equal" or difflib.SequenceMatcher(None, left[i1 + k], right[j1 + k]).ratio() >= 0.6:
+                    mapping[i1 + k + 1] = j1 + k + 1
+    return mapping
+
+
+def pin_text(text: str, commit: str) -> str:
+    """Pin ``blob|tree/main`` Hub URLs of a provenance text file to ``commit``."""
+    return re.sub(re.escape(HUB_URL) + r"/(blob|tree)/main/", lambda m: f"{HUB_URL}/{m.group(1)}/{commit}/", text)
+
+
+def copy_provenance(hub: Path, root: Path, commit: str, line_maps: LineMaps) -> list[str]:
+    """Copy PROVENANCE directories as data and write their manifests."""
+    written = []
+    for hub_dir, local_dir in PROVENANCE.items():
+        rows = ["path\thub_sha256\tcopy_sha256\ttransformation"]
+        source_dir = hub / DOMAIN / hub_dir
+        if not source_dir.is_dir():
+            raise FileNotFoundError(f"provenance directory missing in the Hub clone: {source_dir}")
+        (root / local_dir).mkdir(parents=True, exist_ok=True)
+        for source in sorted(p for p in source_dir.rglob("*") if p.is_file()):
+            rel = source.relative_to(source_dir).as_posix()
+            data = source.read_bytes()
+            target = f"{local_dir}/{rel}"
+            if source.suffix == ".md":
+                out = convert(data.decode("utf-8"), f"{hub_dir}/{rel}", target, commit, line_maps).encode("utf-8")
+                how = "markdown import (frontmatter, links, banner)"
+            else:
+                try:
+                    text = data.decode("utf-8")
+                except UnicodeDecodeError:
+                    out, how = data, "none"
+                else:
+                    out = pin_text(text, commit).encode("utf-8")
+                    how = "blob/main -> blob/<commit>" if out != data else "none"
+            destination = root / target
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_bytes(out)
+            rows.append("\t".join((rel, hashlib.sha256(data).hexdigest(), hashlib.sha256(out).hexdigest(), how)))
+            written.append(target)
+        manifest = root / local_dir / PROVENANCE_MANIFEST
+        manifest.write_text(
+            f"# Hub {HUB_URL} commit {commit}, directory {DOMAIN}/{hub_dir}\n" + "\n".join(rows) + "\n",
+            encoding="utf-8",
+        )
+        written.append(f"{local_dir}/{PROVENANCE_MANIFEST}")
+    return written
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--hub", required=True, type=Path, help="local clone of hybrid-Intelligence-lab")
     parser.add_argument("--root", default=Path(__file__).resolve().parent.parent, type=Path)
-    parser.add_argument("--commit", help="Hub commit for provenance (default: HEAD of --hub)")
+    parser.add_argument("--commit", help="Hub commit for provenance and pinned links (default: HEAD of --hub)")
     args = parser.parse_args(argv)
     commit = args.commit or subprocess.run(
         ["git", "-C", str(args.hub), "rev-parse", "HEAD"], check=True, capture_output=True, text=True,
     ).stdout.strip()
+    sources = {hub_rel: (args.hub / DOMAIN / hub_rel).read_text(encoding="utf-8") for hub_rel in MAPPING}
+    # Pass 1 converts every file to learn how Hub lines move in the copies;
+    # pass 2 converts again with the line maps to recompute #Lnnn anchors.
+    # Pass 2 only edits link anchors and labels, so the maps stay valid.
+    line_maps: LineMaps = {}
     for hub_rel, target in MAPPING.items():
-        source = args.hub / DOMAIN / hub_rel
-        text = source.read_text(encoding="utf-8")
+        copy = convert(sources[hub_rel], hub_rel, target, commit)
+        line_maps[target] = build_line_map(sources[hub_rel], copy, hub_rel, target, commit)
+    for hub_rel, target in MAPPING.items():
         destination = args.root / target
         destination.parent.mkdir(parents=True, exist_ok=True)
-        destination.write_text(convert(text, hub_rel, target, commit), encoding="utf-8")
+        destination.write_text(convert(sources[hub_rel], hub_rel, target, commit, line_maps), encoding="utf-8")
         print(f"{hub_rel} -> {target}")
+    for target in copy_provenance(args.hub, args.root, commit, line_maps):
+        print(f"provenance -> {target}")
     return 0
 
 

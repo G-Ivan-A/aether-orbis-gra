@@ -4,7 +4,7 @@ version: 0.1
 updated: 2026-10-23
 temperature: 0.8
 scope: reputation-engineering-course-day4-images
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-11-03-day4-image-prompts-v5-couturier-constructor.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-day4-image-prompts-v5-couturier-constructor.md"
 ---
 
 # День 4 · Промпты для изображений (Версия 5 · Couturier Constructor)

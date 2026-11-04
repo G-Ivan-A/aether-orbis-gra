@@ -1,0 +1,37 @@
+## After #711: the final quote list (branch issue-711-7011de93cac3)
+
+$ python3 -I research/reputation-technologies/exp/quotes-711/check-quotes-711.py --self-test
+PASS: research/reputation-technologies/2026-11-01-course-quotes-days-1-4-alce.md: 273 quotes, 107 ALCE references, all fields present, all quotes verbatim
+PASS: 24 broken fixtures rejected
+exit=0
+
+$ python3 -I research/reputation-technologies/exp/quotes-711/mutation_reasons_711.py
+quote word changed -> 1.1 (Г1): quote is not verbatim on research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md:546
+interpretation removed -> 1.1 (Г1): interpretation missing, too short or not marked [1]
+authors field dropped -> 1.1 (Г1): field «Авторы» missing
+date field dropped -> 1.1 (Г1): field «Дата» missing
+source title dropped -> 1.1 (Г1): field «Источник» missing
+link not https -> 1.1 (Г1): link is not https
+marker does not resolve -> 1.1 (Г1): quote line missing or not marked [1]
+reference entry removed -> reference numbers are not 1..N
+status UNVERIFIED -> 1.1 (Г1): status 'UNVERIFIED' is not a verified status
+repository line shifted -> 1.1 (Г1): quote is not verbatim on research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md:547
+quote block dropped -> catalogue quotes missing from the list (lines): [548]
+day section missing -> section '## День 3.' must appear exactly once
+ai-generated in frontmatter -> frontmatter must not contain ai-generated
+catalogue translation changed -> 1.1 (Г1): translation is not verbatim on research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md:547
+course translation changed -> 3.39 (Д3-Т3): course translation is not verbatim on research/reputation-technologies/2026-11-02-day3-rationale-and-method.md:935
+original not in excerpts -> 3.39 (Д3-Т3): original is not verbatim in source-excerpts-711.txt
+epigraph deck text changed -> 4.12 (О4): slide 12 epigraph does not match the deck line
+block under wrong day -> 2.1 (Г1): numbered for day 2 but placed under day 1
+heading key differs from reference -> 1.1 (Г3): [1] resolves to Г1, heading names Г3
+source title in citation style -> line 76: source title starts with an author list in initials: 'Tinbergen J. Shaping the World Economy: Suggestion'
+abbreviated pages in source title -> line 76: abbreviation 'pp.' in source title 'Shaping the World Economy: Suggestions for an Inte'
+Russian abbreviations in source title -> line 117: abbreviation '№' in source title 'Гравитационная модель внешней торговли России: слу'
+abbreviated page in place in source -> line 78: abbreviation 'p. 2' in place in source
+foreign quote without translation -> 1.1 (Г1): quote in a foreign language without translation
+exit=0
+
+$ python3 -I research/reputation-technologies/exp/quotes-711/build_quotes_711.py --check
+OK: research/reputation-technologies/2026-11-01-course-quotes-days-1-4-alce.md is up to date (273 quotes)
+exit=0

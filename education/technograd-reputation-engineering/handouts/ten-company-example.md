@@ -3,7 +3,7 @@ status: draft
 version: 0.1
 updated: 2026-10-30
 temperature: 0.1
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/exp/day1-osint-709/2026-10-30-ten-company-example.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/exp/day1-osint-709/2026-10-30-ten-company-example.md"
 ---
 
 # Десять компаний: сохранение черновика карты и его проверка

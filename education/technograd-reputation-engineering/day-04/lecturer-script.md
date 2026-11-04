@@ -4,12 +4,12 @@ version: 0.1
 updated: 2026-10-22
 temperature: 0.4
 scope: reputation-engineering-course-day4
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-11-03-day4-lecturer-script-v5.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-day4-lecturer-script-v5.md"
 ---
 
 # День 4. Сценарий лектора, вариант 5: карта гипотез имидж-технологий
 
-Сценарий к [Gamma-презентации, вариант 5](presentation.md). Оба файла собраны по issue #697 на основе утверждённого [RFC v5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md). Формат речи — тот же, что в [сценарии варианта 3](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-11-03-day4-lecturer-script-v3.md): по 1,2 минуты чистой речи на слайд.
+Сценарий к [Gamma-презентации, вариант 5](presentation.md). Оба файла собраны по issue #697 на основе утверждённого [RFC v5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md). Формат речи — тот же, что в [сценарии варианта 3](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-day4-lecturer-script-v3.md): по 1,2 минуты чистой речи на слайд.
 
 Слайд даёт тезис, речь раскрывает механизм и контекст: почему метод работает, откуда он взят и где его граница. Речь не повторяет текст слайда: ни одна цепочка из восьми слов подряд не совпадает со слайдами колоды. Факты в речи взяты только из подвалов слайдов и из источников, которые лектор показывает на экране. Кейсы курса звучат только на трёх слайдах сборки; в речи о технологиях их нет. Статусы проверки лектор называет словами — «подтверждено», «подтверждено частично», «данные спорят», «проверки нет»; термины методологии исследования для выбора образа в речи не используются. Связка «потому что → поэтому» звучит только как мостик в конце речи к слайду и ведёт к следующему слайду; на самих слайдах её нет.
 
@@ -665,4 +665,4 @@ FFIT — соперник из индустрии, и задача у него �
 
 ## Источники речи
 
-Все факты, которые звучат в речи, взяты из подвалов слайдов [Gamma-презентации, вариант 5](presentation.md) и из её раздела [«Источники и уровень опоры»](presentation.md#источники-и-уровень-опоры). Статусы проверки, которые лектор называет словами, совпадают со строками «Статусы проверки» в выводах слайдов технологий и с профилями карточек в [таксономии модуля](resources/image-technologies/20-taxonomy.md). Кейсы трёх сборок описаны в [практике модуля исследования](../../../methodology/research-program/40-practice-and-cases.md). Проверку правил сценария выполняет [`check-day4-697.py`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/exp/day4-v5-697/check-day4-697.py).
+Все факты, которые звучат в речи, взяты из подвалов слайдов [Gamma-презентации, вариант 5](presentation.md) и из её раздела [«Источники и уровень опоры»](presentation.md#источники-и-уровень-опоры). Статусы проверки, которые лектор называет словами, совпадают со строками «Статусы проверки» в выводах слайдов технологий и с профилями карточек в [таксономии модуля](resources/image-technologies/20-taxonomy.md). Кейсы трёх сборок описаны в [практике модуля исследования](../../../methodology/research-program/40-practice-and-cases.md). Проверку правил сценария выполняет [`check-day4-697.py`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/exp/day4-v5-697/check-day4-697.py).

@@ -5,7 +5,7 @@ updated: 2026-10-10
 temperature: 0.6
 type: research
 scope: reputation-technologies
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/gra-research-program/00-introduction.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/gra-research-program/00-introduction.md"
 ---
 
 # Исследовательская модель GRA: введение и карта чтения
@@ -126,8 +126,8 @@ flowchart LR
 
 SSOT Дня 1 —
 [обоснование и метод](../../education/technograd-reputation-engineering/day-01/rationale-and-method.md),
-[презентация](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-07-day1-presentation-653.md)
-и [сценарий лектора](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-07-day1-lecturer-script-653.md).
+[презентация](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-07-day1-presentation-653.md)
+и [сценарий лектора](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-07-day1-lecturer-script-653.md).
 Эти документы не пересказывают модуль, а ссылаются на него. В аудитории
 остаются три простые линзы (масса, дистанция, полярность) и рамка «это наша
 рабочая гипотеза». Научная глубина живёт здесь и не превращает День 1 в лекцию

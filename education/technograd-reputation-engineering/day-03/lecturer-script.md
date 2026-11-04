@@ -4,7 +4,7 @@ version: 0.3
 updated: 2026-10-17
 temperature: 0.3
 scope: reputation-engineering-course-day3
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-11-02-day3-lecturer-script.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-02-day3-lecturer-script.md"
 ---
 
 # День 3. Сценарий лектора: «Внутренние и внешние факторы влияния на развитие компании»
@@ -22,7 +22,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 **За день:**
 
 1. Проверьте, что слайды 1–33 соответствуют [Gamma-презентации Дня 3](presentation.md).
-2. Откройте [исследование лектора по открытым данным](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) — по нему вы говорите на слайде 2: что имеет статус `VERIFIED`, что `PARTIAL`, где «?».
+2. Откройте [исследование лектора по открытым данным](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) — по нему вы говорите на слайде 2: что имеет статус `VERIFIED`, что `PARTIAL`, где «?».
 3. Подготовьте вкладку с ИИ-ассистентом. Вставьте в неё Промпт-фильтр из [приложения А](#приложение-а-промпт-фильтр-для-слушателей): в блок «ВХОД» — бриф из раздела А.3 и реестр десяти узлов из [раздела Б.1](#б1-десять-узлов-вокруг-сети-х). Запустите его заранее и сохраните результат скриншотом. В эфире промпт показывайте вживую, а результат — со скриншота. Отметьте на скриншоте три места: где стоит чат поставщиков, как записан `CONFLICT` по матрице и есть ли у отложенных узлов причина. Если ваш прогон прошёл без ошибок, держите под рукой образец из [раздела Б.3](#б3-выход-ии-с-ошибками-образец-для-слайда-24).
 4. Подготовьте два сообщения для чата: ссылку на [текст промпта](#а2-текст-промпта) и блок с реестром десяти узлов из раздела Б.1. Ключ разбора держите только у себя.
 5. Откройте вручную https://web.archive.org/ и найдите снимки страницы «Поставщикам» условной или собственной компании: на слайде 22 вы говорите о дате снимка. Реестр юрлиц https://egrul.nalog.ru/ открывать не обязательно. Реальных партнёров слушателей на экране не ищите.
@@ -748,7 +748,7 @@ QR-код на слайде ведёт на обоснование Дня 3. Т�
 
 ## Приложение А. Промпт-фильтр для слушателей
 
-Промпт объединяет два промпта Дня 3 из [библиотеки курса #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md):
+Промпт объединяет два промпта Дня 3 из [библиотеки курса #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md):
 
 - D3-1 «Ранжирование точек влияния»;
 - D3-2 «Контрпромпт».

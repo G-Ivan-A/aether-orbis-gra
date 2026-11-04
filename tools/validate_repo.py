@@ -10,7 +10,9 @@ Hub conventions (https://github.com/G-Ivan-A/hybrid-Intelligence-lab):
 * naming       - dated naming of chronological documents in docs/analysis,
                  docs/rfc and docs/adr (Hub file naming convention);
 * links        - every relative Markdown link resolves to an existing file
-                 (and, for links to Markdown headings, to an existing anchor);
+                 (and, for links to Markdown headings, to an existing anchor;
+                 a GitHub line anchor ``#Lnnn`` or ``#Lnnn-Lmmm`` must name
+                 lines that exist in the target file);
 * structure    - every top-level directory is canonical or declared in
                  `.hub-profile.json -> project_specific_directories` with a
                  non-empty reason;
@@ -67,6 +69,7 @@ AGENTS_HARD_TOKENS = 8000
 LINK_RE = re.compile(r"(?<!!)\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)|!\[[^\]]*\]\(([^)\s]+)\)")
 PLACEHOLDER_RE = re.compile(r"\{\{[a-z_]+\}\}")
 FENCE_RE = re.compile(r"^\s*(```|~~~)")
+LINE_ANCHOR_RE = re.compile(r"^L(\d+)(?:-L(\d+))?$")
 
 
 def debug(msg: str) -> None:
@@ -230,6 +233,13 @@ def check_links(root: Path, report: Report) -> None:
                 if not dest.exists():
                     report.fail(f"links: {rel}:{number} broken relative link: {target}")
                     continue
+            line_anchor = LINE_ANCHOR_RE.match(anchor) if anchor and dest.is_file() else None
+            if line_anchor:
+                count = len(dest.read_text(encoding="utf-8").splitlines())
+                lines = [int(n) for n in line_anchor.groups() if n]
+                if any(n < 1 or n > count for n in lines) or lines != sorted(lines):
+                    report.fail(f"links: {rel}:{number} line anchor '#{anchor}' is not an ascending range within 1..{count} of {dest.relative_to(root.resolve()).as_posix()}")
+                continue
             if anchor and dest.is_file() and dest.suffix == ".md":
                 if anchor not in anchors_of(dest, cache):
                     report.fail(f"links: {rel}:{number} missing anchor '#{anchor}' in {dest.relative_to(root.resolve()).as_posix()}")

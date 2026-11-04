@@ -4,14 +4,14 @@ version: 0.3
 updated: 2026-10-14
 temperature: 0.3
 scope: reputation-engineering-course-day2
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-10-30-day2-rationale-and-method.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-30-day2-rationale-and-method.md"
 ---
 
 # День 2 курса «Репутационный инжиниринг»: обоснование, метод, тайминг и кейсы
 
 **Документ 1 из 3.** Комплект Дня 2 «Собираю: проверяем основания связей» (30 октября, 18:30–20:00, онлайн, 90 минут), тема программы — «Мониторинг ресурсов, работа с данными». Остальные документы комплекта:
 
-- [Документ 2: 24 слайда и промпты для изображений](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-30-day2-presentation.md);
+- [Документ 2: 24 слайда и промпты для изображений](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-30-day2-presentation.md);
 - [Документ 3: сценарий лектора и «Промпт-разведчик»](lecturer-script.md).
 
 Версия 0.3 пересобрана по issue #673. Единственный источник логики, тона и структуры — раздел Дня 2 в [RFC v0.3 «Логический каркас Дней 1–4»](../course-logic.md#день-2-собираю-проверяем-основания-связей). Что изменилось по сравнению с версией 0.2:
@@ -34,7 +34,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 - [RFC v0.3](../course-logic.md) — слайды, гипотезы дня, условие сбора, guardrails;
 - [SSOT Дня 1](../day-01/rationale-and-method.md) — стиль, механики вовлечения, значки статуса;
 - [рамка решений](../../../methodology/research-program/30-decision-framework.md) — запрещённые формулировки F1–F10, процедура S1–S7, гейт ИИ G1–G6;
-- [исследование #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md) — источники Д1–Д13 и Н1–Н13, промпты D2-1…D2-3.
+- [исследование #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md) — источники Д1–Д13 и Н1–Н13, промпты D2-1…D2-3.
 
 Допущения перечислены в разделе [«Ограничения и допущения»](#ограничения-и-допущения).
 
@@ -517,7 +517,7 @@ flowchart LR
 - блок 2 «Вероятностная систематизация данных с помощью ИИ» — 16,5 минуты, проба промпта;
 - блок 3 «Качественные и количественные данные: необходимость и последовательность оцифровки» — 20 минут, кейс 3 и кейс 1.
 
-Полная таблица соответствия слайдов программе — в конце [документа 2](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-30-day2-presentation.md#проверка-на-соответствие-программе).
+Полная таблица соответствия слайдов программе — в конце [документа 2](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-30-day2-presentation.md#проверка-на-соответствие-программе).
 
 ## Мост ко Дню 3
 
@@ -561,7 +561,7 @@ flowchart LR
 
 ## Источники
 
-Ссылки вида `[650:X]` ведут на проверенные записи [исследования #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md). Там библиография, страницы, цитаты и статусы проверки. Ссылки `[653:X]` — на [источники Дня 1](../day-01/rationale-and-method.md#источники). Ниже — сводка источников Дня 2 и записи комплекта. Переводы цитат наши.
+Ссылки вида `[650:X]` ведут на проверенные записи [исследования #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md). Там библиография, страницы, цитаты и статусы проверки. Ссылки `[653:X]` — на [источники Дня 1](../day-01/rationale-and-method.md#источники). Ниже — сводка источников Дня 2 и записи комплекта. Переводы цитат наши.
 
 | ID | Источник | Язык | Цитата или факт, на который опирается День 2 | Статус |
 | --- | --- | --- | --- | --- |

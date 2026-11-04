@@ -4,14 +4,14 @@ version: 0.3
 updated: 2026-10-17
 temperature: 0.3
 scope: reputation-engineering-course-day3
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-11-02-day3-rationale-and-method.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-02-day3-rationale-and-method.md"
 ---
 
 # День 3 курса «Репутационный инжиниринг»: обоснование, метод, фильтр данных и сквозные кейсы
 
 **Документ 1 из 3.** Комплект Дня 3 (2 ноября, 18:30–20:00, онлайн, 90 минут), тема «Внутренние и внешние факторы влияния на развитие компании». Остальные документы комплекта:
 
-- [Документ 2: Gamma-презентация на 33 слайда](presentation.md) (структура v0.2 с промптами для изображений — в [архивном документе 2](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-11-02-day3-presentation.md));
+- [Документ 2: Gamma-презентация на 33 слайда](presentation.md) (структура v0.2 с промптами для изображений — в [архивном документе 2](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-02-day3-presentation.md));
 - [Документ 3: сценарий лектора, Промпт-фильтр, реестр кейса 1, 20 визиток, выход ИИ с ошибками и ответы на частые вопросы](lecturer-script.md).
 
 **Редакция issue #683, версия 0.3.** Документ сверен с [RFC v0.3](../course-logic.md) и с принятыми в PR #682 презентацией и сценарием. Что изменилось против версии 0.2:
@@ -41,7 +41,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 - [исследовательская модель GRA](../../../methodology/research-program/00-introduction.md) и [таксономия](../../../methodology/research-program/20-taxonomy.md) — оси дистанции D1–D5, компоненты массы M1–M4, полярность и направление потока;
 - [рамка решений](../../../methodology/research-program/30-decision-framework.md) — запрещённые формулировки F1–F10, критерии K1–K7 (K7 «этика и право» — порог), гейт ИИ G1–G6;
 - [файл практики](../../../methodology/research-program/40-practice-and-cases.md) — три сквозных кейса, «Свой кейс», этические и правовые границы каждого кейса;
-- [исследование #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md) — источники по данным, ИИ и вовлечению.
+- [исследование #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md) — источники по данным, ИИ и вовлечению.
 
 Комплекты Дня 1 версии 0.3 (PR #661) и Дня 2 (PR #662) влиты в `main` 2026-10-11; Gamma-комплекты Дней 1–3 — позже, последним PR #682. Версия 0.3 сверена с ними. Данные Дня 2, нужные Дню 3, пересказаны здесь, чтобы документ читался без перехода. Подробности — в разделе [«Ограничения и допущения»](#ограничения-и-допущения).
 
@@ -869,7 +869,7 @@ G6 Личные выводы — в основании выбора нет вы�
 - блок 1 «Теория заинтересованных сторон» — 10 минут (слайды 12–16) на кейсе 1, плюс вход на тех же узлах (слайды 5–11);
 - блок 2 «Фильтр данных» — 37 минут (слайды 17–28): четыре вопроса, `CONFLICT` и `PARTIAL`, точка влияния и аудитория, проба промпта, итог фильтра, «Что изменит выбор».
 
-Второй блок длиннее, потому что в нём пять из шести формулировок программы и вся практика. Покрытие программы по слайдам — в [логике Дня 3 в RFC v0.3](../course-logic.md#день-3-выбираю-фильтруем-узлы-для-действия); прежняя таблица соответствия архивной презентации — в [документе 2 предыдущей версии](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-11-02-day3-presentation.md#проверка-на-соответствие-программе).
+Второй блок длиннее, потому что в нём пять из шести формулировок программы и вся практика. Покрытие программы по слайдам — в [логике Дня 3 в RFC v0.3](../course-logic.md#день-3-выбираю-фильтруем-узлы-для-действия); прежняя таблица соответствия архивной презентации — в [документе 2 предыдущей версии](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-02-day3-presentation.md#проверка-на-соответствие-программе).
 
 ## Мост ко Дню 4
 
@@ -921,7 +921,7 @@ G6 Личные выводы — в основании выбора нет вы�
 
 ## Источники
 
-Ссылки вида `[650:X]` ведут на проверенные записи [исследования #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md). Ссылки `[653:X]` — на [источники Дня 1](../day-01/rationale-and-method.md#источники). Ссылки `[Д2-X]` — на [источники Дня 2](../day-02/rationale-and-method.md#источники). Ниже — сводка источников Дня 3 и новые записи комплекта. Переводы цитат наши. Новые ключевые источники (Д3-Т1, Д3-Т4, Д3-Т5, Д3-Р2) внесены в [реестр внешних источников](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/external-knowledge/external-sources-registry.md) как `ext-372` … `ext-375`. Д3-Т2, Д3-Т3 и Д3-Р1 уже были в реестре как `ext-350`, `ext-043` и `ext-363`.
+Ссылки вида `[650:X]` ведут на проверенные записи [исследования #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md). Ссылки `[653:X]` — на [источники Дня 1](../day-01/rationale-and-method.md#источники). Ссылки `[Д2-X]` — на [источники Дня 2](../day-02/rationale-and-method.md#источники). Ниже — сводка источников Дня 3 и новые записи комплекта. Переводы цитат наши. Новые ключевые источники (Д3-Т1, Д3-Т4, Д3-Т5, Д3-Р2) внесены в [реестр внешних источников](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/external-knowledge/external-sources-registry.md) как `ext-372` … `ext-375`. Д3-Т2, Д3-Т3 и Д3-Р1 уже были в реестре как `ext-350`, `ext-043` и `ext-363`.
 
 | ID | Источник | Язык | Цитата или факт, на который опирается День 3 | Статус |
 | --- | --- | --- | --- | --- |

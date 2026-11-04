@@ -4,7 +4,7 @@ version: 0.1
 updated: 2026-10-17
 temperature: 0.3
 scope: reputation-engineering-course-day3
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-11-02-day3-presentation-gamma.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-02-day3-presentation-gamma.md"
 ---
 
 # День 3. Презентация для Gamma: 33 слайда, каждый понятен без лектора
@@ -141,7 +141,7 @@ Architecture photo: a monochrome concrete atrium seen from above, ten pale squar
 Fashion editorial photo: a man aged 40–50 in a charcoal tailored three-piece suit, seen in calm three-quarter view beside a white plinth, resting one hand on a small open brass sieve, monochrome palette, the brass rim as the only gold color spot, a thin gold vertical line in the background grid, art deco restraint, no office or meeting scene, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [исследование лектора по открытым данным: промпт, журнал поиска, разбор по GRA](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md); [страница курса и лектора на Технограде, 10.2026](https://technograd.moscow/event_page_new?669#programm_event); [статус GRA и семь guardrails](../day-01/rationale-and-method.md#gra-как-guardrails-статус-и-семь-ограничителей) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [исследование лектора по открытым данным: промпт, журнал поиска, разбор по GRA](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md); [страница курса и лектора на Технограде, 10.2026](https://technograd.moscow/event_page_new?669#programm_event); [статус GRA и семь guardrails](../day-01/rationale-and-method.md#gra-как-guardrails-статус-и-семь-ограничителей) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 3. Четыре дня: Вижу → Собираю → Выбираю → Действую
 
@@ -316,7 +316,7 @@ Typographic scheme on white background: an abstract network map of ten geometric
 Typographic scheme on white background: one monumental graphite square on the left and a small deep blue circle linked by a thin line to a central node on the right, two tall empty choice panels beneath them, a thin gold vertical line dividing the composition, art deco proportions, constructivist grid, generous white space, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [правило 35–70% Peer Instruction](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#п1-crouch--mazur-2001-peer-instruction) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [правило 35–70% Peer Instruction](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#п1-crouch--mazur-2001-peer-instruction) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 10. Вопрос вечера: с кем начать?
 
@@ -363,7 +363,7 @@ Fashion editorial photo: a woman aged 35–45 in a structured ivory jacket and g
 Symbol-graphic composition: three large geometric cards in a row, graphite, deep blue and graphite, each narrower than the previous, connected by a thin constructivist arrow into a slim gold funnel on the right through which only three small squares pass, generous white space, flat vector, strict grid, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [реестр источников курса: стейкхолдеры и точки влияния](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с-стейкхолдеры-точки-влияния-и-стратегия-коммуникации-день-3); [программа Дня 3 на Технограде](https://technograd.moscow/event_page_new?669#programm_event) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [реестр источников курса: стейкхолдеры и точки влияния](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с-стейкхолдеры-точки-влияния-и-стратегия-коммуникации-день-3); [программа Дня 3 на Технограде](https://technograd.moscow/event_page_new?669#programm_event) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 12. Заинтересованная сторона по Freeman
 
@@ -385,7 +385,7 @@ Symbol-graphic composition: three large geometric cards in a row, graphite, deep
 Architecture photo: a monochrome circular concrete amphitheatre seen from above, concentric empty rows of seats around a small central stage marked by a single gold line, soft overcast light, strict radial geometry, constructivist composition, generous white space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [Freeman, определение стейкхолдера](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с2-freeman-1984--определение-стейкхолдера); [теория заинтересованных сторон на языке GRA](rationale-and-method.md#теория-заинтересованных-сторон-на-языке-gra) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [Freeman, определение стейкхолдера](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с2-freeman-1984--определение-стейкхолдера); [теория заинтересованных сторон на языке GRA](rationale-and-method.md#теория-заинтересованных-сторон-на-языке-gra) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 13. Три измерения: влияние, вовлечённость, активность
 
@@ -411,7 +411,7 @@ Architecture photo: a monochrome circular concrete amphitheatre seen from above,
 Symbol-graphic composition: three large overlapping geometric shapes on white, a heavy graphite circle for mass, a deep blue square placed at a measured distance from a small central node, and a thin graphite triangle drawn only in outline for visibility, the single gold accent at the point where all three overlap, flat vector, art deco proportions, constructivist grid, generous white space, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [три измерения программы как вопросы GRA](rationale-and-method.md#три-измерения-программы-как-вопросы-gra); [Mitchell, Agle, Wood о значимости стейкхолдеров](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с1-mitchell-agle--wood-1997--значимость-стейкхолдеров-власть-легитимность-срочность) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [три измерения программы как вопросы GRA](rationale-and-method.md#три-измерения-программы-как-вопросы-gra); [Mitchell, Agle, Wood о значимости стейкхолдеров](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с1-mitchell-agle--wood-1997--значимость-стейкхолдеров-власть-легитимность-срочность) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 14. Больше подписчиков — не больше влияния
 
@@ -433,7 +433,7 @@ Symbol-graphic composition: three large overlapping geometric shapes on white, a
 Art photo: a monochrome installation of dozens of small grey loudspeaker cones mounted on a white wall, all facing the viewer, and one small brass key hanging on a thin gold thread beside them, soft gallery light, strict grid of cones, constructivist rhythm, generous white space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [Cha et al. и Freeman — в источниках Дня 3](rationale-and-method.md#источники); [лидеры мнений и картирование проводимости](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с6-завгородняя-2026--лидеры-мнений-и-картирование-проводимости-ru) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [Cha et al. и Freeman — в источниках Дня 3](rationale-and-method.md#источники); [лидеры мнений и картирование проводимости](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с6-завгородняя-2026--лидеры-мнений-и-картирование-проводимости-ru) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 15. Посредник ценнее громкого узла
 
@@ -527,7 +527,7 @@ Typographic scheme on white background: four horizontal graphite bars stacked as
 Typographic scheme on white background: one monumental graphite square standing outside a narrow gold gate drawn with thin lines, too large to pass through it, a small deep blue circle already beyond the gate, two tall empty choice panels beneath, a thin gold vertical line dividing the composition, art deco proportions, constructivist grid, generous white space, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [правило 35–70% Peer Instruction](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#п1-crouch--mazur-2001-peer-instruction); [статус → действие или отказ](rationale-and-method.md#статус--действие-или-отказ) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [правило 35–70% Peer Instruction](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#п1-crouch--mazur-2001-peer-instruction); [статус → действие или отказ](rationale-and-method.md#статус--действие-или-отказ) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 19. CONFLICT по матрице — повод поговорить
 
@@ -599,7 +599,7 @@ Art photo: a vintage film reel and a short strip of unspooled film lying on a pa
 Architecture photo: a monochrome empty auditorium with rows of identical grey seats facing a dark stage, and beside the stage a single narrow open door edged with a thin gold frame letting in warm light, strong perspective lines, constructivist geometry, generous white space, near-monochrome art with a mandatory gold accent, no people, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [точка влияния и аудитория](rationale-and-method.md#точка-влияния-и-аудитория); [программа Дня 3 на Технограде](https://technograd.moscow/event_page_new?669#programm_event); [лидеры мнений и картирование проводимости](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с6-завгородняя-2026--лидеры-мнений-и-картирование-проводимости-ru) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [точка влияния и аудитория](rationale-and-method.md#точка-влияния-и-аудитория); [программа Дня 3 на Технограде](https://technograd.moscow/event_page_new?669#programm_event); [лидеры мнений и картирование проводимости](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с6-завгородняя-2026--лидеры-мнений-и-картирование-проводимости-ru) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
 
 ### Слайд 22. Смена полярности: сигнал, а не спам
 
@@ -896,4 +896,4 @@ Symbol-graphic composition: two large geometric modules side by side on white, o
 Typographic scheme on white background: four long horizontal graphite bars of different lengths stacked like a reading list, a slim gold funnel shape between the bars and a square geometric QR-like block of graphite modules on the right with one gold module in its corner, thin constructivist rules between the bars, art deco proportions, generous white space, near-monochrome palette, no readable text on image, 16:9.
 
 **[FOOTER_LINKS]**
-Источники: [Промпт-фильтр для слушателей](lecturer-script.md#приложение-а-промпт-фильтр-для-слушателей); [кейс 3 Дня 3](rationale-and-method.md#кейс-3-массажист-эксперт-специалисты-которые-видят-результат-а-не-клуб-и-не-блогер); [насыщенность каналов: Daft, Lengel](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с3-daft--lengel-1986--насыщенность-каналов-media-richness); [стейкхолдеры и точки влияния](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с-стейкхолдеры-точки-влияния-и-стратегия-коммуникации-день-3); [Internet Archive (Wayback Machine)](https://web.archive.org/); [ЕГРЮЛ — по желанию](https://egrul.nalog.ru/); [источники Дня 3](rationale-and-method.md#источники) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026
+Источники: [Промпт-фильтр для слушателей](lecturer-script.md#приложение-а-промпт-фильтр-для-слушателей); [кейс 3 Дня 3](rationale-and-method.md#кейс-3-массажист-эксперт-специалисты-которые-видят-результат-а-не-клуб-и-не-блогер); [насыщенность каналов: Daft, Lengel](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с3-daft--lengel-1986--насыщенность-каналов-media-richness); [стейкхолдеры и точки влияния](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md#с-стейкхолдеры-точки-влияния-и-стратегия-коммуникации-день-3); [Internet Archive (Wayback Machine)](https://web.archive.org/); [ЕГРЮЛ — по желанию](https://egrul.nalog.ru/); [источники Дня 3](rationale-and-method.md#источники) · (Telegram) @gulienko @qwen-3.7plus @claudeopus-5.5 · Москва, 10.2026

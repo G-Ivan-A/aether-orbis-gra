@@ -5,7 +5,7 @@ updated: 2026-10-22
 temperature: 0.4
 type: research
 scope: reputation-technologies
-source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/image-technologies/00-introduction.md"
+source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/image-technologies/00-introduction.md"
 ---
 
 # Имидж-технологии: введение, отчёт об исследовании и карта чтения
@@ -17,10 +17,10 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 > и [`standards/research-standard.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/standards/research-standard.md).
 >
 > **Задача v0.1.** Issue #693: сначала исследование имидж-технологий по контракту RRP, затем на его основе — презентация для Gamma, версия 4:
-> [`2026-11-03-day4-presentation-gamma-v4.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-11-03-day4-presentation-gamma-v4.md).
+> [`2026-11-03-day4-presentation-gamma-v4.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-day4-presentation-gamma-v4.md).
 >
 > **Задача v0.2.** Issue #695: глубокий поиск технологий по источникам США, Италии, Франции и России, включая школьные и университетские программы; не менее шести технологий на ось с остановкой по насыщению; полный анализ справочника НИА «Гид по стилю» «Кодекс стиля», 2007 ([PDF](https://github.com/user-attachments/files/33784962/kodeks_stilya.pdf)); GRA-разметка утверждений; выбор двух-трёх принципиально разных технологий на ось. Колода v4 не перегенерируется: её изменения описаны в
-> [RFC к презентации v5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md).
+> [RFC к презентации v5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md).
 >
 > **Политика ссылок.** Все ссылки модуля — полные абсолютные URL, без сокращателей. Источник технологии — книга, рецензируемая статья, учебная программа школы или университета, государственная квалификация или институциональное пособие. **Блоги исключены**: публикации в блогах, личных журналах, на страницах магазинов и в каталогах цитат не служат опорой ни одного утверждения. Ссылки такого рода из v0.1 и колоды v4 сняты; список — в разделе «[Исключённые источники](20-taxonomy.md#исключённые-источники)».
 
@@ -32,7 +32,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 4. **Тезис постановки о цвете подтверждён в уточнённой форме.** Цвет не сообщает характер. Он сдвигает первое впечатление, и сила и знак сдвига зависят от контекста. Проверка — в [`10-theory.md`](10-theory.md#3-проверка-тезиса-о-цвете).
 5. **Выбор вектора — гипотеза.** Гармония (классицизм) и контраст (эклектика) — два режима применения любой технологии. Ни один не верен заранее: вектор выбирают по четырём аналитическим маркерам и проверяют реакцией аудитории ([`30-decision-framework.md`](30-decision-framework.md)).
 6. **Модель сбора данных курса к имидж-технологиям не применяется.** Её термины не используются ни в описании технологий, ни в их интерпретации. Сквозные кейсы курса появляются только в трёх сценариях сборки ([`40-practice-and-cases.md`](40-practice-and-cases.md)).
-7. **Изменения колоды — через RFC.** Колода v4 не перегенерируется. Какие слайды и поля меняются, что было и что стало, почему и по каким визуальным правилам — в [RFC к презентации v5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md).
+7. **Изменения колоды — через RFC.** Колода v4 не перегенерируется. Какие слайды и поля меняются, что было и что стало, почему и по каким визуальным правилам — в [RFC к презентации v5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md).
 
 ## Этап 1. Отчёт о найденных методиках и авторах
 
@@ -116,4 +116,4 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542a
 
 | Файл | Ветвь RRP | Что внутри |
 | --- | --- | --- |
-| [`2026-11-03-rfc-presentation-update-v5.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md) | изменение артефакта | обоснование, таблица изменений слайдов колоды v4 по полям, визуальные правила v5 |
+| [`2026-11-03-rfc-presentation-update-v5.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md) | изменение артефакта | обоснование, таблица изменений слайдов колоды v4 по полям, визуальные правила v5 |

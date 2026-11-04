@@ -1,0 +1,282 @@
+{
+ "Г4": [
+  {
+   "short": "Каукин А.С.",
+   "full": "Каукин Андрей Сергеевич",
+   "evidence_url": "https://cyberleninka.ru/article/n/vnutrennyaya-torgovlya-rossii-primenenie-gravitatsionnoy-modeli",
+   "snippet": "<meta name=\"citation_author\" content=\"Андрей Сергеевич Каукин\" /> (Экономическая политика, 2020, № 5)",
+   "note": "Не со страницы самой статьи 2013 г. (архив ecpolicy.ru онлайн начинается только с 2020 г., поиск отдаёт 403). Установлено по другой статье того же журнала о гравитационной модели торговли; имя Andrey для статьи 2013 г. подтверждено английской версией в Crossref: https://api.crossref.org/works/10.2139/ssrn.2273162 (Kaukin, Andrey; Idrisov, Georgy)."
+  },
+  {
+   "short": "Идрисов Г.И.",
+   "full": null,
+   "evidence_url": "https://cyberleninka.ru/article/n/nalogovyy-manevr-uskorenie-ekonomicheskogo-rosta-v-uscherb-byudzhetnoy-konsolidatsii",
+   "snippet": "<meta name=\"citation_author\" content=\"Георгий Идрисов\" />",
+   "note": "Установлено только имя Георгий (соавтор Каукина; также Crossref 10.2139/ssrn.2273162: Idrisov, Georgy). Отчество не установлено."
+  }
+ ],
+ "Г14": [
+  {
+   "short": "Когденко В.Г.",
+   "full": "Когденко Вера Геннадьевна",
+   "evidence_url": "https://cyberleninka.ru/article/n/analiz-integrirovannoy-otchetnosti-sotsialno-reputatsionnyy-kapital/pdf",
+   "snippet": "АНАЛИЗ ИНТЕГРИРОВАННОЙ ОТЧЕТНОСТИ: СОЦИАЛЬНО-РЕПУТАЦИОННЫЙ КАПИТАЛ Вера Геннадьевна КОГДЕНКО доктор экономических наук",
+   "note": "PDF статьи (CyberLeninka), с. 1."
+  }
+ ],
+ "Г15": [
+  {
+   "short": "Шагеева Г.Р.",
+   "full": "Шагеева Гульнара Рафаиловна",
+   "evidence_url": "https://cyberleninka.ru/article/n/reputatsionnyy-kapital-lichnosti-v-delovoy-srede-i-ego-vliyanie-na-reputatsiyu-kompanii",
+   "snippet": "<meta name=\"citation_author\" content=\"Шагеева Гульнара Рафаиловна\" />"
+  }
+ ],
+ "Д9": [
+  {
+   "short": "Большаков Н. В.",
+   "full": "Большаков Никита Викторович",
+   "evidence_url": "https://cyberleninka.ru/article/n/sochetat-kombinirovat-smeshivat-kachestvennye-i-kolichestvennye-metody-v-sovremennoy-issledovatelskoy-praktike",
+   "snippet": "<meta name=\"citation_author\" content=\"Большаков Никита Викторович\" />",
+   "note": "Страница журнала (doi.org/10.14515/monitoring.2017.3.03) даёт \"Nikita V BOLSHAKOV\"."
+  }
+ ],
+ "Д10": [
+  {
+   "short": "Соколова Д. В.",
+   "full": "Соколова Дарья Валерьевна",
+   "evidence_url": "https://cyberleninka.ru/article/n/faktcheking-i-verifikatsiya-informatsii-v-rossiyskih-smi-rezultaty-oprosa",
+   "snippet": "<meta name=\"citation_author\" content=\"Соколова Дарья Валерьевна\" />"
+  }
+ ],
+ "Д11": [
+  {
+   "short": "Поздняков В. А.",
+   "full": "Поздняков Владимир Александрович",
+   "evidence_url": "https://cyberleninka.ru/article/n/svoystva-i-metody-obrabotki-informatsii-v-konkurentnoy-razvedke",
+   "snippet": "<meta name=\"citation_author\" content=\"Поздняков Владимир Александрович\" />"
+  }
+ ],
+ "С6": [
+  {
+   "short": "Завгородняя М. Ю.",
+   "full": "Завгородняя Марина Юрьевна",
+   "evidence_url": "https://cyberleninka.ru/article/n/mesto-pola-lazarsfelda-v-nauke-sovremennoe-primenenie-kontseptsiy",
+   "snippet": "<meta name=\"citation_author\" content=\"Завгородняя Марина Юрьевна\" />",
+   "note": "Страница jour.fnisc.ru не загрузилась (сбой соединения), использована CyberLeninka (Власть, 2026, № 1)."
+  }
+ ],
+ "С7": [
+  {
+   "short": "Джонек-Ковальска И.",
+   "full": null,
+   "evidence_url": "https://api.openalex.org/works/doi:10.31897/PMI.2018.4.428",
+   "snippet": "\"display_name\": \"И. Джонек-Ковальска\" ... \"Silesian University of Technology\"",
+   "note": "Польский автор, отчества нет. Полное русское написание имени не найдено. В OpenAlex есть отдельная запись автора \"Izabela Jonek-Kowalska\" (Silesian University of Technology, https://api.openalex.org/authors?search=Jonek-Kowalska), но со статьёй она не связана, поэтому имя считаем неустановленным."
+  },
+  {
+   "short": "Пономаренко Т. В.",
+   "full": "Пономаренко Татьяна Владимировна",
+   "evidence_url": "https://cyberleninka.ru/article/n/integratsiya-kontseptsiy-korporativnoy-otvetstvennosti-i-proektnogo-podhoda-v-gornyh-kompaniyah",
+   "snippet": "Пономаренко Татьяна Владимировна, д-р экон. наук, проф., ... Россия, Санкт-Петербург, Санкт-Петербургский Горный университет",
+   "note": "Не со страницы самой статьи (на pmi.spmi.ru и в PDF только инициалы). Установлено по другой статье 2018 г. тех же соавторов (Пономаренко и Маринина), где указан тот же Горный университет."
+  },
+  {
+   "short": "Маринина О. А.",
+   "full": "Маринина Оксана Анатольевна",
+   "evidence_url": "https://api.openalex.org/works/doi:10.31897/PMI.2018.4.428",
+   "snippet": "\"display_name\": \"Маринина Оксана Анатольевна\", \"raw_author_name\": \"О. А. Маринина\" (Saint Petersburg Mining University)",
+   "note": "Подтверждается также статьёй https://cyberleninka.ru/article/n/integratsiya-kontseptsiy-korporativnoy-otvetstvennosti-i-proektnogo-podhoda-v-gornyh-kompaniyah: \"Маринина Оксана Анатольевна, канд. экон. наук, доц., ... Санкт-Петербургский Горный университет\"."
+  }
+ ],
+ "С8": [
+  {
+   "short": "Плахин А. Е.",
+   "full": "Плахин Андрей Евгеньевич",
+   "evidence_url": "https://cyberleninka.ru/article/n/kartirovanie-steykholderov-promyshlennyh-parkovyh-struktur-uralskogo-regiona",
+   "snippet": "<meta name=\"citation_author\" content=\"Плахин Андрей Евгеньевич\" />"
+  }
+ ],
+ "С9": [
+  {
+   "short": "Моисеенкова Ю. А.",
+   "full": null,
+   "evidence_url": "https://iea.gostinfo.ru/article/view/85",
+   "snippet": "Об авторах Моисеенкова Ю. А. Моисеенкова Ю. А. — ФГБОУ ВО «МГУ им. Н.П. Огарёва», ( Саранск, Россия )",
+   "note": "На странице журнала, в PDF (CyberLeninka) и в поиске CyberLeninka только инициалы; JATS-эндпоинт журнала выдаёт ошибку. Не установлено."
+  }
+ ],
+ "Н11": [
+  {
+   "short": "Кирпичев А. Е.",
+   "full": "Кирпичёв Александр Евгеньевич",
+   "evidence_url": "https://journals.rudn.ru/law/article/view/41937",
+   "snippet": "<meta name=\"citation_author\" xml:lang=\"ru\" lang=\"ru\" content=\"Кирпичёв Александр Евгеньевич\"/>",
+   "note": "Журнал пишет фамилию через «ё»: Кирпичёв."
+  }
+ ],
+ "Н12": [
+  {
+   "short": "Давлатова М. А.",
+   "full": "Давлатова Мадина Асатуллоевна",
+   "evidence_url": "https://doi.org/10.31992/0869-3617-2026-35-2-53-73",
+   "snippet": "Мадина Асатуллоевна Давлатова, канд. наук об образовании, доцент, зам. директора Департамента",
+   "note": "Страница статьи на vovr.elpub.ru, открыта через DOI."
+  },
+  {
+   "short": "Сперанская М. В.",
+   "full": "Сперанская Марина Викторовна",
+   "evidence_url": "https://doi.org/10.31992/0869-3617-2026-35-2-53-73",
+   "snippet": "Марина Викторовна Сперанская, главный специалист Центра «Высшая школа менеджмента»",
+   "note": "Страница статьи на vovr.elpub.ru, открыта через DOI."
+  }
+ ],
+ "П7": [
+  {
+   "short": "Лукашевич Д. А.",
+   "full": "Лукашевич Денис Анатольевич",
+   "evidence_url": "https://cyberleninka.ru/article/n/primenimost-teorii-spirali-molchaniya-k-seti-internet-i-novym-media",
+   "snippet": "<meta name=\"citation_author\" content=\"Лукашевич Денис Анатольевич\" />"
+  }
+ ],
+ "П8": [
+  {
+   "short": "Ван Цзэкай",
+   "full": "Ван Цзэкай",
+   "evidence_url": "https://doi.org/10.25136/2409-8698.2025.12.77540",
+   "snippet": "Ван Цзэкай ORCID: 0009-0004-7732-8415",
+   "note": "Китайское имя: «Ван» — фамилия, «Цзэкай» — имя, отчества нет (Crossref: Wang, Zekai)."
+  },
+  {
+   "short": "Курышева Ю. В.",
+   "full": "Курышева Юлия Владимировна",
+   "evidence_url": "https://doi.org/10.25136/2409-8698.2025.12.77540",
+   "snippet": "Курышева Юлия Владимировна кандидат политических наук",
+   "note": "Страница nbpublish (кодировка cp1251), открыта через DOI; Crossref: Kurysheva, Julia Vladimirovna."
+  },
+  {
+   "short": "Никонов С. Б.",
+   "full": "Никонов Сергей Борисович",
+   "evidence_url": "https://doi.org/10.25136/2409-8698.2025.12.77540",
+   "snippet": "Никонов Сергей Борисович ORCID: 0000-0002-8340-1541",
+   "note": "Crossref: Nikonov, Sergey Borisovich."
+  }
+ ],
+ "П9": [
+  {
+   "short": "Ибрагимов Г. И.",
+   "full": "Ибрагимов Гасангусейн Ибрагимович",
+   "evidence_url": "https://cyberleninka.ru/article/n/didakticheskoe-nasledie-a-a-verbitskogo-i-sovremennost-k-80-letiyu-so-dnya-rozhdeniya/pdf",
+   "snippet": "Cведения об авторе: Ибрагимов Гасангусейн Ибрагимович (г. Казань, Россия), член -корреспондент РАО, доктор педагогических наук, профессор",
+   "note": "PDF статьи (Казанский педагогический журнал, № 4, 2021), с. 6."
+  },
+  {
+   "short": "Вербицкий А. А.",
+   "full": "Вербицкий Андрей Александрович",
+   "evidence_url": "https://cyberleninka.ru/article/n/didakticheskoe-nasledie-a-a-verbitskogo-i-sovremennost-k-80-letiyu-so-dnya-rozhdeniya/pdf",
+   "snippet": "незадолго до своего 80-летия, не стало академика РАО, доктора педагогических наук, профессора Андрея Александровича Вербицкого. А.А. Вербицкий – это целое явление в дидактике высшей школы",
+   "note": "PDF той же статьи, с. 1."
+  }
+ ],
+ "П10": [
+  {
+   "short": "Лазарева А. С.",
+   "full": "Лазарева Анна Сергеевна",
+   "evidence_url": "https://pedagogy-journal.ru/article/ped20250077/fulltext",
+   "snippet": "<meta name=\"citation_author\" content=\"Лазарева Анна Сергеевна\"> ... Информация об авторах Лазарева Анна Сергеевна к. пед. н. Российский государственный социальный университет"
+  }
+ ],
+ "О3": [
+  {
+   "short": "Поступаева Н. В.",
+   "full": "Поступаева Надежда Васильевна",
+   "evidence_url": "https://cyberleninka.ru/article/n/maskirovka-i-korrektsiya-posledstviy-nekachestvennogo-tatuazha-s-pomoschyu-makiyazha",
+   "snippet": "Поступаева Надежда Васильевна аспирант, Хабаровский государственный институт культуры РФ, РФ, г. Хабаровск",
+   "note": "Не со страницы самой статьи (в её PDF только «Поступаева Н. В. аспирант, Хабаровский государственный институт культуры РФ»: https://cyberleninka.ru/article/n/slozhnosti-opredeleniya-tsvetotipa-vneshnosti/pdf). Установлено по другой статье того же 2021 года о макияже: та же аспирантка того же института."
+  }
+ ],
+ "О5": [
+  {
+   "short": "Шинкарёва М. И.",
+   "full": "Шинкарёва Майя Изяславовна",
+   "evidence_url": "https://cyberleninka.ru/article/n/ponyatie-zhivopisnoe-g-vyolflina-primenitelno-k-iskusstvu-polifonii-xvii-veka",
+   "snippet": "<meta name=\"citation_author\" content=\"Шинкарёва Майя Изяславовна\" />"
+  }
+ ],
+ "О6": [
+  {
+   "short": "Беляева-Экземплярская С. Н.",
+   "full": "Беляева-Экземплярская Софья Николаевна",
+   "evidence_url": "https://cyberleninka.ru/article/n/sofya-nikolaevna-belyaeva-ekzemplyarskaya-vypusknitsa-mvzhk",
+   "snippet": "Софья Николаевна Беляева-Экземплярская выпускница МВЖК ... Итогом напряженной работы этих лет стали монография «Моделирование одежды по законам зрительного восприятия» [11] ... 11. Беляева-Экземплярская С.Н. Моделирование одежды по законам зрительного восприятия. - М., 1934.",
+   "note": "Статья О. Серовой (Развитие личности, 2012, № 2). Русская Википедия даёт вариант «София (Софья) Николаевна», но книгу 1934 г. там не упоминает."
+  }
+ ],
+ "О7": [
+  {
+   "short": "Шипков О. И.",
+   "full": null,
+   "evidence_url": "https://api.crossref.org/works/10.12737/article_5a1802e98cd668.78094174",
+   "snippet": "\"author\": [{\"family\": \"Шипков\", \"given\": \"Олег\"}, {\"family\": \"Shipkov\", \"given\": \"Oleg\"}]",
+   "note": "Установлено только имя Олег (см. также https://naukaru.ru/en/nauka/article/19053/view: \"Oleg Shipkov\"). Русская страница naukaru даёт только «Шипков О. И.». Отчество не установлено."
+  }
+ ],
+ "О21": [
+  {
+   "short": "Ковалёв А. Д.",
+   "full": "Ковалев Александр Дмитриевич",
+   "evidence_url": "https://cyberleninka.ru/article/n/spisok-nauchnyh-trudov-aleksandra-dmitrievicha-kovaleva",
+   "snippet": "Список научных трудов Александра Дмитриевича Ковалева ... 47. Гофман И. Представление себя другим в повседневной жизни (перев. с англ.) М.: Канон+, 1999.",
+   "note": "Источник пишет «Ковалев» через «е». См. также https://cyberleninka.ru/article/n/pamyati-a-d-kovaleva-esse-ob-intellektualnoy-skromnosti: «А.Д. Ковалев перевел работы ведущих представителей мировой социологической мысли — Т. Парсонса, Э. Гидденса, И. Гофмана»."
+  },
+  {
+   "short": "Ковалёва М. С.",
+   "full": null,
+   "evidence_url": "https://cyberleninka.ru/article/n/pamyati-a-d-kovaleva-esse-ob-intellektualnoy-skromnosti",
+   "snippet": "Автор очерка благодарит И.Ф. Девятко и М.С. Ковалеву за предоставленные материалы о жизни и творчестве А.Д. Ковалева.",
+   "note": "Найдены только инициалы. Не установлено."
+  }
+ ],
+ "О22": [
+  {
+   "short": "Шкурко О. В.",
+   "full": "Шкурко Ольга Васильевна",
+   "evidence_url": "https://cyberleninka.ru/article/n/vostrebovannost-imidzhelogicheskogo-znaniya-u-buduschih-menedzherov",
+   "snippet": "<meta name=\"citation_author\" content=\"Шкурко Ольга Васильевна\" />"
+  }
+ ],
+ "Day4": [
+  {
+   "short": "Трубецкова И. А.",
+   "full": "Трубецкова Инесса Александровна",
+   "evidence_url": "https://eksmo.ru/authors/trubetskova-inessa-aleksandrovna-ITD15293/",
+   "snippet": "<title>Трубецкова Инесса Александровна: биография автора, новинки, фото - | Эксмо",
+   "note": "На странице книги ( https://eksmo.ru/book/zolotye-pravila-stilya-dress-kod-uspeshnoy-zhenshchiny-ITD816396/ ): «Автор: Найденская Н.Г. , Трубецкова И.А. Издательство: Издательство \"Эксмо\" ISBN: 978-5-699-92975-7 ... Дата выхода: 30 ноября 2016»; «Об авторах: Наталия Найденская, Инесса Трубецкова». Год издания: 2016."
+  },
+  {
+   "short": "Найденская Н. Г.",
+   "full": "Найденская Наталия Георгиевна",
+   "evidence_url": "https://eksmo.ru/authors/naydenskaya-nataliya-georgievna-ITD10678/",
+   "snippet": "Найденская Наталия Георгиевна — стилист и имиджмейкер, эксперт в модной сфере, автор книг о правилах дресс-кода и стиле.",
+   "note": "Год издания по странице книги Эксмо: «Дата выхода: 30 ноября 2016» (ISBN 978-5-699-92975-7)."
+  }
+ ],
+ "Г7": [
+  {
+   "short": "переводчик(и) Левин К. «Теория поля в социальных науках» (Сенсор, 2000)",
+   "full": null,
+   "evidence_url": null,
+   "snippet": null,
+   "note": "Не установлено: каталожной страницы с указанием переводчика не найдено (два веб-поиска, CyberLeninka; РГБ/eLibrary не проверялись)."
+  }
+ ],
+ "Д13": [
+  {
+   "short": "Аргамакова А. А.",
+   "full": "Аргамакова Александра Александровна",
+   "evidence_url": "https://api.crossref.org/works/10.5840/eps202360467",
+   "snippet": "\"given\": \"Александра Александровна\", \"family\": \"Аргамакова\"",
+   "note": "Crossref metadata of the DOI; OpenAlex gives the same display name."
+  }
+ ]
+}

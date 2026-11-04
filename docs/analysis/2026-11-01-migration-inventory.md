@@ -1,7 +1,7 @@
 ---
 status: reviewed
-version: 1.0
-updated: 2026-11-01
+version: 1.1
+updated: 2026-11-04
 temperature: 0.1
 type: analysis
 source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies"
@@ -28,6 +28,11 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/32b5fa524e542a
    версий по задачам). Ссылки на перенесённые файлы становятся
    относительными, ссылки на задачи и PR Хаба — простым текстом. Текст по
    существу не меняется.
+4. **Ссылки на домен Хаба, который не перенесён**, закрепляются на коммите
+   Хаба из поля `source`, а не на `main`: Хаб убирает домен из дерева (RFC
+   Хаба #721), и ссылки `blob/main` начнут отдавать 404. Якоря строк `#Lnnn`
+   пересчитываются по строкам копии. Правило добавлено задачей
+   [#3](https://github.com/G-Ivan-A/aether-orbis-gra/issues/3).
 
 ## Перенесено (35 файлов)
 
@@ -61,6 +66,25 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/32b5fa524e542a
 | [`2026-11-03-day4-crisis-mitigation-rfc.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-11-03-day4-crisis-mitigation-rfc.md) | План замен в днях 1–3, `draft`, не применён без согласования автора | Известная проблема в [карте курса](../../education/technograd-reputation-engineering/README.md#известная-проблема-формулировки-дней-13-за-границей-gra) |
 | `gra-research-program/presentation-rfc/` | RFC отклонён (`rejected`) | — |
 | `exp/` (21 каталог, 102 файла) | Эксперименты и проверки задач | Один учебный пример перенесён в handouts |
+
+## Доимпорт 2026-11-04 (issue #3)
+
+Снимок Хаба — [`48ebe52`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies),
+слияние PR #722 Хаба (RFC #721). После снимка `32b5fa5` в домене изменились
+15 файлов. Как обработан каждый:
+
+| Что | Откуда (в Хабе) | Куда | Почему |
+| --- | --- | --- | --- |
+| Список цитат курса (дни 1–4, ALCE) | `2026-11-01-course-quotes-days-1-4-alce.md` | [education/…/handouts/course-quotes-days-1-4-alce.md](../../education/technograd-reputation-engineering/handouts/course-quotes-days-1-4-alce.md) | Создан после снимка `32b5fa5` (класс R3 инвентаря Хаба). Якоря строк пересчитаны по копиям колод: эпиграф слайда 24 дня 4 — строка 581 копии, а не 591 Хаба |
+| Сборщик и журналы списка цитат, 13 файлов | `exp/quotes-711/` | [education/…/handouts/course-quotes-provenance/](../../education/technograd-reputation-engineering/handouts/course-quotes-provenance/README.md) | Исключение из правила 2 по RFC #721 (Ш2.2): провенанс списка. Не исполняется; SHA-256 оригиналов — в `provenance-manifest.tsv` |
+| `README.md` домена | `README.md` | — | Добавлена строка индекса о списке цитат; индекс не переносится (см. выше) |
+
+35 ранее перенесённых файлов импортированы заново с того же снимка. По
+существу они не изменились: поменялись только поле `source` и 167 ссылок на
+неперенесённые файлы домена, которые теперь закреплены на `48ebe52` (правило 4).
+Источники #650 (Q-3 RFC) и файл с персональными данными (Q-4) остались в Хабе,
+ссылки на них закреплены. Пункт 2 предложений для Хаба ниже заменён решением
+Хаба: RFC #721 и ADR-022 убирают домен из дерева и оставляют архив тегом.
 
 ## Что не переносилось в принципе
 

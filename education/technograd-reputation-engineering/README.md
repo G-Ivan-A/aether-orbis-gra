@@ -1,7 +1,7 @@
 ---
 status: draft
 version: 0.1
-updated: 2026-11-01
+updated: 2026-11-04
 temperature: 0.1
 type: index
 ---
@@ -55,6 +55,7 @@ type: index
 | [handouts/prompt-and-handout-registry.md](handouts/prompt-and-handout-registry.md) | Всё, что получает слушатель: промпты, учебные материалы, разборы ошибок, домашние задания |
 | [handouts/osint-pipeline-design.md](handouts/osint-pipeline-design.md) | Обоснование конвейера «собираем → проверяем» для поиска компаний по открытым данным |
 | [handouts/ten-company-example.md](handouts/ten-company-example.md) | Воспроизводимый учебный пример на десяти компаниях |
+| [handouts/course-quotes-days-1-4-alce.md](handouts/course-quotes-days-1-4-alce.md) | Цитаты и эпиграфы дней 1–4 с источником каждой (ALCE) и ссылкой на строку колоды; [провенанс](handouts/course-quotes-provenance/README.md) |
 
 ## Отклонения от плана и границы
 

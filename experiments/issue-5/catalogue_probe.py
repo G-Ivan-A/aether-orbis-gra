@@ -23,26 +23,38 @@ def validate(snapshot):
     assert len({x['id'] for x in items}) == len(items), 'duplicate programme IDs'
     assert pages[-1]['next'] is None, 'pagination not exhausted'
     assert all(p['count'] == len(items) for p in pages), 'count changed during retrieval'
-    assert all(5 in x['category_ids'] for x in items), 'category filter failed'
+    if snapshot['category'] is not None:
+        assert all(snapshot['category'] in x['category_ids'] for x in items), 'category filter failed'
     assert all(x['updated_at'][:10] <= snapshot['accessed_at'][:10] for x in items), 'future update'
     assert all(set(x) == {'id', 'name', 'url', 'category_ids', 'price', 'started_at',
                          'flexible_start', 'updated_at'} for x in items), 'unexpected fields'
 
 
-def collect():
+def collect(category=5):
     result = {'accessed_at': datetime.now(timezone.utc).isoformat(),
-              'category': 5, 'pages': [], 'programmes': []}
-    url = BASE + '/api/v1/metaprograms/metaprogram?categories=5&page=1&per_page=6'
+              'category': category, 'pages': [], 'programmes': []}
+    query = f'categories={category}&' if category is not None else ''
+    url = BASE + '/api/v1/metaprograms/metaprogram?' + query + 'page=1&per_page=6'
     for _ in range(30):
         parsed = urlparse(url)
         assert parsed.hostname == 'psb-academy.ru' and parsed.path == '/api/v1/metaprograms/metaprogram'
-        assert parse_qs(parsed.query).get('categories') == ['5']
+        assert parse_qs(parsed.query).get('categories') == ([str(category)] if category is not None else None)
         # The public API emits HTTP next links; retain query/path, always request HTTPS.
         url = urlunparse(parsed._replace(scheme='https'))
         with urlopen(url) as response:
-            raw = response.read(2_000_001)
-        assert len(raw) <= 2_000_000, 'unexpected response size'
-        data = json.loads(raw)
+            # Some public responses leave the connection open after the JSON body.
+            # read1 returns available bytes; stop once a complete document arrives.
+            raw = b''
+            while True:
+                part = response.read1(min(65536, 2_000_001 - len(raw)))
+                assert part, 'incomplete JSON response'
+                raw += part
+                assert len(raw) <= 2_000_000, 'unexpected response size'
+                try:
+                    data = json.loads(raw)
+                    break
+                except (json.JSONDecodeError, UnicodeDecodeError):
+                    continue
         result['pages'].append({'url': url, 'count': data['count'], 'next': data['next'],
                                 'sha256': hashlib.sha256(raw).hexdigest()})
         for row in data['results']:
@@ -65,12 +77,13 @@ def main():
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument('--output', type=Path)
     mode.add_argument('--check', type=Path)
+    parser.add_argument('--all', action='store_true', help='Inventory all public categories to check boundary omissions')
     args = parser.parse_args()
     if args.check:
         snapshot = json.loads(args.check.read_text(encoding='utf-8'))
         validate(snapshot)
     else:
-        snapshot = collect()
+        snapshot = collect(None if args.all else 5)
         args.output.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f"OK: {len(snapshot['programmes'])} unique programmes; {len(snapshot['pages'])} pages exhausted")
 

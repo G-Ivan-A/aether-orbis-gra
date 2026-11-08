@@ -1,0 +1,1528 @@
+{
+  "accessed_at": "2026-11-08T21:03:11.053026+00:00",
+  "category": null,
+  "pages": [
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=1&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=2&per_page=6",
+      "sha256": "7af46227289fb7fd1e4103dcd9dce00b6cb5f658f4f78d2a483911d0062ae8c4"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=2&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=3&per_page=6",
+      "sha256": "cc9e14446af1870e38d4c328fc9a356d8a56bf169d5b57262545616c9fc056df"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=3&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=4&per_page=6",
+      "sha256": "56fd2e5f0727eb3a59300267c832301fa177aa1662f16296df7461caa9f8406c"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=4&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=5&per_page=6",
+      "sha256": "140ec985e983f2f80e31b2bd505f83f17e2cbaf7dbd9efeb8600adc312c7861a"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=5&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=6&per_page=6",
+      "sha256": "9e8941eff4944b1da26f6c6d2aafb918bada782c58a169b8e0b8a8016124c396"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=6&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=7&per_page=6",
+      "sha256": "724a6585cb6d1e5fd6f8de4259a29e6895fc262a442aa38fbedd366f1fc4c69c"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=7&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=8&per_page=6",
+      "sha256": "2a4bb512154a0f5399069d0f63f42a9e7e7337159b7de0d4c8da82e0b8f69809"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=8&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=9&per_page=6",
+      "sha256": "e7949e770826320c647befdedc833093c6340fc07cbf4b6531c8a4a28c6c3289"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=9&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=10&per_page=6",
+      "sha256": "8a76f2e7a579309835888e3db63f697c667acaa3120c2c3cc7d764c8146b4b21"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=10&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=11&per_page=6",
+      "sha256": "ba59db63edc997b1c78e7904ab3bfa6bacfc0fc10b4840221c0e5612a0f676a4"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=11&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=12&per_page=6",
+      "sha256": "541133c504b60e511dbe2dc65baa823f72796e6b228d5a4c79bedeabff174a36"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=12&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=13&per_page=6",
+      "sha256": "220e9fe99ced52dcae46de62d3d5c460e695fa55e157c3432c281919274af22f"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=13&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=14&per_page=6",
+      "sha256": "8d142d1f31e31ef472f14d026b8be539c71af83d4a4a9254d822c16911323f57"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=14&per_page=6",
+      "count": 87,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?page=15&per_page=6",
+      "sha256": "e2cd7c685cf13d0fe4998990ed0fcb931eabf497f6c2f432f4dfb9a83708de23"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?page=15&per_page=6",
+      "count": 87,
+      "next": null,
+      "sha256": "92afa2adca6c28aa8381bdecb653b936cb50a640b53509622ef6388009a4c38c"
+    }
+  ],
+  "programmes": [
+    {
+      "id": 173,
+      "name": "Стратегия продаж: от разработки до реализации",
+      "url": "https://psb-academy.ru/education/173",
+      "category_ids": [
+        2,
+        7
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2022-12-17T14:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-22T11:07:19.470000+03:00"
+    },
+    {
+      "id": 174,
+      "name": "Коммерческое предложение и работа с отказами",
+      "url": "https://psb-academy.ru/education/174",
+      "category_ids": [
+        2
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2022-12-17T14:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-22T11:10:15.687000+03:00"
+    },
+    {
+      "id": 175,
+      "name": "Формирование эффективной команды",
+      "url": "https://psb-academy.ru/education/175",
+      "category_ids": [
+        7,
+        10
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2022-12-17T14:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-17T13:44:01.882000+03:00"
+    },
+    {
+      "id": 160,
+      "name": "Креативное мышление",
+      "url": "https://psb-academy.ru/education/160",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2022-12-18T13:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-22T16:44:04.077000+03:00"
+    },
+    {
+      "id": 164,
+      "name": "Маркетинг продукта",
+      "url": "https://psb-academy.ru/education/164",
+      "category_ids": [
+        2,
+        3
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2022-12-18T13:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-22T11:09:41.487000+03:00"
+    },
+    {
+      "id": 168,
+      "name": "Управление личным бюджетом",
+      "url": "https://psb-academy.ru/education/168",
+      "category_ids": [
+        1
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2022-12-18T13:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-22T16:47:01.118000+03:00"
+    },
+    {
+      "id": 165,
+      "name": "Управление цифровым продуктом",
+      "url": "https://psb-academy.ru/education/165",
+      "category_ids": [
+        3
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2022-12-20T14:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-06-02T14:59:16.752000+03:00"
+    },
+    {
+      "id": 154,
+      "name": "Процессное (бережливое) управление в государственном секторе",
+      "url": "https://psb-academy.ru/education/154",
+      "category_ids": [
+        3
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2023-01-31T16:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-22T11:09:06.846000+03:00"
+    },
+    {
+      "id": 161,
+      "name": "Управление командой и коммуникациями проекта",
+      "url": "https://psb-academy.ru/education/161",
+      "category_ids": [
+        3
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2023-02-10T16:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-22T11:08:44.466000+03:00"
+    },
+    {
+      "id": 120,
+      "name": "Введение в машинное обучение",
+      "url": "https://psb-academy.ru/education/120",
+      "category_ids": [
+        5
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2024-03-05T11:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-20T18:03:54.823000+03:00"
+    },
+    {
+      "id": 121,
+      "name": "Инвестиции в искусство",
+      "url": "https://psb-academy.ru/education/121",
+      "category_ids": [
+        1
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2024-10-04T09:21:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-13T17:53:24.308000+03:00"
+    },
+    {
+      "id": 276,
+      "name": "Управление финансовым благополучием сотрудников",
+      "url": "https://psb-academy.ru/education/276",
+      "category_ids": [
+        1
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2024-11-20T11:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-08-20T12:06:50.613000+03:00"
+    },
+    {
+      "id": 89,
+      "name": "Цифровые навыки",
+      "url": "https://psb-academy.ru/education/89",
+      "category_ids": [
+        5
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-01-10T15:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-22T15:12:18.116000+03:00"
+    },
+    {
+      "id": 95,
+      "name": "Основы финансов для нефинансистов",
+      "url": "https://psb-academy.ru/education/95",
+      "category_ids": [
+        1
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-01-10T15:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-13T01:13:31.150000+03:00"
+    },
+    {
+      "id": 303,
+      "name": "Бизнес-игра \"Включайся в проект\"",
+      "url": "https://psb-academy.ru/education/303",
+      "category_ids": [
+        3,
+        11
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-01-28T15:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:50:14.756000+03:00"
+    },
+    {
+      "id": 304,
+      "name": "Публичные выступления",
+      "url": "https://psb-academy.ru/education/304",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-01-29T15:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:57:58.519000+03:00"
+    },
+    {
+      "id": 306,
+      "name": "Как быть устойчивым во время перемен",
+      "url": "https://psb-academy.ru/education/306",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-01-29T15:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:52:48.958000+03:00"
+    },
+    {
+      "id": 307,
+      "name": "Психология конфликта",
+      "url": "https://psb-academy.ru/education/307",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-01-29T15:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:57:40.377000+03:00"
+    },
+    {
+      "id": 319,
+      "name": "Финансово-деловая игра «Время денег»",
+      "url": "https://psb-academy.ru/education/319",
+      "category_ids": [
+        1,
+        11
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-03-24T10:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2025-05-06T10:35:28.198000+03:00"
+    },
+    {
+      "id": 325,
+      "name": "Критическое мышление",
+      "url": "https://psb-academy.ru/education/325",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-04-14T11:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:54:39.904000+03:00"
+    },
+    {
+      "id": 326,
+      "name": "Тренинг \"Переговорные поединки\"",
+      "url": "https://psb-academy.ru/education/326",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-04-14T11:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:59:37.429000+03:00"
+    },
+    {
+      "id": 328,
+      "name": "Навыки предоставления обратной связи",
+      "url": "https://psb-academy.ru/education/328",
+      "category_ids": [
+        7,
+        10
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-04-14T11:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:56:26.529000+03:00"
+    },
+    {
+      "id": 329,
+      "name": "Мастер фасилитации: управление групповыми процессами",
+      "url": "https://psb-academy.ru/education/329",
+      "category_ids": [
+        7,
+        10
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-04-14T11:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:55:09.408000+03:00"
+    },
+    {
+      "id": 330,
+      "name": "Искусство наставничества",
+      "url": "https://psb-academy.ru/education/330",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-04-14T11:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:52:28.070000+03:00"
+    },
+    {
+      "id": 332,
+      "name": "Модульная программа \"Мастерство тренера\"",
+      "url": "https://psb-academy.ru/education/332",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-04-14T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:55:58.398000+03:00"
+    },
+    {
+      "id": 333,
+      "name": "Результативное лидерство",
+      "url": "https://psb-academy.ru/education/333",
+      "category_ids": [
+        7,
+        10
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-04-14T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:58:28.735000+03:00"
+    },
+    {
+      "id": 302,
+      "name": "Основы гибридного управления проектами",
+      "url": "https://psb-academy.ru/education/302",
+      "category_ids": [
+        3
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 25500
+      },
+      "started_at": "2025-05-27T18:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2025-05-27T18:27:29.527000+03:00"
+    },
+    {
+      "id": 347,
+      "name": "Ответственность в сфере ГОЗ",
+      "url": "https://psb-academy.ru/education/347",
+      "category_ids": [
+        4,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 25000
+      },
+      "started_at": "2025-08-01T16:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-05-25T18:13:40.999000+03:00"
+    },
+    {
+      "id": 346,
+      "name": "Финансовая грамотность и личный бюджет",
+      "url": "https://psb-academy.ru/education/346",
+      "category_ids": [
+        1
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 100
+      },
+      "started_at": "2025-09-11T13:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-06T18:18:18.348000+03:00"
+    },
+    {
+      "id": 351,
+      "name": "Стратегическое взаимодействие и эффективность мультидисциплинарных команд в высокотехнологичных проектах",
+      "url": "https://psb-academy.ru/education/351",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-16T11:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:59:08.382000+03:00"
+    },
+    {
+      "id": 305,
+      "name": "Эмоциональное развитие",
+      "url": "https://psb-academy.ru/education/305",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-18T10:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T18:01:15.150000+03:00"
+    },
+    {
+      "id": 356,
+      "name": "Бизнес-игра \"Зеркало Тайн\"",
+      "url": "https://psb-academy.ru/education/356",
+      "category_ids": [
+        11
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-24T15:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:50:41.045000+03:00"
+    },
+    {
+      "id": 357,
+      "name": "Бизнес-игра \"Рассвет отваги\"",
+      "url": "https://psb-academy.ru/education/357",
+      "category_ids": [
+        11
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-24T15:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:51:36.720000+03:00"
+    },
+    {
+      "id": 358,
+      "name": "Бизнес-игра \"Подарок\"",
+      "url": "https://psb-academy.ru/education/358",
+      "category_ids": [
+        11
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-24T15:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:51:19.216000+03:00"
+    },
+    {
+      "id": 359,
+      "name": "Бизнес-игра \"Инструменты наставничества\"",
+      "url": "https://psb-academy.ru/education/359",
+      "category_ids": [
+        11
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-24T15:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:50:58.699000+03:00"
+    },
+    {
+      "id": 377,
+      "name": "Сила гибкости. Устойчивость в мире перемен",
+      "url": "https://psb-academy.ru/education/377",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T15:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:58:54.649000+03:00"
+    },
+    {
+      "id": 360,
+      "name": "Секреты стресс-джедая: управление силой внутри себя",
+      "url": "https://psb-academy.ru/education/360",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:58:40.994000+03:00"
+    },
+    {
+      "id": 361,
+      "name": "Понимание и эффективное взаимодействие по типологии DISC",
+      "url": "https://psb-academy.ru/education/361",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:57:21.999000+03:00"
+    },
+    {
+      "id": 362,
+      "name": "Как работать с трудным руководителем: уверенность и эффективность в условиях давления",
+      "url": "https://psb-academy.ru/education/362",
+      "category_ids": [
+        7,
+        10
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:54:02.765000+03:00"
+    },
+    {
+      "id": 363,
+      "name": "Основы успешных продаж",
+      "url": "https://psb-academy.ru/education/363",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:56:53.540000+03:00"
+    },
+    {
+      "id": 364,
+      "name": "Необходимость продаж: психология переговоров и убеждения",
+      "url": "https://psb-academy.ru/education/364",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:56:40+03:00"
+    },
+    {
+      "id": 365,
+      "name": "Деловые коммуникации: искусство эффективного общения",
+      "url": "https://psb-academy.ru/education/365",
+      "category_ids": [
+        7,
+        10
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:51:52.336000+03:00"
+    },
+    {
+      "id": 366,
+      "name": "5 пороков команды",
+      "url": "https://psb-academy.ru/education/366",
+      "category_ids": [
+        7,
+        10
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:49:54.294000+03:00"
+    },
+    {
+      "id": 367,
+      "name": "Управление временем в период многозадачности",
+      "url": "https://psb-academy.ru/education/367",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:59:51.289000+03:00"
+    },
+    {
+      "id": 368,
+      "name": "Как говорить «нет» и почему это важно",
+      "url": "https://psb-academy.ru/education/368",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:53:18.535000+03:00"
+    },
+    {
+      "id": 369,
+      "name": "Как зарядить команду: практикум по мотивации и развитию вовлеченности",
+      "url": "https://psb-academy.ru/education/369",
+      "category_ids": [
+        7,
+        10
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:53:41.717000+03:00"
+    },
+    {
+      "id": 370,
+      "name": "Цикл эффективного менеджмента",
+      "url": "https://psb-academy.ru/education/370",
+      "category_ids": [
+        7,
+        10
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T18:00:59.488000+03:00"
+    },
+    {
+      "id": 371,
+      "name": "Лидер как наставник",
+      "url": "https://psb-academy.ru/education/371",
+      "category_ids": [
+        7,
+        10
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:54:54.131000+03:00"
+    },
+    {
+      "id": 372,
+      "name": "Управление исполнением",
+      "url": "https://psb-academy.ru/education/372",
+      "category_ids": [
+        7,
+        10
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T18:00:33.773000+03:00"
+    },
+    {
+      "id": 373,
+      "name": "Инструменты подбора и развития сотрудника",
+      "url": "https://psb-academy.ru/education/373",
+      "category_ids": [
+        7,
+        10
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:52:12.003000+03:00"
+    },
+    {
+      "id": 374,
+      "name": "Исключительный клиентский сервис для внутренних клиентов",
+      "url": "https://psb-academy.ru/education/374",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2025-09-26T16:03:43.418000+03:00"
+    },
+    {
+      "id": 375,
+      "name": "Модерационная сессия «Текучесть персонала: анализ и решения»",
+      "url": "https://psb-academy.ru/education/375",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:55:44.438000+03:00"
+    },
+    {
+      "id": 376,
+      "name": "Управление изменениями",
+      "url": "https://psb-academy.ru/education/376",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-09-26T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T18:00:21.658000+03:00"
+    },
+    {
+      "id": 269,
+      "name": "Основы хранилищ данных: самостоятельный старт",
+      "url": "https://psb-academy.ru/education/269",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 29450
+      },
+      "started_at": "2025-09-29T17:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-09-01T09:42:18.371000+03:00"
+    },
+    {
+      "id": 380,
+      "name": "Нейросети для бизнеса",
+      "url": "https://psb-academy.ru/education/380",
+      "category_ids": [
+        5
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-10-07T09:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-03-02T12:27:36.318000+03:00"
+    },
+    {
+      "id": 323,
+      "name": "Тренинг \"Системное мышление\"",
+      "url": "https://psb-academy.ru/education/323",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 17300
+      },
+      "started_at": "2025-11-19T11:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2025-05-30T13:23:49.220000+03:00"
+    },
+    {
+      "id": 309,
+      "name": "Развитие стрессоустойчивости",
+      "url": "https://psb-academy.ru/education/309",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-12-17T12:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-15T17:58:15.911000+03:00"
+    },
+    {
+      "id": 331,
+      "name": "Теория поколений",
+      "url": "https://psb-academy.ru/education/331",
+      "category_ids": [
+        7,
+        10
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 16300
+      },
+      "started_at": "2025-12-22T12:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:59:23.128000+03:00"
+    },
+    {
+      "id": 385,
+      "name": "Просто о сложном: государственный оборонный заказ в вопросах и ответах",
+      "url": "https://psb-academy.ru/education/385",
+      "category_ids": [
+        4,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 27000
+      },
+      "started_at": "2025-12-29T16:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-08-25T15:32:28.189000+03:00"
+    },
+    {
+      "id": 387,
+      "name": "\"Деньги под Контролем: Финансовая Грамотность для Жизни\"",
+      "url": "https://psb-academy.ru/education/387",
+      "category_ids": [
+        1
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2026-01-19T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-16T13:03:31.571000+03:00"
+    },
+    {
+      "id": 117,
+      "name": "Банковское дело",
+      "url": "https://psb-academy.ru/education/117",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 17000
+      },
+      "started_at": "2026-02-09T13:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-09-03T12:30:00.338000+03:00"
+    },
+    {
+      "id": 205,
+      "name": "Отдельный счет. Банковское сопровождение по ГОЗ",
+      "url": "https://psb-academy.ru/education/205",
+      "category_ids": [],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 60000
+      },
+      "started_at": "2026-03-03T11:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-03-03T11:21:10.779000+03:00"
+    },
+    {
+      "id": 402,
+      "name": "Фундаментальный анализ акций. Как оценивать бизнес.",
+      "url": "https://psb-academy.ru/education/402",
+      "category_ids": [
+        1
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2026-03-18T16:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-22T15:21:07.716000+03:00"
+    },
+    {
+      "id": 392,
+      "name": "Переговоры и влияние: как добиваться целей без агрессии",
+      "url": "https://psb-academy.ru/education/392",
+      "category_ids": [
+        7,
+        10,
+        12
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2026-05-18T19:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:57:06.998000+03:00"
+    },
+    {
+      "id": 391,
+      "name": "Управление изменениями: как быть успешным в эпоху трансформаций",
+      "url": "https://psb-academy.ru/education/391",
+      "category_ids": [
+        7,
+        10,
+        12
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2026-06-01T19:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-08T18:28:50.595000+03:00"
+    },
+    {
+      "id": 390,
+      "name": "Лидерство в эпоху цифровизации: как управлять командами и проектами в новых условиях",
+      "url": "https://psb-academy.ru/education/390",
+      "category_ids": [
+        7,
+        10,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 27000
+      },
+      "started_at": "2026-06-15T19:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-08T18:33:51.523000+03:00"
+    },
+    {
+      "id": 430,
+      "name": "Технический анализ акций. Как находить идеи на графике.",
+      "url": "https://psb-academy.ru/education/430",
+      "category_ids": [
+        1
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2026-06-30T11:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-05T22:52:05.089000+03:00"
+    },
+    {
+      "id": 389,
+      "name": "Мотивация через признание: как создать культуру признания и поощрения в команде",
+      "url": "https://psb-academy.ru/education/389",
+      "category_ids": [
+        7,
+        10,
+        12
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2026-08-03T19:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-15T17:56:13.029000+03:00"
+    },
+    {
+      "id": 343,
+      "name": "Промпт-инженер: работа с нейросетями (для сотрудников Банка ПСБ)",
+      "url": "https://psb-academy.ru/education/343",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 26000
+      },
+      "started_at": "2026-09-24T10:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-11-05T09:01:15.367000+03:00"
+    },
+    {
+      "id": 92,
+      "name": "Продвинутый SQL для анализа данных",
+      "url": "https://psb-academy.ru/education/92",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 52500
+      },
+      "started_at": "2026-10-05T10:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-30T15:45:07.956000+03:00"
+    },
+    {
+      "id": 93,
+      "name": "Основы хранилищ данных",
+      "url": "https://psb-academy.ru/education/93",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 37300
+      },
+      "started_at": "2026-10-13T10:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-11-05T09:34:41.427000+03:00"
+    },
+    {
+      "id": 91,
+      "name": "Системный анализ для начинающих",
+      "url": "https://psb-academy.ru/education/91",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 45000
+      },
+      "started_at": "2026-10-22T10:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-11-03T16:24:50.430000+03:00"
+    },
+    {
+      "id": 239,
+      "name": "Анализ данных для начинающих",
+      "url": "https://psb-academy.ru/education/239",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 40000
+      },
+      "started_at": "2026-10-22T10:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-09-01T18:34:11.411000+03:00"
+    },
+    {
+      "id": 314,
+      "name": "Вебинар: «Расчетно-калькуляционные материалы»",
+      "url": "https://psb-academy.ru/education/314",
+      "category_ids": [
+        4,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 35000
+      },
+      "started_at": "2026-11-12T00:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-30T10:45:51.552000+03:00"
+    },
+    {
+      "id": 203,
+      "name": "Вебинар: \"Раздельный учет при выполнении гособоронзаказа\"",
+      "url": "https://psb-academy.ru/education/203",
+      "category_ids": [
+        4
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 40000
+      },
+      "started_at": "2026-11-16T00:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-11-05T11:29:22.540000+03:00"
+    },
+    {
+      "id": 241,
+      "name": "Гособоронзаказ. Эксперты",
+      "url": "https://psb-academy.ru/education/241",
+      "category_ids": [
+        4,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 95000
+      },
+      "started_at": "2026-11-24T08:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-30T10:45:15.033000+03:00"
+    },
+    {
+      "id": 417,
+      "name": "Нейросети для работы и жизни",
+      "url": "https://psb-academy.ru/education/417",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 56000
+      },
+      "started_at": "2026-12-01T10:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-11-06T10:29:31.645000+03:00"
+    },
+    {
+      "id": 202,
+      "name": "Специфика ценообразования при выполнении государственного оборонного заказа",
+      "url": "https://psb-academy.ru/education/202",
+      "category_ids": [
+        4,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 60000
+      },
+      "started_at": "2026-12-31T11:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-11-02T14:04:20.772000+03:00"
+    },
+    {
+      "id": 206,
+      "name": "Закупки в сфере ОПК",
+      "url": "https://psb-academy.ru/education/206",
+      "category_ids": [
+        4
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 97000
+      },
+      "started_at": "2026-12-31T19:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-11-06T14:08:00.695000+03:00"
+    },
+    {
+      "id": 207,
+      "name": "Государственные контракты: составление, заключение, исполнение, прекращение",
+      "url": "https://psb-academy.ru/education/207",
+      "category_ids": [
+        4,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 60000
+      },
+      "started_at": "2026-12-31T19:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-10-16T13:06:41.806000+03:00"
+    },
+    {
+      "id": 94,
+      "name": "Базовый SQL для анализа данных",
+      "url": "https://psb-academy.ru/education/94",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 42500
+      },
+      "started_at": null,
+      "flexible_start": false,
+      "updated_at": "2026-09-14T13:15:54.024000+03:00"
+    },
+    {
+      "id": 204,
+      "name": "Контроль и ответственность при выполнении гособоронзаказа",
+      "url": "https://psb-academy.ru/education/204",
+      "category_ids": [
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 60000
+      },
+      "started_at": null,
+      "flexible_start": false,
+      "updated_at": "2026-08-25T15:31:12.444000+03:00"
+    },
+    {
+      "id": 222,
+      "name": "Аналитик данных: быстрый старт в профессии",
+      "url": "https://psb-academy.ru/education/222",
+      "category_ids": [
+        5
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 38000
+      },
+      "started_at": null,
+      "flexible_start": true,
+      "updated_at": "2026-07-10T13:51:01.102000+03:00"
+    },
+    {
+      "id": 262,
+      "name": "Бизнес-анализ для начинающих",
+      "url": "https://psb-academy.ru/education/262",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 44000
+      },
+      "started_at": null,
+      "flexible_start": false,
+      "updated_at": "2026-09-23T13:08:41.429000+03:00"
+    },
+    {
+      "id": 268,
+      "name": "Аналитик данных: самостоятельный старт",
+      "url": "https://psb-academy.ru/education/268",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 31450
+      },
+      "started_at": null,
+      "flexible_start": true,
+      "updated_at": "2026-07-15T10:56:24.203000+03:00"
+    },
+    {
+      "id": 395,
+      "name": "Коучинг и менторинг: развитие сотрудников и лидерских качеств",
+      "url": "https://psb-academy.ru/education/395",
+      "category_ids": [
+        7
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 25000
+      },
+      "started_at": null,
+      "flexible_start": false,
+      "updated_at": "2026-02-16T19:42:26.897000+03:00"
+    },
+    {
+      "id": 404,
+      "name": "Бесплатный вебинар: «Инвестиции для начинающих: с чего начать за 120 минут?»",
+      "url": "https://psb-academy.ru/education/404",
+      "category_ids": [],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": null,
+      "flexible_start": false,
+      "updated_at": "2026-03-25T12:20:25.478000+03:00"
+    }
+  ]
+}

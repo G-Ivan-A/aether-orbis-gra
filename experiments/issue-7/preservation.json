@@ -1,0 +1,16 @@
+{
+  "baseline_sha": "c857c9cc485c04918d9ed054aaca43cf4686e572",
+  "files": {
+    "docs/analysis/2026-11-08-issue-5-academy-roles.md": "fcb5b26b5237928bf190fbe95237e4bfd53c4717e142ca5341febe11f9950859",
+    "docs/analysis/2026-11-08-issue-5-acceptance.md": "eb20a03c66644d07a60cd1a8a2f223a3d8f5edee589061e94717de964e21f0f6",
+    "docs/analysis/2026-11-08-issue-5-bank-market.md": "7840cb84d1723f789f0d019c897edd1f2e84ff01f5ff016f513a0c43a4a9164a",
+    "docs/analysis/2026-11-08-issue-5-bank-parent.md": "80f15e24befc6a51364ada9a8eebe9d6c37c271decb289873837f48f8808abf7",
+    "docs/analysis/2026-11-08-issue-5-evidence.md": "2e5dd39023c5aaf02ae330e2b64cdd3e02c1c44392487f20dbb75babbe6a1652",
+    "docs/analysis/2026-11-08-issue-5-products.md": "a52b0065c57de6b92a40d18a95bad8f327141d76a783172fd1301e9e017dfaf4",
+    "docs/analysis/2026-11-08-issue-5-programmes.md": "e6e4b39498e688a4e812d77ee4ec361bfba955d29010aa23fee96f48dc17748c",
+    "docs/analysis/2026-11-08-issue-5-research-plan.md": "8d4547fcb03d51c11a1e406fb72b78718f1c8f6e7899ffd9fe90d83e464c0e7d",
+    "experiments/issue-5/all-catalogue-2026-11-08.json": "e8e8b652d5adcb3cb98cf150d314333987b32c4543a4069fa1f629269b0b5213",
+    "experiments/issue-5/catalogue-2026-11-08.json": "1328fe27ad105d3d6039a528f88969bfd98cca7c4a8350cb5d8e265de529e4df"
+  },
+  "inherited_site_audit_sha256": "9e9b7c4795a7b60530b8b7e137f356b4e466dc81e9eec593260501a8b1540b31"
+}

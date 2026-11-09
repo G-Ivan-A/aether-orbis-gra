@@ -1,0 +1,82 @@
+{
+  "accessed_at": "2026-11-09",
+  "repository": "G-Ivan-A/mango_ba_prompts",
+  "main_sha": "e6a72240ba5f7b121f42e2446d9bd7fa341f753c",
+  "pages": {
+    "source": {
+      "branch": "gh-pages",
+      "path": "/"
+    },
+    "build_type": "legacy",
+    "status": "built",
+    "html_url": "https://g-ivan-a.github.io/mango_ba_prompts/"
+  },
+  "recent_main_runs": [
+    {
+      "conclusion": "success",
+      "createdAt": "2026-08-22T15:19:31Z",
+      "databaseId": 32581350697,
+      "headSha": "ccb273e2287ff22e5158d5acde3666218cde1e92",
+      "workflowName": "Validate governance"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-08-22T15:19:31Z",
+      "databaseId": 32581350676,
+      "headSha": "ccb273e2287ff22e5158d5acde3666218cde1e92",
+      "workflowName": "KB pipeline"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-08-22T15:19:31Z",
+      "databaseId": 32581350682,
+      "headSha": "ccb273e2287ff22e5158d5acde3666218cde1e92",
+      "workflowName": "GitHub Pages"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-08-22T15:15:40Z",
+      "databaseId": 32581160459,
+      "headSha": "ad0f3448094ac7edf129b921afd020eddcdfc420",
+      "workflowName": "KB pipeline"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-08-22T15:15:40Z",
+      "databaseId": 32581160462,
+      "headSha": "ad0f3448094ac7edf129b921afd020eddcdfc420",
+      "workflowName": "Validate governance"
+    }
+  ],
+  "commands": [
+    "gh api repos/G-Ivan-A/mango_ba_prompts/commits/main --jq .sha",
+    "gh api repos/G-Ivan-A/mango_ba_prompts/pages",
+    "gh run list --repo G-Ivan-A/mango_ba_prompts --branch main --limit 5 --json databaseId,workflowName,conclusion,createdAt,headSha",
+    "gh api repos/G-Ivan-A/mango_ba_prompts/git/trees/e6a72240ba5f7b121f42e2446d9bd7fa341f753c?recursive=1 (filter site blobs except screenshots)"
+  ],
+  "limit": "No current candidate CI inferred from these older successful runs.",
+  "tree_assets": [
+    "site/app.js",
+    "site/data/a-in-kit.json",
+    "site/data/bcreq-flow.json",
+    "site/data/checks.json",
+    "site/data/patterns.json",
+    "site/data/process-tree.json",
+    "site/data/processes.json",
+    "site/data/prompts.json",
+    "site/data/roadmap.json",
+    "site/data/stats.json",
+    "site/data/test-kit.json",
+    "site/favicon.svg",
+    "site/gate.js",
+    "site/index.html",
+    "site/login.css",
+    "site/login.html",
+    "site/password-hashes.json",
+    "site/reports/index.html",
+    "site/standards.css",
+    "site/styles.css",
+    "site/v2.css",
+    "site/v2.js"
+  ]
+}

@@ -1,7 +1,7 @@
 ---
 status: draft
-version: 0.2
-updated: 2026-11-08
+version: 0.3
+updated: 2026-11-09
 temperature: 0.1
 ---
 
@@ -14,6 +14,14 @@ temperature: 0.1
 
 ### Added
 
+- Issue [#7](https://github.com/G-Ivan-A/aether-orbis-gra/issues/7):
+  [именная карта Академии ПСБ и provenance 20 источников](docs/analysis/2026-11-09-issue-7-academy-decision-makers.md),
+  перенос и повторная сверка исследования из ошибочного Mango PR #479,
+  сохранение пакета #5, [аудит live и принятого комплекта сайта](docs/audit/2026-11-09-issue-7-site-readiness.md)
+  с воспроизводимым получением, браузерными снимками и проверками границ.
+  Девять ФИО имеют документальную опору; одно остаётся индексным кандидатом,
+  закупочные мандаты неизвестны. Публикация гипотез разрешена #7, прежний A2
+  не блокирует эту итерацию.
 - Issue [#5](https://github.com/G-Ivan-A/aether-orbis-gra/issues/5):
   [постановка прикладного исследования](docs/analysis/2026-11-08-issue-5-research-plan.md)
   с последовательным WBS, протоколом evidence, проверками границ и явной

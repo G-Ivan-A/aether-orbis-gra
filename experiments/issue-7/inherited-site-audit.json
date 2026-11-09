@@ -1,0 +1,257 @@
+{
+  "accessed_at": "2026-11-09",
+  "baseline_sha": "e6a72240ba5f7b121f42e2446d9bd7fa341f753c",
+  "live_url": "https://g-ivan-a.github.io/mango_ba_prompts/",
+  "live_version": {
+    "version": "2.7.0",
+    "released": "2026-11-05",
+    "issue": 464,
+    "basis": "PR #465: замечания к странице «Стандарты» и тест задачи 1135, шаг Ш-А; текст не измерен",
+    "changelog": "CHANGELOG.md"
+  },
+  "candidate_version": {
+    "version": "2.8.5",
+    "released": "2026-11-08",
+    "issue": 476,
+    "basis": "PR #477: проверка 24 A-IN, архив 2.7.0, фильтры и трассировка; готово к ручному пакетному деплою",
+    "changelog": "CHANGELOG.md"
+  },
+  "live_totals": {
+    "allPrompts": 53,
+    "activePrompts": 39,
+    "archivedPrompts": 14,
+    "testsPassed": 0,
+    "inWork": 39,
+    "deferred": 14,
+    "modes": {
+      "manual": 39
+    },
+    "statuses": {
+      "draft": 39
+    },
+    "operations": {
+      "ingestion": 3,
+      "understanding": 2,
+      "impact_analysis": 3,
+      "research": 2,
+      "validation": 4,
+      "documentation": 9,
+      "governance": 5,
+      "modeling": 4,
+      "solution_design": 2,
+      "risk_analysis": 2,
+      "release_readiness": 2,
+      "quality": 1
+    },
+    "processes": {
+      "A-IN · Приём задачи": 21,
+      "A-CORE · Требования": 26,
+      "A-WORK · Решение": 32,
+      "A-RELEASE · Выпуск": 14
+    }
+  },
+  "candidate_totals": {
+    "allPrompts": 57,
+    "activePrompts": 39,
+    "archivedPrompts": 18,
+    "testsPassed": 0,
+    "inWork": 39,
+    "deferred": 18,
+    "modes": {
+      "manual": 39
+    },
+    "statuses": {
+      "draft": 39
+    },
+    "operations": {
+      "ingestion": 3,
+      "understanding": 2,
+      "impact_analysis": 3,
+      "research": 2,
+      "validation": 4,
+      "documentation": 9,
+      "governance": 5,
+      "modeling": 4,
+      "solution_design": 2,
+      "risk_analysis": 2,
+      "release_readiness": 2,
+      "quality": 1
+    },
+    "processes": {
+      "A-IN · Приём задачи": 21,
+      "A-CORE · Требования": 26,
+      "A-WORK · Решение": 32,
+      "A-RELEASE · Выпуск": 14
+    }
+  },
+  "live_sha256": {
+    "index.html": "771dcd33230d573b0bc27aef2c7454d1a82106c6aa65a3948c4eb52b43d85a81",
+    "data/stats.json": "616e254b5c5c196f63db139f34cd73d63ff9e4844efeffa30d541da34874d3e9",
+    "data/prompts.json": "6a8938a29852f48d13d76e57201bf24fbdddcd54fe576814d3d250e319a79f7c",
+    "data/test-kit.json": "4a037a64ddc45cb6cbea27243bd96cf592e0dbd50ca8c93872641208a1203075"
+  },
+  "catalogue_ids_preserved": [
+    "mango-bcreq-c01-intake",
+    "mango-bcreq-c02-normalize",
+    "mango-bcreq-c03-ambiguity",
+    "mango-bcreq-c04-questions",
+    "mango-bcreq-c05-taxonomy",
+    "mango-bcreq-c06-scope",
+    "mango-bcreq-c07-web-evidence",
+    "mango-bcreq-c08-document-evidence",
+    "mango-bcreq-c09-ba-enrichment",
+    "mango-bcreq-c10-source-conflicts",
+    "mango-bcreq-c11-dependency-check",
+    "mango-bcreq-c12-phase-assembly",
+    "mango-bcreq-c13-handoff-check",
+    "mango-bcreq-c14-glossary",
+    "mango-bcreq-c15-business-context",
+    "mango-bcreq-c16-fr-delta",
+    "mango-bcreq-c17-fr-new",
+    "mango-bcreq-c18-nfr",
+    "mango-bcreq-c19-uc-coverage",
+    "mango-bcreq-c20-gate-evidence",
+    "mango-bcreq-c21-solution-l1",
+    "mango-bcreq-c22-solution-l2",
+    "mango-bcreq-c23-constraints",
+    "mango-bcreq-c24-uc-boundaries",
+    "mango-bcreq-c25-risks",
+    "mango-bcreq-c26-delivery-dependencies",
+    "mango-bcreq-c27-acceptance",
+    "mango-bcreq-c28-independent-review",
+    "mango-bcreq-c29-impact",
+    "mango-bcreq-c30-targeted-edit",
+    "mango-bcreq-c31-conformance",
+    "mango-bcreq-c32-audience-projection",
+    "mango-bcreq-c33-release-audit",
+    "mango-bcreq-c34-human-record",
+    "mango-bcreq-c35-baseline-handover",
+    "mango-bcreq-c36-rule-bundle",
+    "mango-bcreq-c37-user-story",
+    "mango-bcreq-c38-requested-uc",
+    "mango-bcreq-c39-manifest-alignment",
+    "mango-bcreq-constitution-governance-oneshot",
+    "mango-bcreq-constraints-documentation-stepwise",
+    "mango-bcreq-context-understanding-stepwise",
+    "mango-bcreq-core-documentation-oneshot",
+    "mango-bcreq-extra-risk-analysis-stepwise",
+    "mango-bcreq-fr-documentation-stepwise",
+    "mango-bcreq-in-understanding-oneshot",
+    "mango-bcreq-nfr-documentation-stepwise",
+    "mango-bcreq-orr-solution-design-stepwise",
+    "mango-bcreq-products-impact-analysis-stepwise",
+    "mango-bcreq-review-validation-oneshot",
+    "mango-bcreq-scenarios-modeling-oneshot",
+    "mango-bcreq-uc-modeling-stepwise",
+    "mango-bcreq-work-solution-design-oneshot"
+  ],
+  "catalogue_ids_added": [
+    "mango-bcreq-context-understanding-stepwise-by-test-site-v2p7p0",
+    "mango-bcreq-in-understanding-oneshot-site-v2p7p0",
+    "mango-bcreq-intake-questionnaire-stepwise-by-test-site-v2p7p0",
+    "mango-bcreq-products-impact-analysis-stepwise-by-test-site-v2p7p0"
+  ],
+  "baseline_semantic_changes": [],
+  "normalization": "Ignore generatedAt only; screenshots excluded from deploy-content hash comparison.",
+  "assets": {
+    "site/app.js": {
+      "sha256": "020f873123f39e2e6f9e945f8c9e9fd9d91b8fbec66914312848368f09ca38b2",
+      "bytes": 76700
+    },
+    "site/data/a-in-kit.json": {
+      "sha256": "8b1a08d556041dbc70794167d6210aa375bec33e4a1b94dc07157276366c7f7d",
+      "bytes": 792709,
+      "normalized_sha256": "b95b55e877369f3c07a8ed860c00c1ea13a3d68a3f88c07edb95d05697fef114"
+    },
+    "site/data/bcreq-flow.json": {
+      "sha256": "ff83c70efc5a6a8ce263d82deaf3a4bdc78c05c7ee35612c66707d5946072fb7",
+      "bytes": 97854,
+      "normalized_sha256": "34f250b8a2b8d36ddacb9ca124d5282e55ff3c894614d395827e1ecb0f063a39"
+    },
+    "site/data/checks.json": {
+      "sha256": "6922e9c6b56dbd7d112b345c4edd844a472ea2a991310f8dd390207899ddf801",
+      "bytes": 28610,
+      "normalized_sha256": "5be67e2a218370e6d80e5b00091c1324b3e42e09e8458af1a52e832d3092371a"
+    },
+    "site/data/patterns.json": {
+      "sha256": "dc21e8e8b5b8ed9b5e70f25903876bcebd8bd4e2d1c0433b58b3c1713f6a9cef",
+      "bytes": 7272,
+      "normalized_sha256": "2fafe880aed8a31b0cd9bdd4235dca800b644b25d59850ec8c2c0e06cfa98379"
+    },
+    "site/data/process-tree.json": {
+      "sha256": "cea3bab48381697b9694df903d63f8d9b411e50f5cb59abd59048d5fa5aa7b21",
+      "bytes": 22550,
+      "normalized_sha256": "d1530d660e9e500c61b28244eadb79a9bd0effca1ec26f5dbdf9522424d34196"
+    },
+    "site/data/processes.json": {
+      "sha256": "27549912ef36c611bf41ee2c06d1f5702a055db36a192f3786a6cec99f0298b7",
+      "bytes": 28152,
+      "normalized_sha256": "4769b10695ecbe985a368b27a5021170f5518bb3c5c83c8dffa08d24e7bd36f4"
+    },
+    "site/data/prompts.json": {
+      "sha256": "ce7a0df081f06237422bbde6992d18c4879f0dacf814ce9c2da8b6fc0741874c",
+      "bytes": 1962101,
+      "normalized_sha256": "320832187453534872fabfa3abc8aa1a8266accbb64d7bdac0ab28f6cd3ec7d3"
+    },
+    "site/data/roadmap.json": {
+      "sha256": "09bde76b013b094f0318a44a209df74e89e35772cc392ef6004b03eeab572420",
+      "bytes": 4954,
+      "normalized_sha256": "a324663beb146d8e82b27b69b9bcffb598ba27f2c7f9fcaf6211b31303b0ff41"
+    },
+    "site/data/stats.json": {
+      "sha256": "d520666323f7073ee4e2c08f240abd610523bc5a7f1a1f67092b75213658e2cd",
+      "bytes": 11656,
+      "normalized_sha256": "3e2c64181d4e0c2757b90f9c33263407eab912146156e97e1c8f037778e7972d"
+    },
+    "site/data/test-kit.json": {
+      "sha256": "199bad9a95def8a189052f0894d5d3e816d38c755e97a3cd57aafa4d0aa95c03",
+      "bytes": 615865,
+      "normalized_sha256": "590d5f10bdeb790721ad7c881a9a38e72e3c76c3e3198a7ff24137687e7090dd"
+    },
+    "site/favicon.svg": {
+      "sha256": "566c43b5a5b72d2b0385ec78a8ce285177bb05088391cc69513cb99032b880f6",
+      "bytes": 241
+    },
+    "site/gate.js": {
+      "sha256": "5833157c54d3c491de3af163dd6171ccd16668d1f30b0de87c57872b01fdebff",
+      "bytes": 4685
+    },
+    "site/index.html": {
+      "sha256": "78db690947e37cf2e958e5dbbc7875411216f76221e3fd00e37705aaadce83e8",
+      "bytes": 110645
+    },
+    "site/login.css": {
+      "sha256": "15954bdaa679474bb6c136b69b3ef601f94c6585423f5488f72abdbf7d5387b2",
+      "bytes": 1022
+    },
+    "site/login.html": {
+      "sha256": "362a10c21f1b53d4b860eb6352dcd27bf78330c3bc90811184bb4c6808431967",
+      "bytes": 1001
+    },
+    "site/password-hashes.json": {
+      "sha256": "b66df9da574ecf6f212f7c433f6efd5949e0f9bc4c2ac28d07b6127007c8220c",
+      "bytes": 176,
+      "normalized_sha256": "13bccdea67edc1cc6db2aaeebbc1eacda076c30c6aa8384cd29b65c7582b2cf3"
+    },
+    "site/reports/index.html": {
+      "sha256": "2615f9233e993c4ea6dcc6ac27fb97c76196b4c54e0b5eaa59271f896a6b298c",
+      "bytes": 3248
+    },
+    "site/standards.css": {
+      "sha256": "bdb3e02f1667d14393d39afee33f45647bf0b5ee912f32a6991bc35f02ed0920",
+      "bytes": 5595
+    },
+    "site/styles.css": {
+      "sha256": "0dddb81d19170cee9c639e66af7c40384a62fa5f53708dc797660cad15c042ca",
+      "bytes": 39870
+    },
+    "site/v2.css": {
+      "sha256": "2c53ed998e941c5c3812510f6f39826e22ee1afe1844477435580fd5c09a1651",
+      "bytes": 5460
+    },
+    "site/v2.js": {
+      "sha256": "c9af574386eaaa9b32f96ad8d2ad4c5babcfd745873e5ddeb915d9d2e486ad75",
+      "bytes": 955
+    }
+  }
+}

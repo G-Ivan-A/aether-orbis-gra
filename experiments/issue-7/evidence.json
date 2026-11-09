@@ -1,0 +1,702 @@
+{
+  "schema_version": 2,
+  "accessed_at": "2026-11-09",
+  "baseline": {
+    "repository": "G-Ivan-A/aether-orbis-gra",
+    "sha": "c857c9cc485c04918d9ed054aaca43cf4686e572",
+    "pull_request": "https://github.com/G-Ivan-A/aether-orbis-gra/pull/6"
+  },
+  "sources": [
+    {
+      "id": "N01",
+      "previous": [
+        "A04"
+      ],
+      "url": "https://psb-academy.ru/organization/7",
+      "publisher": "Академия ПСБ",
+      "title": "Руководство",
+      "published_at": null,
+      "event_date": null,
+      "access": "full_text",
+      "locator": "Таблица «Руководство», столбец Ф.И.О., пять строк",
+      "quote": "Вишнякова Светлана Сергеевна; Семенова Марина Александровна; Астафьев Владимир Петрович; Колесникова Светлана Васильевна; Шведова Ольга Владимировна",
+      "status": "VERIFIED",
+      "origin": "organization",
+      "claim": "Пять полных имён сопоставлены с должностями в официальной таблице.",
+      "limits": "Страница без даты назначения и без делегирования права закупки; проверено опубликованное содержание.",
+      "inherited_record_sha256": "bf77fd53da46db375a3ed4a4f9ca4c7afa2ff02b0bd20fb9553fb2e71924cf6b",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N02",
+      "previous": [
+        "A03"
+      ],
+      "url": "https://psb-academy.ru/organization/2",
+      "publisher": "Академия ПСБ",
+      "title": "Структура и органы управления",
+      "published_at": null,
+      "event_date": null,
+      "access": "full_text",
+      "locator": "Информация о руководителях структурных подразделений: социальный, ОПК, методический центры; центр данных — поле «-»",
+      "quote": "Котова Алёна Сергеевна; Белхороев Идрис Микаилович; Амелина Наталья Валентиновна",
+      "status": "VERIFIED",
+      "origin": "organization",
+      "claim": "Три полных имени; у центра данных имя не заполнено. В прочитанном ответе нет строки центра платформы.",
+      "limits": "Пропуск не доказывает вакансию или отсутствие центра. Отличается от поискового представления N03.",
+      "inherited_record_sha256": "3aae21ea40665c5208f4655ac3ca7bebe1d007c3a190fda474f2fd383eaad363",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N03",
+      "previous": [
+        "A03"
+      ],
+      "url": "https://psb-academy.ru/organization/2",
+      "publisher": "Академия ПСБ (поисковое представление)",
+      "title": "Индекс строки центра цифровой образовательной платформы",
+      "published_at": null,
+      "event_date": null,
+      "access": "search_index",
+      "locator": "Поиск точного ФИО с Академией; индексированная строка центра платформы (возраст индекса: last month)",
+      "quote": "Сафёров Владимир Николаевич",
+      "status": "CONFLICT",
+      "origin": "organization_index",
+      "claim": "Полное имя и должность директора центра платформы найдены в индексе официального URL.",
+      "limits": "Строка отсутствует в текущем полном текстовом ответе N02. Отчество и актуальное назначение не подтверждены прочитанным документом; это кандидат, не установленный текущий ЛПР.",
+      "inherited_record_sha256": "4485d1c34e61589e4e2f06243e4dd6079dcca647c004df29f5f032dbfc141f88",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "exact-name search; current full page N02; browser navigation and alternate query URL attempted",
+        "result": "index_conflict_reproduced"
+      }
+    },
+    {
+      "id": "N04",
+      "previous": [
+        "M11"
+      ],
+      "url": "https://storage.psb-academy.ru/project/media/ПК_Неиросети_для_работы_и_жизни.pdf",
+      "publisher": "Академия ПСБ",
+      "title": "Нейросети для работы и жизни: программа повышения квалификации",
+      "published_at": null,
+      "event_date": null,
+      "access": "pdf_text",
+      "locator": "PDF, страница 2 из 7 (считая от 1), §4.1 «Руководитель программы»",
+      "quote": "Мубаракшина Алсу Ирековна, директор Центра развития обучения по управлению данными",
+      "status": "VERIFIED",
+      "origin": "organization",
+      "claim": "Полное имя и программная руководящая функция в документе; помогает раскрыть имя при пустом N02.",
+      "limits": "Установлена запись в недатированной программе ПК26-003; не приказ о текущем назначении и не свидетельство лично проведённого занятия.",
+      "inherited_record_sha256": "d19294c2ce024977189ee65c5ba3e0ac6a17e2f5909d4888e1a45e42c052c4a7",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web PDF text; stated pages reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N05",
+      "previous": [
+        "P380"
+      ],
+      "url": "https://psb-academy.ru/education/380",
+      "publisher": "Академия ПСБ",
+      "title": "Нейросети для бизнеса",
+      "published_at": null,
+      "event_date": null,
+      "access": "full_text",
+      "locator": "Об обучении → Контакты; подпись контактной роли (уточнено после повторного открытия)",
+      "quote": "Алсу Мубаракшина",
+      "status": "PARTIAL",
+      "origin": "organization",
+      "claim": "Карточка программы также связывает имя с руководством обучением управлению данными.",
+      "limits": "Тот же издатель, не независимая проверка N04; контактная роль не право утверждать бюджет.",
+      "inherited_record_sha256": "9f768a82086e57391047a21bd59a0ad52402d2978910c76d902080617cfa5cde",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N06",
+      "previous": [
+        "M01"
+      ],
+      "url": "https://rrmag.ru/2025/12/18/rektor-akademii-psb-svetlana-vishnyakova-sozdaem-obrazovatelnuyu-ekosistemu-gruppy-psb/",
+      "publisher": "Регионы России",
+      "title": "Ректор Академии ПСБ Светлана Вишнякова: Создаем образовательную экосистему группы ПСБ",
+      "published_at": "2025-12-18",
+      "event_date": null,
+      "access": "full_text",
+      "locator": "Вступление; вопросы «Каким трендам…», «Какой опыт…», «Какие планы…»",
+      "quote": "Делаем ставку на практику: деловые игры, стратегические сессии, обмен опытом.",
+      "status": "PARTIAL",
+      "origin": "interview",
+      "claim": "Интервью ректора: практические форматы, развитие ИИ-обучения, планы единой экосистемы; присоединение в январе 2025 — её собственное сообщение.",
+      "limits": "Первичная запись позиции интервьюируемой; показатели и планы не независимый аудит, не обещание приобрести конкретное решение.",
+      "inherited_record_sha256": "6a8b71da8bdd7085a7a809a1cdb64c44e19222ad15bf6edd21a0beace2a28820",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N07",
+      "previous": [
+        "M02"
+      ],
+      "url": "https://psb-academy.ru/news/akademiya-psb-prinyala-uchastie-v-nevskom-forume",
+      "publisher": "Академия ПСБ",
+      "title": "Академия ПСБ приняла участие в Невском форуме",
+      "published_at": "2026-07-02",
+      "event_date": null,
+      "access": "full_text",
+      "locator": "Основной текст, абзац об экспертном участии ректора",
+      "quote": "Светлана Вишнякова",
+      "status": "PARTIAL",
+      "origin": "organization",
+      "claim": "Сообщение об экспертном участии ректора в секции технологического лидерства.",
+      "limits": "Дата публикации не дата выступления; собственная новость, не транскрипт и не учебное занятие.",
+      "inherited_record_sha256": "b7bbd585c99ed8cb8cc276b404c34b06b08b731a3e2dec98c50e7baef77cc20b",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N08",
+      "previous": [
+        "M03"
+      ],
+      "url": "https://psb-academy.ru/news/akademiya-psb-i-bank-psb-na-konferencii-cifrovaya-transformaciya-i-bankovskie-tehnologii-2025",
+      "publisher": "Академия ПСБ",
+      "title": "Академия ПСБ и Банк ПСБ на конференции Цифровая трансформация и банковские технологии 2025",
+      "published_at": "2025-07-05",
+      "event_date": "2025-06-24/2025-06-25",
+      "access": "full_text",
+      "locator": "Основной текст: модерация конференции Владимиром Астафьевым",
+      "quote": "Владимир Астафьев",
+      "status": "CONFLICT",
+      "origin": "organization",
+      "claim": "Академия называет модератора проректором; организатор того же события N09 указывает другую должность.",
+      "limits": "Общее имя, организация и событие дают основание сопоставления, но не доказывают историю переводов или совмещение.",
+      "inherited_record_sha256": "db3c49808675d8624fbcd2e50cbb1997fedf5acb5ef483728ff8622e67432ed8",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N09",
+      "previous": [],
+      "url": "https://dialogmanag.com/CTBT/2025/dokladchiki/",
+      "publisher": "Диалог Менеджмент",
+      "title": "Докладчики конференции 2025",
+      "published_at": null,
+      "event_date": "2025-06-24/2025-06-25",
+      "access": "full_text",
+      "locator": "Карточка «Владимир Астафьев», организация Академия ПСБ",
+      "quote": "Директор Департамента развития продаж",
+      "status": "CONFLICT",
+      "origin": "event_organizer",
+      "claim": "Организатор указывает функциональную должность, отличную от N08.",
+      "limits": "Историческая программа, не текущая штатная структура и не подтверждение специальности нынешнего проректора.",
+      "inherited_record_sha256": "335ca10f3f5a942bea19c57af469afd3483707ba199a0f6dc3b981089219a710",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N10",
+      "previous": [
+        "M09"
+      ],
+      "url": "https://psb-academy.ru/organization/20",
+      "publisher": "Академия ПСБ",
+      "title": "Педагогический состав",
+      "published_at": null,
+      "event_date": null,
+      "access": "full_text",
+      "locator": "Таблица педагогического состава, строка Колесниковой, преподаваемые программы / итоговая аттестация",
+      "quote": "Колесникова Светлана Васильевна",
+      "status": "VERIFIED",
+      "origin": "organization",
+      "claim": "Указана старшим преподавателем; заявлена итоговая аттестация, в том числе по SQL, хранилищам данных и промпт-инженерии.",
+      "limits": "Подтверждена запись о функции, а не проведение конкретной аттестации или её качество.",
+      "inherited_record_sha256": "155df938b9f0de72417f47a40eceba0f46f4b3cc4bf0555e2bac1cbfdfa5db8b",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N11",
+      "previous": [
+        "M12"
+      ],
+      "url": "https://psb-academy.ru/education/328",
+      "publisher": "Академия ПСБ",
+      "title": "Навыки предоставления обратной связи",
+      "published_at": null,
+      "event_date": null,
+      "access": "full_text",
+      "locator": "Эксперты курса → Наталья Амелина",
+      "quote": "Наталья Амелина",
+      "status": "VERIFIED",
+      "origin": "organization",
+      "claim": "Включена в эксперты курса с функциями тренера, коуча и методолога.",
+      "limits": "Имя без отчества, связывается с N02 по организации и функции; список экспертов не подтверждает состоявшееся занятие.",
+      "inherited_record_sha256": "66085bb3147273c918956ba1b39c0e102997c5ef81cab1a7ce941c36a5d4d7a2",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N12",
+      "previous": [],
+      "url": "https://www.vedomosti.ru/ideas/special/2023/11/30/korporatsii-gotovyat-kadri-erid-ldtckf5j1",
+      "publisher": "Ведомости.Идеи управления / рекламодатель Академия ПСБ",
+      "title": "Корпорации готовят кадры",
+      "published_at": "2023-11-30",
+      "event_date": null,
+      "access": "full_text",
+      "locator": "Маркировка рекламы перед заголовком; §«Курс малого бизнеса», абзац «Обучение проводится онлайн…» (не §«Социальная направленность»)",
+      "quote": "Алёна Котова",
+      "status": "PARTIAL",
+      "origin": "advertorial",
+      "claim": "Котовой, директору социального центра, приписано описание сочетания самостоятельной онлайн-теории с практикой малых групп в реальном времени.",
+      "limits": "Рекламный материал 2023 года; не независимое подтверждение результативности и не текущий приказ. Указанный там другой ректор не переносится на 2026.",
+      "inherited_record_sha256": "a9fe5eebfd9bbc4f55ca995334e87ce4413348b316e1a04ef82d4a2a3ac4ffd3",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N13",
+      "previous": [
+        "M07"
+      ],
+      "url": "https://psb-academy.ru/news/akademiya-psb-predstavila-na-cheboksarskom-ekonomicheskom-forume-programmu-tehnologicheskoe-liderstvo",
+      "publisher": "Академия ПСБ",
+      "title": "Программа Технологическое лидерство на Чебоксарском экономическом форуме",
+      "published_at": "2026-06-22",
+      "event_date": null,
+      "access": "full_text",
+      "locator": "Дата новости; заключительный абзац с директором по маркетингу",
+      "quote": "Ольга Шведова",
+      "status": "PARTIAL",
+      "origin": "organization",
+      "claim": "Маркетинговая функция представляет ценность программы; уточнена ранее не установленная дата публикации M07.",
+      "limits": "Нет отчества в новости; сопоставление по организации/роли с N01. Не преподавание и не измерение конверсии.",
+      "inherited_record_sha256": "8a40658065d5e7d109f0235830c1f5b81496fcabd9aea1ad61428a23604e2b1a",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N14",
+      "previous": [],
+      "url": "https://teachbase.ru/cases/apsb-videokursy-o-finansah-dlya-nefinansistov-za-5-nedel/",
+      "publisher": "Teachbase",
+      "title": "Кейс АПСБ: видеокурсы о финансах",
+      "published_at": null,
+      "event_date": null,
+      "access": "full_text",
+      "locator": "§«Результаты», подпись отзыва клиента после блока о пяти неделях",
+      "quote": "Владимир Сафёров, директор центра развития цифровой образовательной платформы",
+      "status": "PARTIAL",
+      "origin": "supplier_case",
+      "claim": "Поставщик публикует именной отзыв представителя Академии о создании онлайн-курсов.",
+      "limits": "Без отчества и даты; автор заинтересован в продаже. Не независимый аудит метрик, не приказ о нынешней должности.",
+      "inherited_record_sha256": "3745d8a9f95a8ca2a1fb2b6e696d226140f92100e1989cade6ffb5dc8c8ddecb",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N15",
+      "previous": [],
+      "url": "https://workspace.ru/cases/sdelali-redizayn-obrazovatelnoy-platformy-akademiya-psb-dlya-5-5-tysyach-slushateley/",
+      "publisher": "pinkman на Workspace",
+      "title": "Дизайн единой образовательной платформы Академии ПСБ",
+      "published_at": null,
+      "event_date": "2023-09",
+      "access": "full_text",
+      "locator": "Карточка проекта → Сдано: Сентябрь 2023; §«Отзыв клиента»",
+      "quote": "Владимир Сафёров",
+      "status": "PARTIAL",
+      "origin": "supplier_case",
+      "claim": "В отзыве назван директором центра развития образовательной платформы; описано участие владельца продукта в командной работе.",
+      "limits": "Дата сдачи проекта не дата публикации. Отчества нет; рост конверсии заявлен без чисел/методики. Не доказательство текущего закупочного мандата.",
+      "inherited_record_sha256": "d39b62df289ce34593d37439f89178761dad10246f0e4dba753f560cba4778d6",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N16",
+      "previous": [
+        "M09"
+      ],
+      "url": "https://storage.psb-academy.ru/project/media/ПК_Гособоронзаказ.Эксперты.pdf",
+      "publisher": "Академия ПСБ",
+      "title": "Гособоронзаказ.Эксперты: программа повышения квалификации",
+      "published_at": null,
+      "event_date": null,
+      "access": "pdf_text",
+      "locator": "PDF 14 страниц; с.3 §3.4 (Колесникова); с.4 §4.1 (Белхороев), страницы от 1",
+      "quote": "Колесникова Светлана Васильевна; Белхороев Идрис Микаилович",
+      "status": "VERIFIED",
+      "origin": "organization",
+      "claim": "Повторно проверены заявленные функции старшего преподавателя и руководителя программы соответственно.",
+      "limits": "Два фрагмента имён из разных ячеек. Только атрибуция учебных функций; конкретные занятия и результаты не наблюдались.",
+      "inherited_record_sha256": "6a260c0997d0a5e881b74bf6488a362bb9e4e435094a6dd4fb8339546a6781d9",
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web PDF text; stated pages reviewed",
+        "result": "content_reproduced"
+      }
+    },
+    {
+      "id": "N17",
+      "url": "https://spb.ranepa.ru/news/obrazovanie-biznes-i-gosudarstvo-sozdayut-ekosistemu-podgotovki-liderov-dlya-tehnologicheskogo-proryva/",
+      "publisher": "Президентская академия в Санкт-Петербурге",
+      "title": "Образование, бизнес и государство создают экосистему подготовки лидеров для технологического прорыва",
+      "published_at": "2026-04-14",
+      "event_date": null,
+      "access": "full_text",
+      "locator": "Основной текст, выступление ректора Академии ПСБ; цитата после тезиса об образовательной экосистеме",
+      "quote": "Мы открыты и готовы встраивать свои модули в программы других вузов.",
+      "status": "PARTIAL",
+      "origin": "event_organizer",
+      "claim": "Организатор приписывает Вишняковой готовность к модульному сотрудничеству; профессиональный контекст первого разговора.",
+      "limits": "Это публичная позиция, не согласие на предложение автора. Точная дата выступления отдельно не установлена; это не Невский форум N07.",
+      "previous": [],
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "new_source_read"
+      }
+    },
+    {
+      "id": "N18",
+      "url": "https://raex-rr.com/events/2026/three_missions_forum/?erid=2VtzqxmPwyA",
+      "publisher": "RAEX",
+      "title": "Форум «Три миссии университета»: программа",
+      "published_at": null,
+      "event_date": "2026-06-16",
+      "access": "full_text",
+      "locator": "Раздел 1 «Бизнес-образование в России: тренды и национальная специфика»; карточка Вишняковой и ссылка «Скачать презентацию»",
+      "quote": "Вишнякова Светлана Сергеевна",
+      "status": "VERIFIED",
+      "origin": "event_organizer",
+      "claim": "Программа называет ректора и тему образовательной экосистемы Группы ПСБ; доступна презентация N20.",
+      "limits": "Листинг выступления не видеозапись и не независимый аудит тезисов. Дата события из программы, дата публикации неизвестна.",
+      "previous": [],
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "new_source_read"
+      }
+    },
+    {
+      "id": "N19",
+      "url": "https://psb-academy.ru/contacts",
+      "publisher": "Академия ПСБ",
+      "title": "Контакты",
+      "published_at": null,
+      "event_date": null,
+      "access": "full_text",
+      "locator": "Основной блок, общий email Академии (до формы обратной связи)",
+      "quote": "info@psb-academy.ru",
+      "status": "VERIFIED",
+      "origin": "organization",
+      "claim": "Официальный общий адрес для запроса актуального владельца функции и порядка согласования встречи.",
+      "limits": "Проверено опубликованное наличие адреса; доставка и ответ не тестировались. Индивидуальные контакты не собирались.",
+      "previous": [],
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "web full text; named section reviewed",
+        "result": "new_source_read"
+      }
+    },
+    {
+      "id": "N20",
+      "url": "https://raex-rr.com/files/presentation/Вишнякова.pdf",
+      "publisher": "Академия ПСБ; размещение RAEX",
+      "title": "Роль Академии ПСБ в образовательной экосистеме Группы компаний ПСБ и предприятий ОПК",
+      "published_at": null,
+      "event_date": null,
+      "access": "pdf_text",
+      "locator": "PDF: с.1 титул; с.2 (слайд 01) контур обучения персонала / Академия; с.8 (07) партнёрские модули; с.11 (10) «Нейросети для работы и жизни»; страницы от 1 из 13",
+      "quote": "Светлана Сергеевна Вишнякова",
+      "status": "PARTIAL",
+      "origin": "speaker_presentation",
+      "claim": "Титул даёт полное имя и роль. Слайды различают обучение персонала банка и Академию, описывают партнёрские модули, ИИ-курс и ограничения обращения с данными.",
+      "limits": "Самопрезентация на сайте организатора, не независимый аудит чисел/обещанных результатов. Не отождествляет внутренний HR банка с Академией. Дата PDF неизвестна; событие — контекст N18.",
+      "previous": [],
+      "accessed_at": "2026-11-09",
+      "recheck": {
+        "date": "2026-11-09",
+        "method": "downloaded PDF identified with file; local pypdf 7.0.0 text extraction; 13 pages",
+        "result": "new_source_read"
+      },
+      "document_sha256": "04752ca1d13f5b62b93df4d70502943985211c11f1676a2308fdbd7701c0d23f",
+      "document_bytes": 14057668
+    }
+  ],
+  "people": [
+    {
+      "id": "P01",
+      "name": "Вишнякова Светлана Сергеевна",
+      "role": "Ректор",
+      "name_status": "VERIFIED",
+      "name_source": "N01",
+      "role_sources": [
+        "N01"
+      ],
+      "mentions": [
+        "N06",
+        "N07",
+        "N17",
+        "N18",
+        "N20"
+      ],
+      "authority": "unknown",
+      "current_mandate": "unknown",
+      "role_evidence": "published_official_table"
+    },
+    {
+      "id": "P02",
+      "name": "Семенова Марина Александровна",
+      "role": "Проректор по развитию образовательных программ",
+      "name_status": "VERIFIED",
+      "name_source": "N01",
+      "role_sources": [
+        "N01"
+      ],
+      "mentions": [],
+      "authority": "unknown",
+      "current_mandate": "unknown",
+      "role_evidence": "published_official_table"
+    },
+    {
+      "id": "P03",
+      "name": "Астафьев Владимир Петрович",
+      "role": "Проректор (специализация не указана)",
+      "name_status": "VERIFIED",
+      "name_source": "N01",
+      "role_sources": [
+        "N01"
+      ],
+      "mentions": [
+        "N08",
+        "N09"
+      ],
+      "authority": "unknown",
+      "current_mandate": "unknown",
+      "role_evidence": "published_official_table"
+    },
+    {
+      "id": "P04",
+      "name": "Колесникова Светлана Васильевна",
+      "role": "Проректор по образовательной деятельности",
+      "name_status": "VERIFIED",
+      "name_source": "N01",
+      "role_sources": [
+        "N01"
+      ],
+      "mentions": [
+        "N10",
+        "N16"
+      ],
+      "authority": "unknown",
+      "current_mandate": "unknown",
+      "role_evidence": "published_official_table"
+    },
+    {
+      "id": "P05",
+      "name": "Шведова Ольга Владимировна",
+      "role": "Маркетинг и продвижение образовательных программ",
+      "name_status": "VERIFIED",
+      "name_source": "N01",
+      "role_sources": [
+        "N01"
+      ],
+      "mentions": [
+        "N13"
+      ],
+      "authority": "unknown",
+      "current_mandate": "unknown",
+      "role_evidence": "published_official_table"
+    },
+    {
+      "id": "P06",
+      "name": "Котова Алёна Сергеевна",
+      "role": "Центр социальных проектов и финансовой грамотности",
+      "name_status": "VERIFIED",
+      "name_source": "N02",
+      "role_sources": [
+        "N02"
+      ],
+      "mentions": [
+        "N12"
+      ],
+      "authority": "unknown",
+      "current_mandate": "unknown",
+      "role_evidence": "published_official_table"
+    },
+    {
+      "id": "P07",
+      "name": "Белхороев Идрис Микаилович",
+      "role": "Центр развития программ ОПК",
+      "name_status": "VERIFIED",
+      "name_source": "N02",
+      "role_sources": [
+        "N02"
+      ],
+      "mentions": [
+        "N16"
+      ],
+      "authority": "unknown",
+      "current_mandate": "unknown",
+      "role_evidence": "published_official_table"
+    },
+    {
+      "id": "P08",
+      "name": "Амелина Наталья Валентиновна",
+      "role": "Центр методологии и обучения",
+      "name_status": "VERIFIED",
+      "name_source": "N02",
+      "role_sources": [
+        "N02"
+      ],
+      "mentions": [
+        "N11"
+      ],
+      "authority": "unknown",
+      "current_mandate": "unknown",
+      "role_evidence": "published_official_table"
+    },
+    {
+      "id": "P09",
+      "name": "Мубаракшина Алсу Ирековна",
+      "role": "Центр развития обучения по управлению данными (документальная атрибуция; поле структуры пусто)",
+      "name_status": "VERIFIED",
+      "name_source": "N04",
+      "role_sources": [
+        "N02",
+        "N04",
+        "N05"
+      ],
+      "mentions": [
+        "N04",
+        "N05"
+      ],
+      "authority": "unknown",
+      "current_mandate": "unknown",
+      "role_evidence": "undated_programme_and_course_card"
+    },
+    {
+      "id": "P10",
+      "name": "Сафёров Владимир Николаевич",
+      "role": "Центр цифровой образовательной платформы — кандидат с конфликтом представлений",
+      "name_status": "PARTIAL",
+      "name_source": "N03",
+      "role_sources": [
+        "N02",
+        "N03",
+        "N14",
+        "N15"
+      ],
+      "mentions": [
+        "N14",
+        "N15"
+      ],
+      "authority": "unknown",
+      "current_mandate": "unknown",
+      "role_evidence": "index_and_supplier_cases_conflict_with_live_structure"
+    }
+  ],
+  "inherited": {
+    "repository": "konard/G-Ivan-A-mango_ba_prompts",
+    "sha": "b98219e636427f06ba9bb8ebb4b94bddf912200a",
+    "path": "experiments/issue_478/evidence.json",
+    "sha256": "0de698f727f7a1565d0884f52dc8de6f6dfb7920cca1f88379744af89b9a7969",
+    "source_ids": [
+      "N01",
+      "N02",
+      "N03",
+      "N04",
+      "N05",
+      "N06",
+      "N07",
+      "N08",
+      "N09",
+      "N10",
+      "N11",
+      "N12",
+      "N13",
+      "N14",
+      "N15",
+      "N16"
+    ],
+    "person_ids": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P09",
+      "P10"
+    ]
+  }
+}

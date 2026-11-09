@@ -1,0 +1,42 @@
+{
+  "accessed_at": "2026-11-09",
+  "baseline_sha": "e6a72240ba5f7b121f42e2446d9bd7fa341f753c",
+  "base_url": "http://127.0.0.1:8768/",
+  "live_url": "https://g-ivan-a.github.io/mango_ba_prompts/",
+  "liveCards": 14,
+  "routes": [
+    "about",
+    "catalog",
+    "standards",
+    "processes",
+    "dashboard",
+    "glossary"
+  ],
+  "cards": 35,
+  "ain": 24,
+  "copies": 24,
+  "archiveCopies": 4,
+  "archiveSearch": true,
+  "deepLinks": true,
+  "standardLinks": true,
+  "byteEqual": true,
+  "previewEqual": true,
+  "legacyEditions": true,
+  "sameCardForm": true,
+  "mobileOverflow": false,
+  "errorReload": true,
+  "pageErrors": [],
+  "console_limits": [
+    "External Mango widget font CORS errors on localhost; inherited assets unchanged.",
+    "Network abort for a-in-kit.json is deliberate fault injection.",
+    "An exploratory request to /version.json caused a 404; actual version is data/stats.json."
+  ],
+  "visual_limits": [
+    "Floating external call/chat controls overlap part of the mobile card; no product changes in this repository."
+  ],
+  "screenshots": [
+    "screenshots/live-2.7.0.png",
+    "screenshots/candidate-2.8.5-desktop.png",
+    "screenshots/candidate-2.8.5-mobile.png"
+  ]
+}

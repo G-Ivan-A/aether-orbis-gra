@@ -1,7 +1,7 @@
 ---
 status: draft
-version: 0.1
-updated: 2026-11-01
+version: 0.2
+updated: 2026-11-09
 temperature: 0.1
 type: registry
 ---
@@ -82,6 +82,17 @@ type: registry
 | N-YT | Yang, A., & Taylor, M. (2015). Looking over, looking out, and moving forward: Positioning public relations in theorizing organizational network ecologies. *Communication Theory*, 25(1), 91–115 | Сетевой подход к связям с общественностью |
 | N-JOS | Jøsang, A., Ismail, R., & Boyd, C. (2007). A survey of trust and reputation systems for online service provision. *Decision Support Systems*, 43(2), 618–644 | Вычисление доверия |
 | N-EIG | Kamvar, S. D., Schlosser, M. T., & Garcia-Molina, H. (2003). The EigenTrust algorithm for reputation management in P2P networks. *Proceedings of WWW 2003*, 640–651 | Вычисление доверия |
+
+## Прикладные исследования
+
+Прикладные источники Академии ПСБ по issue #7 (N01–N20) ведутся в
+[реестре evidence](../experiments/issue-7/evidence.json) и
+[записке с локаторами](analysis/2026-11-09-issue-7-academy-decision-makers.md).
+[Резюме](analysis/2026-11-09-issue-7-psb-academy-brief.md) дополнительно цитирует
+источники учредителя B01/B02/B06 из принятого реестра #5.
+Это открытые свидетельства об организации и профессиональных функциях,
+не научные основания или валидация GRA; ограничения каждого источника
+размечены отдельно.
 
 ## Пробелы
 

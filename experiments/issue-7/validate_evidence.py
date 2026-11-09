@@ -114,7 +114,8 @@ def main():
     validate(load('evidence.json'), load('preservation.json'))
     documents = [HERE / 'README.md', *sorted((ROOT / 'docs/analysis').glob('*issue-7-*.md'))]
     for path in documents:
-        validate_links(path.read_text(encoding='utf-8'), SOURCE_HOSTS | FOUNDER_HOSTS)
+        hosts = SOURCE_HOSTS | FOUNDER_HOSTS if path.name.endswith('-brief.md') else SOURCE_HOSTS
+        validate_links(path.read_text(encoding='utf-8'), hosts)
     print('Academy research scope, provenance and predecessor preservation: OK')
 
 

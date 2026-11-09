@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "accessed_at": "2026-11-09",
   "baseline": {
     "repository": "G-Ivan-A/aether-orbis-gra",
@@ -24,11 +24,10 @@
       "origin": "organization",
       "claim": "Пять полных имён сопоставлены с должностями в официальной таблице.",
       "limits": "Страница без даты назначения и без делегирования права закупки; проверено опубликованное содержание.",
-      "inherited_record_sha256": "bf77fd53da46db375a3ed4a4f9ca4c7afa2ff02b0bd20fb9553fb2e71924cf6b",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
-        "method": "web full text; named section reviewed",
+        "method": "direct web full text after owner clarification; named section reviewed",
         "result": "content_reproduced"
       }
     },
@@ -49,11 +48,10 @@
       "origin": "organization",
       "claim": "Три полных имени; у центра данных имя не заполнено. В прочитанном ответе нет строки центра платформы.",
       "limits": "Пропуск не доказывает вакансию или отсутствие центра. Отличается от поискового представления N03.",
-      "inherited_record_sha256": "3aae21ea40665c5208f4655ac3ca7bebe1d007c3a190fda474f2fd383eaad363",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
-        "method": "web full text; named section reviewed",
+        "method": "direct web full text after owner clarification; named section reviewed",
         "result": "content_reproduced"
       }
     },
@@ -74,11 +72,11 @@
       "origin": "organization_index",
       "claim": "Полное имя и должность директора центра платформы найдены в индексе официального URL.",
       "limits": "Строка отсутствует в текущем полном текстовом ответе N02. Отчество и актуальное назначение не подтверждены прочитанным документом; это кандидат, не установленный текущий ЛПР.",
-      "inherited_record_sha256": "4485d1c34e61589e4e2f06243e4dd6079dcca647c004df29f5f032dbfc141f88",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
-        "method": "exact-name search; current full page N02; browser navigation and alternate query URL attempted",
+        "method": "exact-name web search and direct full page N02 after owner clarification",
+        "query": "site:psb-academy.ru/organization/2 \"Сафёров\" \"Николаевич\"",
         "result": "index_conflict_reproduced"
       }
     },
@@ -99,11 +97,10 @@
       "origin": "organization",
       "claim": "Полное имя и программная руководящая функция в документе; помогает раскрыть имя при пустом N02.",
       "limits": "Установлена запись в недатированной программе ПК26-003; не приказ о текущем назначении и не свидетельство лично проведённого занятия.",
-      "inherited_record_sha256": "d19294c2ce024977189ee65c5ba3e0ac6a17e2f5909d4888e1a45e42c052c4a7",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
-        "method": "web PDF text; stated pages reviewed",
+        "method": "direct web PDF text after owner clarification; stated pages reviewed",
         "result": "content_reproduced"
       }
     },
@@ -124,7 +121,6 @@
       "origin": "organization",
       "claim": "Карточка программы также связывает имя с руководством обучением управлению данными.",
       "limits": "Тот же издатель, не независимая проверка N04; контактная роль не право утверждать бюджет.",
-      "inherited_record_sha256": "9f768a82086e57391047a21bd59a0ad52402d2978910c76d902080617cfa5cde",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
@@ -149,7 +145,6 @@
       "origin": "interview",
       "claim": "Интервью ректора: практические форматы, развитие ИИ-обучения, планы единой экосистемы; присоединение в январе 2025 — её собственное сообщение.",
       "limits": "Первичная запись позиции интервьюируемой; показатели и планы не независимый аудит, не обещание приобрести конкретное решение.",
-      "inherited_record_sha256": "6a8b71da8bdd7085a7a809a1cdb64c44e19222ad15bf6edd21a0beace2a28820",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
@@ -174,7 +169,6 @@
       "origin": "organization",
       "claim": "Сообщение об экспертном участии ректора в секции технологического лидерства.",
       "limits": "Дата публикации не дата выступления; собственная новость, не транскрипт и не учебное занятие.",
-      "inherited_record_sha256": "b7bbd585c99ed8cb8cc276b404c34b06b08b731a3e2dec98c50e7baef77cc20b",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
@@ -199,7 +193,6 @@
       "origin": "organization",
       "claim": "Академия называет модератора проректором; организатор того же события N09 указывает другую должность.",
       "limits": "Общее имя, организация и событие дают основание сопоставления, но не доказывают историю переводов или совмещение.",
-      "inherited_record_sha256": "db3c49808675d8624fbcd2e50cbb1997fedf5acb5ef483728ff8622e67432ed8",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
@@ -222,7 +215,6 @@
       "origin": "event_organizer",
       "claim": "Организатор указывает функциональную должность, отличную от N08.",
       "limits": "Историческая программа, не текущая штатная структура и не подтверждение специальности нынешнего проректора.",
-      "inherited_record_sha256": "335ca10f3f5a942bea19c57af469afd3483707ba199a0f6dc3b981089219a710",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
@@ -247,7 +239,6 @@
       "origin": "organization",
       "claim": "Указана старшим преподавателем; заявлена итоговая аттестация, в том числе по SQL, хранилищам данных и промпт-инженерии.",
       "limits": "Подтверждена запись о функции, а не проведение конкретной аттестации или её качество.",
-      "inherited_record_sha256": "155df938b9f0de72417f47a40eceba0f46f4b3cc4bf0555e2bac1cbfdfa5db8b",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
@@ -272,7 +263,6 @@
       "origin": "organization",
       "claim": "Включена в эксперты курса с функциями тренера, коуча и методолога.",
       "limits": "Имя без отчества, связывается с N02 по организации и функции; список экспертов не подтверждает состоявшееся занятие.",
-      "inherited_record_sha256": "66085bb3147273c918956ba1b39c0e102997c5ef81cab1a7ce941c36a5d4d7a2",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
@@ -295,7 +285,6 @@
       "origin": "advertorial",
       "claim": "Котовой, директору социального центра, приписано описание сочетания самостоятельной онлайн-теории с практикой малых групп в реальном времени.",
       "limits": "Рекламный материал 2023 года; не независимое подтверждение результативности и не текущий приказ. Указанный там другой ректор не переносится на 2026.",
-      "inherited_record_sha256": "a9fe5eebfd9bbc4f55ca995334e87ce4413348b316e1a04ef82d4a2a3ac4ffd3",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
@@ -320,7 +309,6 @@
       "origin": "organization",
       "claim": "Маркетинговая функция представляет ценность программы; уточнена ранее не установленная дата публикации M07.",
       "limits": "Нет отчества в новости; сопоставление по организации/роли с N01. Не преподавание и не измерение конверсии.",
-      "inherited_record_sha256": "8a40658065d5e7d109f0235830c1f5b81496fcabd9aea1ad61428a23604e2b1a",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
@@ -343,7 +331,6 @@
       "origin": "supplier_case",
       "claim": "Поставщик публикует именной отзыв представителя Академии о создании онлайн-курсов.",
       "limits": "Без отчества и даты; автор заинтересован в продаже. Не независимый аудит метрик, не приказ о нынешней должности.",
-      "inherited_record_sha256": "3745d8a9f95a8ca2a1fb2b6e696d226140f92100e1989cade6ffb5dc8c8ddecb",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
@@ -366,7 +353,6 @@
       "origin": "supplier_case",
       "claim": "В отзыве назван директором центра развития образовательной платформы; описано участие владельца продукта в командной работе.",
       "limits": "Дата сдачи проекта не дата публикации. Отчества нет; рост конверсии заявлен без чисел/методики. Не доказательство текущего закупочного мандата.",
-      "inherited_record_sha256": "d39b62df289ce34593d37439f89178761dad10246f0e4dba753f560cba4778d6",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
@@ -391,11 +377,10 @@
       "origin": "organization",
       "claim": "Повторно проверены заявленные функции старшего преподавателя и руководителя программы соответственно.",
       "limits": "Два фрагмента имён из разных ячеек. Только атрибуция учебных функций; конкретные занятия и результаты не наблюдались.",
-      "inherited_record_sha256": "6a260c0997d0a5e881b74bf6488a362bb9e4e435094a6dd4fb8339546a6781d9",
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
-        "method": "web PDF text; stated pages reviewed",
+        "method": "direct web PDF text after owner clarification; stated pages reviewed",
         "result": "content_reproduced"
       }
     },
@@ -417,8 +402,8 @@
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
-        "method": "web full text; named section reviewed",
-        "result": "new_source_read"
+        "method": "direct organizer page after owner clarification; named section reviewed",
+        "result": "content_reproduced"
       }
     },
     {
@@ -439,8 +424,8 @@
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
-        "method": "web full text; named section reviewed",
-        "result": "new_source_read"
+        "method": "direct organizer page after owner clarification; named section reviewed",
+        "result": "content_reproduced"
       }
     },
     {
@@ -461,8 +446,8 @@
       "accessed_at": "2026-11-09",
       "recheck": {
         "date": "2026-11-09",
-        "method": "web full text; named section reviewed",
-        "result": "new_source_read"
+        "method": "direct web full text after owner clarification; named section reviewed",
+        "result": "content_reproduced"
       }
     },
     {
@@ -663,40 +648,5 @@
       "role_evidence": "index_and_supplier_cases_conflict_with_live_structure"
     }
   ],
-  "inherited": {
-    "repository": "konard/G-Ivan-A-mango_ba_prompts",
-    "sha": "b98219e636427f06ba9bb8ebb4b94bddf912200a",
-    "path": "experiments/issue_478/evidence.json",
-    "sha256": "0de698f727f7a1565d0884f52dc8de6f6dfb7920cca1f88379744af89b9a7969",
-    "source_ids": [
-      "N01",
-      "N02",
-      "N03",
-      "N04",
-      "N05",
-      "N06",
-      "N07",
-      "N08",
-      "N09",
-      "N10",
-      "N11",
-      "N12",
-      "N13",
-      "N14",
-      "N15",
-      "N16"
-    ],
-    "person_ids": [
-      "P01",
-      "P02",
-      "P03",
-      "P04",
-      "P05",
-      "P06",
-      "P07",
-      "P08",
-      "P09",
-      "P10"
-    ]
-  }
+  "scope": "academy_decision_makers_meeting"
 }

@@ -1,12 +1,22 @@
 #!/usr/bin/env python3
-"""Offline integrity checks; they cannot establish the truth of a web claim."""
+"""Offline integrity and scope checks for the Academy meeting research."""
 import hashlib
 import json
 import re
-from pathlib import Path, PurePosixPath
+from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
+REPOSITORY = 'G-Ivan-A/aether-orbis-gra'
+# Publishers actually used by this research; this is not a repository policy.
+SOURCE_HOSTS = frozenset((
+    'psb-academy.ru', 'storage.psb-academy.ru', 'rrmag.ru', 'dialogmanag.com',
+    'www.vedomosti.ru', 'teachbase.ru', 'workspace.ru', 'spb.ranepa.ru',
+    'raex-rr.com',
+))
+PACKAGE_FILES = frozenset(('README.md', 'evidence.json', 'preservation.json',
+                           'validate_evidence.py'))
 
 
 def require(condition, message):
@@ -15,30 +25,66 @@ def require(condition, message):
 
 
 def load(name):
-    return json.loads((HERE / name).read_text())
+    return json.loads((HERE / name).read_text(encoding='utf-8'))
 
 
-def validate(evidence, preservation, site, inherited_site):
+def validate_artifacts(paths):
+    require(set(paths) == PACKAGE_FILES, 'out-of-scope or missing research artifact')
+
+
+def validate_links(text):
+    """Reject links to unrelated projects, including links inside prose fields."""
+    for url in re.findall(r'https?://[^\s<>"\')]+', text):
+        parsed = urlsplit(url)
+        if parsed.hostname == 'github.com':
+            project = '/'.join(unquote(parsed.path).strip('/').split('/')[:2])
+            require(project in (REPOSITORY, 'G-Ivan-A/hybrid-Intelligence-lab'),
+                    f'out-of-scope project link: {url}')
+        else:
+            require(parsed.scheme == 'https' and parsed.hostname in SOURCE_HOSTS,
+                    f'out-of-scope source link: {url}')
+
+
+def validate(evidence, preservation):
+    require(evidence.get('schema_version') == 3, 'unexpected evidence schema')
+    require(set(evidence) == {'schema_version', 'scope', 'accessed_at', 'baseline',
+                              'sources', 'people'}, 'out-of-scope evidence metadata')
+    require(evidence['scope'] == 'academy_decision_makers_meeting', 'wrong research scope')
+    baseline = evidence['baseline']
+    require(baseline['repository'] == REPOSITORY, 'out-of-scope baseline repository')
+    require(set(baseline) == {'repository', 'sha', 'pull_request'},
+            'out-of-scope baseline metadata')
+    require(set(preservation) == {'baseline_sha', 'files'},
+            'out-of-scope preservation metadata')
+    require(baseline['sha'] == preservation['baseline_sha'], 'baseline mismatch')
+    validate_links(json.dumps(evidence, ensure_ascii=False))
     sources = {s['id']: s for s in evidence['sources']}
     people = {p['id']: p for p in evidence['people']}
     require(len(sources) == len(evidence['sources']), 'duplicate source ID')
     require(len(people) == len(evidence['people']), 'duplicate person ID')
-    require(set(evidence['inherited']['source_ids']) <= sources.keys(), 'lost inherited source')
-    require(set(evidence['inherited']['person_ids']) <= people.keys(), 'lost inherited person')
+    require(set(sources) == {f'N{i:02}' for i in range(1, 21)}, 'source inventory incomplete')
+    require(set(people) == {f'P{i:02}' for i in range(1, 11)}, 'person inventory incomplete')
+    source_fields = {'id', 'previous', 'url', 'publisher', 'title', 'published_at',
+                     'event_date', 'access', 'locator', 'quote', 'status', 'origin',
+                     'claim', 'limits', 'accessed_at', 'recheck', 'document_sha256',
+                     'document_bytes'}
     for source in sources.values():
+        require(set(source) <= source_fields, 'out-of-scope source metadata')
         for key in ('url', 'publisher', 'title', 'access', 'locator', 'quote',
                     'status', 'origin', 'claim', 'limits', 'accessed_at', 'recheck'):
             require(bool(source.get(key)), f'{source["id"]}: missing {key}')
+        require(urlsplit(source['url']).hostname in SOURCE_HOSTS,
+                'source must point directly to an Academy research publisher')
         require(source['url'].startswith('https://'), 'source URL must be HTTPS')
         require(source['status'] in ('VERIFIED', 'PARTIAL', 'CONFLICT'), 'unknown status')
         require(source['access'] != 'search_index' or source['status'] != 'VERIFIED',
                 'index-only evidence cannot become VERIFIED')
         for key in ('published_at', 'event_date'):
             require(key in source, f'{source["id"]}: missing explicit date or null')
-        if source['id'] in evidence['inherited']['source_ids']:
-            require(bool(re.fullmatch('[0-9a-f]{64}', source.get('inherited_record_sha256', ''))),
-                    'missing inherited record hash')
+    person_fields = {'id', 'name', 'role', 'name_status', 'name_source', 'role_sources',
+                     'mentions', 'authority', 'current_mandate', 'role_evidence'}
     for person in people.values():
+        require(set(person) == person_fields, 'unexpected person fields')
         refs = [person['name_source']] + person['role_sources'] + person['mentions']
         require(set(refs) <= sources.keys(), 'dangling source reference')
         name_source = sources[person['name_source']]
@@ -47,41 +93,25 @@ def validate(evidence, preservation, site, inherited_site):
                 'name promoted without a verified document')
         require(person['authority'] == 'unknown' and person['current_mandate'] == 'unknown',
                 'public mention cannot establish purchasing authority')
-    # P09/P10 are documented gaps: no automatic appointment from a course or index.
     require(people['P10']['name_status'] == 'PARTIAL', 'platform identity conflict lost')
     require(people['P09']['role_evidence'] == 'undated_programme_and_course_card',
             'programme role promoted to current appointment')
     require(len(preservation['files']) == 10, 'predecessor inventory incomplete')
     for name, expected in preservation['files'].items():
-        actual = hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
+        path = ROOT / name
+        require(path.resolve().is_relative_to(ROOT), 'predecessor path outside repository')
+        actual = hashlib.sha256(path.read_bytes()).hexdigest()
         require(actual == expected, f'predecessor changed: {name}')
-    old_hash = hashlib.sha256((HERE / 'inherited-site-audit.json').read_bytes()).hexdigest()
-    require(old_hash == preservation['inherited_site_audit_sha256'], 'inherited manifest changed')
-    require(site['baseline_sha'] == inherited_site['baseline_sha'], 'site baseline changed')
-    require(site['catalogue_ids_removed'] == [], 'live catalogue IDs removed')
-    require(set(inherited_site['catalogue_ids_preserved']) <= set(site['catalogue_ids_preserved']),
-            'previous live IDs lost')
-    require(site['inherited_candidate_semantic_changes'] == [], 'candidate content changed')
-    require(len(site['assets']) == 22 and site['assets'].keys() == inherited_site['assets'].keys(),
-            'deployment asset set changed')
-    for name, asset in site['assets'].items():
-        path = PurePosixPath(name)
-        require(not path.is_absolute() and '..' not in path.parts and bool(path.parts) and path.parts[0] == 'site',
-                'unsafe deployment path')
-        old = inherited_site['assets'][name]
-        key = 'normalized_sha256' if name.endswith('.json') else 'sha256'
-        require(asset[key] == old[key], f'deployment content drift: {name}')
 
 
 def main():
-    validate(load('evidence.json'), load('preservation.json'), load('site-audit.json'),
-             load('inherited-site-audit.json'))
-    browser = load('browser-result.json')
-    require(browser['pageErrors'] == [] and browser['copies'] == 24 and
-            browser['archiveCopies'] == 4 and browser['errorReload'], 'browser check incomplete')
-    for name in browser['screenshots']:
-        require((HERE / name).read_bytes().startswith(b'\x89PNG\r\n\x1a\n'), 'invalid screenshot')
-    print('Evidence, predecessor preservation, deployment manifest and browser record: OK')
+    validate_artifacts(p.relative_to(HERE).as_posix() for p in HERE.rglob('*')
+                       if p.is_file() and p.suffix != '.pyc')
+    validate(load('evidence.json'), load('preservation.json'))
+    documents = [HERE / 'README.md', *sorted((ROOT / 'docs/analysis').glob('*issue-7-*.md'))]
+    for path in documents:
+        validate_links(path.read_text(encoding='utf-8'))
+    print('Academy research scope, provenance and predecessor preservation: OK')
 
 
 if __name__ == '__main__':

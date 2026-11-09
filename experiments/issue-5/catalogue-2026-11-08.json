@@ -1,0 +1,277 @@
+{
+  "accessed_at": "2026-11-08T20:50:24.654551+00:00",
+  "category": 5,
+  "pages": [
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?categories=5&page=1&per_page=6",
+      "count": 15,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?categories=5&page=2&per_page=6",
+      "sha256": "2dec1c28a7fd9997eaa4f6fe38984530434ed90b8bd5f3de7922bd6979f65c1d"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?categories=5&page=2&per_page=6",
+      "count": 15,
+      "next": "http://psb-academy.ru/api/v1/metaprograms/metaprogram?categories=5&page=3&per_page=6",
+      "sha256": "28a69ebc2529e3a690efd40f669a05ddc812d8a2408feade972fdf5c1cd8079e"
+    },
+    {
+      "url": "https://psb-academy.ru/api/v1/metaprograms/metaprogram?categories=5&page=3&per_page=6",
+      "count": 15,
+      "next": null,
+      "sha256": "160a66a6bdff8499f89bdcf68aa33160a727e15c85de59801504af5b44cb31fc"
+    }
+  ],
+  "programmes": [
+    {
+      "id": 120,
+      "name": "Введение в машинное обучение",
+      "url": "https://psb-academy.ru/education/120",
+      "category_ids": [
+        5
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2024-03-05T11:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-20T18:03:54.823000+03:00"
+    },
+    {
+      "id": 89,
+      "name": "Цифровые навыки",
+      "url": "https://psb-academy.ru/education/89",
+      "category_ids": [
+        5
+      ],
+      "price": {
+        "price_type": "free",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-01-10T15:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-22T15:12:18.116000+03:00"
+    },
+    {
+      "id": 269,
+      "name": "Основы хранилищ данных: самостоятельный старт",
+      "url": "https://psb-academy.ru/education/269",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 29450
+      },
+      "started_at": "2025-09-29T17:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-09-01T09:42:18.371000+03:00"
+    },
+    {
+      "id": 380,
+      "name": "Нейросети для бизнеса",
+      "url": "https://psb-academy.ru/education/380",
+      "category_ids": [
+        5
+      ],
+      "price": {
+        "price_type": "by_request",
+        "price_label": "",
+        "value": 0
+      },
+      "started_at": "2025-10-07T09:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-03-02T12:27:36.318000+03:00"
+    },
+    {
+      "id": 117,
+      "name": "Банковское дело",
+      "url": "https://psb-academy.ru/education/117",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 17000
+      },
+      "started_at": "2026-02-09T13:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-09-03T12:30:00.338000+03:00"
+    },
+    {
+      "id": 343,
+      "name": "Промпт-инженер: работа с нейросетями (для сотрудников Банка ПСБ)",
+      "url": "https://psb-academy.ru/education/343",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 26000
+      },
+      "started_at": "2026-09-24T10:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-11-05T09:01:15.367000+03:00"
+    },
+    {
+      "id": 92,
+      "name": "Продвинутый SQL для анализа данных",
+      "url": "https://psb-academy.ru/education/92",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 52500
+      },
+      "started_at": "2026-10-05T10:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-10-30T15:45:07.956000+03:00"
+    },
+    {
+      "id": 93,
+      "name": "Основы хранилищ данных",
+      "url": "https://psb-academy.ru/education/93",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 37300
+      },
+      "started_at": "2026-10-13T10:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-11-05T09:34:41.427000+03:00"
+    },
+    {
+      "id": 91,
+      "name": "Системный анализ для начинающих",
+      "url": "https://psb-academy.ru/education/91",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 45000
+      },
+      "started_at": "2026-10-22T10:00:00+03:00",
+      "flexible_start": true,
+      "updated_at": "2026-11-03T16:24:50.430000+03:00"
+    },
+    {
+      "id": 239,
+      "name": "Анализ данных для начинающих",
+      "url": "https://psb-academy.ru/education/239",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 40000
+      },
+      "started_at": "2026-10-22T10:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-09-01T18:34:11.411000+03:00"
+    },
+    {
+      "id": 417,
+      "name": "Нейросети для работы и жизни",
+      "url": "https://psb-academy.ru/education/417",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 56000
+      },
+      "started_at": "2026-12-01T10:00:00+03:00",
+      "flexible_start": false,
+      "updated_at": "2026-11-06T10:29:31.645000+03:00"
+    },
+    {
+      "id": 94,
+      "name": "Базовый SQL для анализа данных",
+      "url": "https://psb-academy.ru/education/94",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 42500
+      },
+      "started_at": null,
+      "flexible_start": false,
+      "updated_at": "2026-09-14T13:15:54.024000+03:00"
+    },
+    {
+      "id": 222,
+      "name": "Аналитик данных: быстрый старт в профессии",
+      "url": "https://psb-academy.ru/education/222",
+      "category_ids": [
+        5
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 38000
+      },
+      "started_at": null,
+      "flexible_start": true,
+      "updated_at": "2026-07-10T13:51:01.102000+03:00"
+    },
+    {
+      "id": 262,
+      "name": "Бизнес-анализ для начинающих",
+      "url": "https://psb-academy.ru/education/262",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 44000
+      },
+      "started_at": null,
+      "flexible_start": false,
+      "updated_at": "2026-09-23T13:08:41.429000+03:00"
+    },
+    {
+      "id": 268,
+      "name": "Аналитик данных: самостоятельный старт",
+      "url": "https://psb-academy.ru/education/268",
+      "category_ids": [
+        5,
+        12
+      ],
+      "price": {
+        "price_type": "paid",
+        "price_label": "",
+        "value": 31450
+      },
+      "started_at": null,
+      "flexible_start": true,
+      "updated_at": "2026-07-15T10:56:24.203000+03:00"
+    }
+  ]
+}

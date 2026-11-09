@@ -1,7 +1,7 @@
 ---
 status: draft
 version: 0.2
-updated: 2026-11-04
+updated: 2026-11-08
 temperature: 0.1
 ---
 
@@ -14,6 +14,15 @@ temperature: 0.1
 
 ### Added
 
+- Issue [#5](https://github.com/G-Ivan-A/aether-orbis-gra/issues/5):
+  [постановка прикладного исследования](docs/analysis/2026-11-08-issue-5-research-plan.md)
+  с последовательным WBS, протоколом evidence, проверками границ и явной
+  границей публикации кейса;
+  [исследовательский пакет и матрица покрытия](docs/analysis/2026-11-08-issue-5-acceptance.md):
+  отдельные записки о рынке и учредителе, академии/ролях, полном цифровом
+  срезе и смежных программах, трендах и продуктовых гипотезах;
+  воспроизводимые снимки каталога и offline-проверки полноты/границы данных.
+  Публикация содержательного кейса требует решения A2; план не закрывает issue.
 - Issue [#3](https://github.com/G-Ivan-A/aether-orbis-gra/issues/3) — подготовка
   к удалению домена GRA из Хаба (S-1 RFC Хаба #721, снимок
   [48ebe52](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies)):

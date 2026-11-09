@@ -1,6 +1,6 @@
 ---
 status: draft
-version: 0.2
+version: 0.3
 updated: 2026-11-09
 temperature: 0.1
 ---
@@ -16,6 +16,8 @@ temperature: 0.1
 | --- | --- |
 | `evidence.json` | N01–N20 / P01–P10: прямые URL источников об Академии, локаторы, короткие цитаты, даты доступа и статусы. `previous` отсылает к источникам принятого пакета GRA #5, не к другим проектам |
 | `preservation.json` | SHA-256 восьми записок GRA #5 и двух снимков каталога на принятом `c857c9c`; предшественники остаются на прежних местах |
+| `brief.py` | Подсчёт видимых знаков [резюме](../../docs/analysis/2026-11-09-issue-7-psb-academy-brief.md) (≤3600 = 2 машинописных листа) и печать PDF A4 с постоянными ссылками на коммит |
+| `brief-render.json` | Манифест печати: SHA-256 исходника и PDF, число страниц, коммит ссылок; CI отклоняет устаревший PDF без Chrome |
 | `validate_evidence.py` | Offline-контроль полноты, ссылок, границы источников/метаданных и сохранности предшественников; не проверяет истинность веб-страниц |
 
 Схема 3 содержит только реестр Академии и baseline GRA. Хеши переноса,
@@ -37,6 +39,14 @@ N03 всё ещё расходится с полным документом N02.
 ```bash
 python3 experiments/issue-7/validate_evidence.py
 python3 -m unittest discover -s tests -p 'test_issue7_evidence.py'
+python3 experiments/issue-7/brief.py check
+```
+
+После правки резюме PDF перепечатывается вручную (нужны `markdown`,
+`pypdf` и headless Chrome), ссылки закрепляются на коммите с исходником:
+
+```bash
+python3 experiments/issue-7/brief.py render --ref "$(git rev-parse HEAD)"
 ```
 
 Регрессии: чужой репозиторий в baseline; URL чужого проекта в источнике

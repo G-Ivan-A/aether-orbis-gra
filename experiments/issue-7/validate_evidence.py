@@ -15,8 +15,12 @@ SOURCE_HOSTS = frozenset((
     'www.vedomosti.ru', 'teachbase.ru', 'workspace.ru', 'spb.ranepa.ru',
     'raex-rr.com',
 ))
+# Founder (bank) sources of the accepted GRA #5 registry B01/B02/B06, cited by
+# the PSB / Academy brief only; they are not Academy evidence records.
+FOUNDER_HOSTS = frozenset(('www.cbr.ru', 'sanctionssearch.ofac.treas.gov',
+                           'www.psbank.ru'))
 PACKAGE_FILES = frozenset(('README.md', 'evidence.json', 'preservation.json',
-                           'validate_evidence.py'))
+                           'validate_evidence.py', 'brief.py', 'brief-render.json'))
 
 
 def require(condition, message):
@@ -32,7 +36,7 @@ def validate_artifacts(paths):
     require(set(paths) == PACKAGE_FILES, 'out-of-scope or missing research artifact')
 
 
-def validate_links(text):
+def validate_links(text, hosts=SOURCE_HOSTS):
     """Reject links to unrelated projects, including links inside prose fields."""
     for url in re.findall(r'https?://[^\s<>"\')]+', text):
         parsed = urlsplit(url)
@@ -41,7 +45,7 @@ def validate_links(text):
             require(project in (REPOSITORY, 'G-Ivan-A/hybrid-Intelligence-lab'),
                     f'out-of-scope project link: {url}')
         else:
-            require(parsed.scheme == 'https' and parsed.hostname in SOURCE_HOSTS,
+            require(parsed.scheme == 'https' and parsed.hostname in hosts,
                     f'out-of-scope source link: {url}')
 
 
@@ -110,7 +114,7 @@ def main():
     validate(load('evidence.json'), load('preservation.json'))
     documents = [HERE / 'README.md', *sorted((ROOT / 'docs/analysis').glob('*issue-7-*.md'))]
     for path in documents:
-        validate_links(path.read_text(encoding='utf-8'))
+        validate_links(path.read_text(encoding='utf-8'), SOURCE_HOSTS | FOUNDER_HOSTS)
     print('Academy research scope, provenance and predecessor preservation: OK')
 
 

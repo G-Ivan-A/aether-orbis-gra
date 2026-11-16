@@ -41,7 +41,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87c
 - [исследовательская модель GRA](../../../methodology/research-program/00-introduction.md) и [таксономия](../../../methodology/research-program/20-taxonomy.md) — оси дистанции D1–D5, компоненты массы M1–M4, полярность и направление потока;
 - [рамка решений](../../../methodology/research-program/30-decision-framework.md) — запрещённые формулировки F1–F10, критерии K1–K7 (K7 «этика и право» — порог), гейт ИИ G1–G6;
 - [файл практики](../../../methodology/research-program/40-practice-and-cases.md) — три сквозных кейса, «Свой кейс», этические и правовые границы каждого кейса;
-- [исследование #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md) — источники по данным, ИИ и вовлечению.
+- [исследование #650](../course-sources-and-presentations.md) — источники по данным, ИИ и вовлечению.
 
 Комплекты Дня 1 версии 0.3 (PR #661) и Дня 2 (PR #662) влиты в `main` 2026-10-11; Gamma-комплекты Дней 1–3 — позже, последним PR #682. Версия 0.3 сверена с ними. Данные Дня 2, нужные Дню 3, пересказаны здесь, чтобы документ читался без перехода. Подробности — в разделе [«Ограничения и допущения»](#ограничения-и-допущения).
 
@@ -921,7 +921,7 @@ G6 Личные выводы — в основании выбора нет вы�
 
 ## Источники
 
-Ссылки вида `[650:X]` ведут на проверенные записи [исследования #650](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/48ebe5230be87ca5bf8a08b385e296a2987e9958/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md). Ссылки `[653:X]` — на [источники Дня 1](../day-01/rationale-and-method.md#источники). Ссылки `[Д2-X]` — на [источники Дня 2](../day-02/rationale-and-method.md#источники). Ниже — сводка источников Дня 3 и новые записи комплекта. Переводы цитат наши. Новые ключевые источники (Д3-Т1, Д3-Т4, Д3-Т5, Д3-Р2) внесены в [реестр внешних источников](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/external-knowledge/external-sources-registry.md) как `ext-372` … `ext-375`. Д3-Т2, Д3-Т3 и Д3-Р1 уже были в реестре как `ext-350`, `ext-043` и `ext-363`.
+Ссылки вида `[650:X]` ведут на проверенные записи [исследования #650](../course-sources-and-presentations.md). Ссылки `[653:X]` — на [источники Дня 1](../day-01/rationale-and-method.md#источники). Ссылки `[Д2-X]` — на [источники Дня 2](../day-02/rationale-and-method.md#источники). Ниже — сводка источников Дня 3 и новые записи комплекта. Переводы цитат наши. Новые ключевые источники (Д3-Т1, Д3-Т4, Д3-Т5, Д3-Р2) внесены в [реестр внешних источников](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/external-knowledge/external-sources-registry.md) как `ext-372` … `ext-375`. Д3-Т2, Д3-Т3 и Д3-Р1 уже были в реестре как `ext-350`, `ext-043` и `ext-363`.
 
 | ID | Источник | Язык | Цитата или факт, на который опирается День 3 | Статус |
 | --- | --- | --- | --- | --- |

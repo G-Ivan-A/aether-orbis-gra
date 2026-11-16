@@ -32,7 +32,7 @@
   "hub_url": "https://github.com/G-Ivan-A/hybrid-Intelligence-lab",
   "last_sync": {
     "hub_commit": "48ebe5230be87ca5bf8a08b385e296a2987e9958",
-    "date": "2026-11-04",
-    "scope": "research/reputation-technologies: re-import of the current documents at PIN_SHA (Hub links to the domain pinned to this commit, 167 floating links), new 2026-11-01-course-quotes-days-1-4-alce.md with recomputed line anchors and exp/quotes-711 as provenance (issue #3, Hub RFC #721 S-1); templates/htom unchanged since 32b5fa5"
+    "date": "2026-11-16",
+    "scope": "research/reputation-technologies: re-import at PIN_SHA (domain links pinned to this commit) plus the course sources catalogue 2026-09-30-course-sources-and-presentations-650.md read at the Hub archive commit 51869aa50f14a0bc8f69f8b426e216244f16c970 (owner answer Q-3, Hub #725; identical blob at PIN_SHA), its 399 line anchors recomputed; links to the personal-data file 2026-10-14-day1-lecturer-gra-research.md replaced by a note (Q-4) (issue #9; earlier: issue #3, Hub RFC #721 S-1); templates/htom unchanged since 32b5fa5"
   }
 }

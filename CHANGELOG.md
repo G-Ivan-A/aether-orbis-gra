@@ -1,7 +1,7 @@
 ---
 status: draft
-version: 0.4
-updated: 2026-11-09
+version: 0.5
+updated: 2026-11-16
 temperature: 0.1
 ---
 
@@ -13,6 +13,18 @@ temperature: 0.1
 ## [Unreleased]
 
 ### Added
+
+- Issue [#9](https://github.com/G-Ivan-A/aether-orbis-gra/issues/9) — сверка
+  бэклога с итогами Спринта 31 Хаба:
+  - GRA-003: [каталог источников курса #650](education/technograd-reputation-engineering/course-sources-and-presentations.md)
+    доимпортирован с архивного коммита Хаба
+    [51869aa](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/51869aa50f14a0bc8f69f8b426e216244f16c970/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md)
+    (ответ Q-3 владельца в Хабе #725); 518 ссылок спицы на каталог стали
+    локальными, 399 якорей `#Lnnn` пересчитаны и проверены;
+  - GRA-004: 10 ссылок на файл Хаба с персональными данными заменены
+    описанием без персональных данных (ответ Q-4);
+  - [бэклог](ops/backlog.md): GRA-001, GRA-003, GRA-004 — `DONE`, S-1 —
+    предыдущий шаг цепочки; доказательства — в `experiments/`.
 
 - Issue [#7](https://github.com/G-Ivan-A/aether-orbis-gra/issues/7):
   [именная карта Академии ПСБ и provenance 20 источников](docs/analysis/2026-11-09-issue-7-academy-decision-makers.md),

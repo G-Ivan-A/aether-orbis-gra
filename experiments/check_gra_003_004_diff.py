@@ -15,13 +15,17 @@ be one of two intended changes:
 * GRA-004: a link to the personal-data file became its label followed by the
   note without personal data.
 
-The new catalogue copy and the quotes document banner are reported separately.
+Only files written by ``tools/import_from_hub.py`` are checked, so ``--rev`` may
+be any commit before the re-import (for example ``dba1f68``, main before the
+PR); hand-edited documents such as the backlog are outside this check. The new
+catalogue copy and the quotes document banner are reported separately.
 
 Usage: python3 -I experiments/check_gra_003_004_diff.py --hub /tmp/hub [--rev HEAD]
 """
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import re
 import subprocess
 import sys
@@ -47,6 +51,14 @@ def git(*args: str, cwd: str | None = None) -> str:
     return subprocess.run(["git", *args], capture_output=True, text=True, check=True, cwd=cwd).stdout
 
 
+def imported_files() -> tuple[set[str], tuple[str, ...]]:
+    """Targets of the import tool: mapped files and provenance directories."""
+    spec = importlib.util.spec_from_file_location("import_from_hub", "tools/import_from_hub.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return set(module.MAPPING.values()) - {CATALOGUE}, tuple(f"{d}/" for d in module.PROVENANCE.values())
+
+
 def strip_targets(line: str) -> str:
     """Line text with link targets removed (labels kept), to compare Hub and copy lines."""
     return LINK.sub(lambda m: f"{m.group(1)}[{m.group(2)}]()", line).strip()
@@ -59,7 +71,9 @@ def main() -> int:
     args = parser.parse_args()
     hub_lines = git("show", f"{ARCHIVE}:{DOMAIN}/{CATALOGUE_HUB}", cwd=args.hub).splitlines()
     copy_lines = Path(CATALOGUE).read_text(encoding="utf-8").splitlines()
-    files = [f for f in git("diff", "--name-only", args.rev).splitlines() if f.endswith(".md")]
+    mapped, provenance = imported_files()
+    files = [f for f in git("diff", "--name-only", args.rev).splitlines()
+             if f.endswith(".md") and (f in mapped or f.startswith(provenance))]
     bad = catalogue_links = anchored = redactions = 0
     for rel in files:
         old = git("show", f"{args.rev}:{rel}").splitlines()

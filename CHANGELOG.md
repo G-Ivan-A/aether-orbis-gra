@@ -1,6 +1,6 @@
 ---
 status: draft
-version: 0.5
+version: 0.6
 updated: 2026-11-16
 temperature: 0.1
 ---
@@ -13,6 +13,18 @@ temperature: 0.1
 ## [Unreleased]
 
 ### Added
+
+- GRA-002 по [указанию владельца](https://github.com/G-Ivan-A/aether-orbis-gra/pull/10#issuecomment-6920349604)
+  ([анализ](docs/analysis/2026-11-16-gra-002-hub-course-checks.md)):
+  - из шести шагов CI Хаба, проходивших на копиях спицы, текст курса
+    проверяет только #709; два шага не читают ни одной копии, три используют
+    копии лишь как цели ссылок вариантов Дня 4 эпохи Хаба
+    ([реплей](experiments/gra-002-replay-hub-checks.log));
+  - [`tests/test_course_handouts.py`](tests/test_course_handouts.py) —
+    инварианты реестра промптов холодного старта и примера десяти компаний,
+    написанные заново, с мутационными тестами;
+  - [бэклог](ops/backlog.md): GRA-002 — `DONE`; предложена GRA-007
+    (инварианты колод Дней 1–4).
 
 - Issue [#9](https://github.com/G-Ivan-A/aether-orbis-gra/issues/9) — сверка
   бэклога с итогами Спринта 31 Хаба:

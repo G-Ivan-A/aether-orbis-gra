@@ -19,7 +19,7 @@ temperature: 0.1
   - GRA-003: [каталог источников курса #650](education/technograd-reputation-engineering/course-sources-and-presentations.md)
     доимпортирован с архивного коммита Хаба
     [51869aa](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/51869aa50f14a0bc8f69f8b426e216244f16c970/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md)
-    (ответ Q-3 владельца в Хабе #725); 518 ссылок курса на каталог стали
+    (ответ Q-3 владельца в Хабе #725); 518 ссылок спицы на каталог стали
     локальными, 399 якорей `#Lnnn` пересчитаны и проверены;
   - GRA-004: 10 ссылок на файл Хаба с персональными данными заменены
     описанием без персональных данных (ответ Q-4);

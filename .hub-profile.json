@@ -14,7 +14,7 @@
     },
     {
       "path": "tests",
-      "reason": "Unit tests of the local tools (tools/validate_repo.py, tools/import_from_hub.py) run by .github/workflows/validate.yml; the HTOM genome has no tests/ home and the tests are not product code."
+      "reason": "Unit tests of the local tools (tools/validate_repo.py, tools/import_from_hub.py) and the course invariants the spoke owns (quote anchors, issue #3; cold-start handouts, GRA-002) run by .github/workflows/validate.yml; the HTOM genome has no tests/ home and the tests are not product code."
     },
     {
       "path": "ops",
@@ -22,7 +22,7 @@
     },
     {
       "path": "experiments",
-      "reason": "Evidence scripts and logs of task executions (issue #3: anchor verification of the quotes list, PIN_SHA link probe, Hub import log), kept for re-running; not product code and not read by the course."
+      "reason": "Evidence scripts and logs of task executions (issue #3: anchor verification of the quotes list, PIN_SHA link probe, Hub import log; issue #9; GRA-002: replay of Hub course checks), kept for re-running; not product code and not read by the course."
     }
   ],
   "project_name": "aether-orbis-gra",

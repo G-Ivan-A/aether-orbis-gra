@@ -1,7 +1,9 @@
 """Course invariants owned by this repository (issue #3, Hub RFC #721 S-1).
 
 The Hub RFC leaves it to the spoke to pick the course invariants CI checks
-(the Hub builder of the quotes list is not executed here). Two are checked:
+(the Hub builder of the quotes list is not executed here). This module checks
+two of them (the handout invariants chosen by GRA-002 are in
+test_course_handouts.py):
 
 1. Every ``#Lnnn`` link of the quotes list to a local file (decks and, since
    issue #9, the course sources catalogue #650) points to a line that carries

@@ -3,8 +3,9 @@
 The Hub RFC leaves it to the spoke to pick the course invariants CI checks
 (the Hub builder of the quotes list is not executed here). Two are checked:
 
-1. Every ``#Lnnn`` link of the quotes list to a local file points to a line
-   that carries the quoted text. Anchors are line numbers: an edit above the
+1. Every ``#Lnnn`` link of the quotes list to a local file (decks and, since
+   issue #9, the course sources catalogue #650) points to a line that carries
+   the quoted text. Anchors are line numbers: an edit above the
    quote shifts it, and the link silently points to a wrong line. This is the
    failure the Hub hit in #711 (Hub L591 is L581 in the course copy).
 2. No tracked text file links the Hub domain ``research/reputation-technologies``
@@ -96,12 +97,15 @@ class QuoteAnchorsTest(unittest.TestCase):
     def test_shifted_anchor_is_detected(self) -> None:
         """Mutation: anchors moved by an edit above the quotes must fail the check.
 
-        The shift is 10 lines: with 1 line two quotes still match by chance,
-        because the next deck line repeats a name from the epigraph.
+        The shift is 20 lines: with a smaller shift a few quotes still match by
+        chance, because a nearby line repeats a short quoted term: the next
+        deck line repeats a name from the epigraph, and since the catalogue
+        #650 is local (issue #9, GRA-003) its entries ten lines apart repeat
+        terms such as «достоверность».
         """
         shifted = LINE_LINK.sub(
             lambda m: m.group(0) if m.group(2).startswith("http")
-            else m.group(0).replace(f"#L{m.group(3)}", f"#L{int(m.group(3)) + 10}", 1),
+            else m.group(0).replace(f"#L{m.group(3)}", f"#L{int(m.group(3)) + 20}", 1),
             QUOTES.read_text(encoding="utf-8"),
         )
         checked, problems = anchor_problems(shifted, QUOTES.parent)

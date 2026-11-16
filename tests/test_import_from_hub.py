@@ -4,16 +4,20 @@ The import tool converts Hub documents into this repository: it keeps only
 the documentation frontmatter fields, drops task-execution sections, rewrites
 Hub links to local paths, pins the remaining links to the GRA domain to one
 Hub commit, recomputes line anchors ``#Lnnn`` for the local copies, copies the
-quotes builder as provenance and marks stage I documents as historical. Each
+quotes builder as provenance, reads the sources catalogue #650 at the Hub
+archive commit, replaces links to the personal-data file by a note and marks
+stage I documents as historical. Each
 test checks one of those rules on a small inline sample.
 Run: python3 -m unittest discover -s tests -v
 """
 from __future__ import annotations
 
+import subprocess
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
 import import_from_hub as imp  # noqa: E402
@@ -85,9 +89,24 @@ class RewriteLinksTest(unittest.TestCase):
         self.assertEqual(self.rewrite(text), f"[RFC]({BLOB}/2026-11-03-day4-crisis-mitigation-rfc.md)")
 
     def test_link_to_not_imported_domain_file_is_pinned_to_commit(self) -> None:
-        text = f"[каталог]({BLOB}/2026-09-30-course-sources-and-presentations-650.md#L12)"
+        text = f"[варианты курса]({BLOB}/2026-09-24-introductory-course-options-610.md#L12)"
         result = imp.rewrite_links(text, self.OWN, self.HUB_DIR, COMMIT)
-        self.assertEqual(result, f"[каталог]({PINNED}/2026-09-30-course-sources-and-presentations-650.md#L12)")
+        self.assertEqual(result, f"[варианты курса]({PINNED}/2026-09-24-introductory-course-options-610.md#L12)")
+
+    def test_link_to_sources_catalogue_becomes_relative(self) -> None:
+        """GRA-003: the catalogue #650 is imported, its links are local (anchor kept without line maps)."""
+        text = f"[каталог]({BLOB}/2026-09-30-course-sources-and-presentations-650.md#г1-anderson)"
+        result = imp.rewrite_links(text, f"{imp.COURSE}/handouts/course-quotes-days-1-4-alce.md", self.HUB_DIR, COMMIT)
+        self.assertEqual(result, "[каталог](../course-sources-and-presentations.md#г1-anderson)")
+
+    def test_link_to_personal_data_file_is_replaced_by_note(self) -> None:
+        """GRA-004: no link (pinned or floating) to the file with personal data survives the import."""
+        for url in (f"{BLOB}/2026-10-14-day1-lecturer-gra-research.md",
+                    "2026-10-14-day1-lecturer-gra-research.md#раздел"):
+            text = f"- [исследование лектора]({url}) — источник слайда 2;\n"
+            result = imp.rewrite_links(text, self.OWN, self.HUB_DIR, COMMIT)
+            self.assertEqual(result, f"- исследование лектора {imp.REDACTED_NOTE} — источник слайда 2;\n")
+            self.assertNotIn("lecturer-gra-research", result)
 
     def test_relative_link_to_not_imported_domain_file_is_pinned(self) -> None:
         result = imp.rewrite_links("[RFC](2026-11-03-day4-crisis-mitigation-rfc.md)", self.OWN, self.HUB_DIR, COMMIT)
@@ -204,7 +223,48 @@ class ConvertTest(unittest.TestCase):
         self.assertEqual(imp.target_for(f"{imp.DOMAIN}/image-technologies/"), f"{imp.IMAGE}/README.md")
 
 
+def git(cwd: str, *args: str) -> str:
+    return subprocess.run(["git", "-C", cwd, *args], check=True, capture_output=True, text=True).stdout.strip()
+
+
+class ArchivedTest(unittest.TestCase):
+    """ARCHIVED files are read by SHA; a change after --commit stops the import."""
+
+    REL = "2026-09-30-course-sources-and-presentations-650.md"
+
+    def make_hub(self, hub: str, texts: list[str]) -> list[str]:
+        git(hub, "init", "-q")
+        path = Path(hub) / imp.DOMAIN / self.REL
+        path.parent.mkdir(parents=True, exist_ok=True)
+        shas = []
+        for text in texts:
+            path.write_text(text, encoding="utf-8")
+            git(hub, "add", "-A")
+            git(hub, "-c", "user.name=t", "-c", "user.email=t@example.org", "commit", "-q", "--allow-empty", "-m", "c")
+            shas.append(git(hub, "rev-parse", "HEAD"))
+        return shas
+
+    def test_reads_archive_commit_not_working_tree(self) -> None:
+        with tempfile.TemporaryDirectory() as hub:
+            pin, archive = self.make_hub(hub, ["# Каталог\n", "# Каталог\n"])
+            (Path(hub) / imp.DOMAIN / self.REL).write_text("рабочее дерево\n", encoding="utf-8")
+            self.assertEqual(imp.read_archived(Path(hub), self.REL, pin, archive), "# Каталог\n")
+
+    def test_differs_from_commit_stops_import(self) -> None:
+        with tempfile.TemporaryDirectory() as hub:
+            pin, archive = self.make_hub(hub, ["# Каталог\nстрока\n", "# Каталог\n\nстрока\n"])
+            with self.assertRaises(SystemExit) as raised:
+                imp.read_archived(Path(hub), self.REL, pin, archive)
+            self.assertIn("differs between", str(raised.exception))
+
+
+def read_working_tree(hub: Path, rev: str, hub_rel: str) -> str:
+    """Stand-in for ``git show`` in tests whose Hub is a plain directory."""
+    return (Path(hub) / imp.DOMAIN / hub_rel).read_text(encoding="utf-8")
+
+
 class MainTest(unittest.TestCase):
+    @mock.patch.object(imp, "read_at", read_working_tree)
     def test_main_writes_every_mapped_file(self) -> None:
         with tempfile.TemporaryDirectory() as hub, tempfile.TemporaryDirectory() as root:
             for rel in imp.MAPPING:
@@ -235,12 +295,16 @@ class MainTest(unittest.TestCase):
             copy = (Path(root) / imp.MAPPING["2026-11-01-course-quotes-days-1-4-alce.md"]).read_text(encoding="utf-8")
             # Line 9 of the Hub deck ("Эпиграф") is line 8 of the copy: two task fields dropped, `source` added.
             self.assertIn("[day-04/presentation.md, строка 8](../day-04/presentation.md#L8)", copy)
+            catalogue = (Path(root) / imp.MAPPING["2026-09-30-course-sources-and-presentations-650.md"]).read_text(
+                encoding="utf-8")
+            self.assertIn(f"/blob/{imp.ARCHIVE_COMMIT}/{imp.DOMAIN}/2026-09-30-", catalogue)
             local = Path(root) / imp.PROVENANCE["exp/quotes-711"]
             self.assertIn(f"/blob/{COMMIT}/", (local / "build.py").read_text(encoding="utf-8"))
             manifest = (local / imp.PROVENANCE_MANIFEST).read_text(encoding="utf-8").splitlines()
             self.assertEqual([row.split("\t")[0] for row in manifest[2:]], ["README.md", "build.py"])
             self.assertIn("blob/main -> blob/<commit>", manifest[3])
 
+    @mock.patch.object(imp, "read_at", read_working_tree)
     def test_main_fails_without_provenance_directory(self) -> None:
         with tempfile.TemporaryDirectory() as hub, tempfile.TemporaryDirectory() as root:
             for rel in imp.MAPPING:

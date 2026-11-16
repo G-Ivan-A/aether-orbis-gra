@@ -29,7 +29,17 @@ adapts them for an external reader:
   are copied as data: Markdown is converted as above, other text files only
   get ``blob/main`` -> ``blob/<sha>``; every file is listed with the SHA-256
   of the Hub original in ``provenance-manifest.tsv``. Hub code is never
-  executed here.
+  executed here;
+* files listed in ARCHIVED (the course sources catalogue #650, Hub owner's
+  answer Q-3 in Hub issue #725) are read with ``git show`` at the Hub archive
+  commit ``--archive-commit``, not from the working tree, and their own
+  ``source`` and pinned links use that commit. The tool stops if such a file
+  differs between ``--commit`` and the archive commit, because the line
+  anchors of the other files were written against ``--commit``;
+* links to files listed in REDACTED (a Hub file with personal data that the
+  owner removed from the tree and excluded from the archive tag, answer Q-4
+  in Hub issue #725) are replaced by their label and a short note without
+  personal data; the line count does not change.
 
 Usage (re-runnable while the course is still being delivered):
 
@@ -37,7 +47,8 @@ Usage (re-runnable while the course is still being delivered):
     git -C /tmp/hub checkout <PIN_SHA>
     python3 tools/import_from_hub.py --hub /tmp/hub --commit <PIN_SHA>
 
-The last import used PIN_SHA from ``.hub-profile.json -> last_sync``.
+The last import used PIN_SHA from ``.hub-profile.json -> last_sync`` and the
+default ``--archive-commit`` (ARCHIVE_COMMIT).
 
 Set GRA_IMPORT_DEBUG=1 to trace every rewritten link and removed section.
 """
@@ -96,7 +107,23 @@ MAPPING: dict[str, str] = {
     # Quotes of days 1-4 (Hub issue #711), created after the first snapshot
     # 32b5fa5; imported by Hub RFC #721, step 2.2 (issue #3 here).
     "2026-11-01-course-quotes-days-1-4-alce.md": f"{COURSE}/handouts/course-quotes-days-1-4-alce.md",
+    # Course sources catalogue (Hub issue #650): the owner moved it here by the
+    # answer Q-3 in Hub issue #725; read at ARCHIVE_COMMIT (see ARCHIVED).
+    "2026-09-30-course-sources-and-presentations-650.md": f"{COURSE}/course-sources-and-presentations.md",
 }
+# Hub commit the archive tag archive/reputation-technologies-2026-11 will point
+# to (Hub RFC #721, Q-5). The tag is not set yet, so files are read by SHA.
+ARCHIVE_COMMIT = "51869aa50f14a0bc8f69f8b426e216244f16c970"
+# MAPPING entries read at the archive commit instead of the --hub working tree.
+ARCHIVED = {"2026-09-30-course-sources-and-presentations-650.md"}
+# Hub files (relative to DOMAIN) whose links are replaced by a note: the file
+# holds personal data; by the answer Q-4 in Hub issue #725 it is removed from
+# the Hub tree and excluded from the archive tag, history is not rewritten.
+REDACTED = {"2026-10-14-day1-lecturer-gra-research.md"}
+REDACTED_NOTE = (
+    "(ссылка не приводится: файл Хаба содержит персональные данные; по решению владельца"
+    " Q-4 в issue #725 Хаба он удалён из дерева и не входит в архивный тег)"
+)
 # Hub directories (relative to DOMAIN) copied as provenance data, not as
 # documents: the builder and the inputs of the quotes list.
 PROVENANCE = {
@@ -122,8 +149,8 @@ GENERATED_BANNER = (
     "> **Перенесено из Хаба.** Файл собран в Хабе построителем из каталога\n"
     "> [course-quotes-provenance/](course-quotes-provenance/README.md) (провенанс, здесь не\n"
     "> исполняется). При переносе якоря строк `#Lnnn` пересчитаны по копиям материалов\n"
-    "> в этом репозитории; ссылки на файлы, которые остались в Хабе (каталог источников\n"
-    "> #650 и другие), закреплены на коммите Хаба из поля `source`.\n"
+    "> в этом репозитории, включая [каталог источников #650](../course-sources-and-presentations.md);\n"
+    "> ссылки на файлы, которые остались в Хабе, закреплены на коммите Хаба из поля `source`.\n"
 )
 PROVENANCE_BANNER = (
     "> **Провенанс.** Копия каталога Хаба на коммите из поля `source`. Код Хаба в\n"
@@ -234,6 +261,12 @@ def in_domain(hub_path: str) -> bool:
     return hub_path == DOMAIN or hub_path.startswith(DOMAIN + "/")
 
 
+def redacted(hub_path: str) -> bool:
+    """True for a Hub path (relative to the Hub root) whose links must not be kept."""
+    path = hub_path.rstrip("/")
+    return in_domain(path) and path[len(DOMAIN) + 1:] in REDACTED
+
+
 def display_name(target: str) -> str:
     """Short name of a repository file for link labels (course files without the course prefix)."""
     return target[len(COURSE) + 1:] if target.startswith(COURSE + "/") else target
@@ -302,6 +335,9 @@ def rewrite_links(
         hub = HUB_FILE.fullmatch(url)
         if hub:
             kind, hub_path, query, anchor = hub.group(1), hub.group(2), hub.group(3) or "", hub.group(4) or ""
+            if redacted(hub_path):
+                debug(f"{own_target}: redact {url}")
+                return f"{label} {REDACTED_NOTE}"
             pinned = f"{HUB_URL}/{kind}/{commit}/{hub_path}{query}{anchor}"
             mapped = target_for(hub_path)
             if mapped:
@@ -316,6 +352,9 @@ def rewrite_links(
         path, _, anchor = url.partition("#")
         hub_path = posixpath.normpath(posixpath.join(own_hub_dir, path))
         anchor = f"#{anchor}" if anchor else ""
+        if redacted(hub_path):
+            debug(f"{own_target}: redact relative {url}")
+            return f"{label} {REDACTED_NOTE}"
         kind = "tree" if path.endswith("/") or "." not in posixpath.basename(path) else "blob"
         ref = commit if in_domain(hub_path) else "main"
         absolute = f"{HUB_URL}/{kind}/{ref}/{hub_path}{anchor}"
@@ -434,27 +473,56 @@ def copy_provenance(hub: Path, root: Path, commit: str, line_maps: LineMaps) -> 
     return written
 
 
+def read_at(hub: Path, rev: str, hub_rel: str) -> str:
+    """Text of a domain file at a Hub commit (``git show``), independent of the working tree."""
+    return subprocess.run(
+        ["git", "-C", str(hub), "show", f"{rev}:{DOMAIN}/{hub_rel}"], check=True, capture_output=True,
+    ).stdout.decode("utf-8")
+
+
+def read_archived(hub: Path, hub_rel: str, commit: str, archive_commit: str) -> str:
+    """Read an ARCHIVED file at ``archive_commit``; refuse if it differs at ``commit``."""
+    text = read_at(hub, archive_commit, hub_rel)
+    if commit != archive_commit and read_at(hub, commit, hub_rel) != text:
+        raise SystemExit(
+            f"{hub_rel} differs between {commit} and the archive commit {archive_commit}: "
+            "line anchors of the other files were written against --commit; re-check them first"
+        )
+    return text
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--hub", required=True, type=Path, help="local clone of hybrid-Intelligence-lab")
     parser.add_argument("--root", default=Path(__file__).resolve().parent.parent, type=Path)
     parser.add_argument("--commit", help="Hub commit for provenance and pinned links (default: HEAD of --hub)")
+    parser.add_argument("--archive-commit", default=ARCHIVE_COMMIT,
+                        help=f"Hub commit the ARCHIVED files are read at (default: {ARCHIVE_COMMIT})")
     args = parser.parse_args(argv)
     commit = args.commit or subprocess.run(
         ["git", "-C", str(args.hub), "rev-parse", "HEAD"], check=True, capture_output=True, text=True,
     ).stdout.strip()
-    sources = {hub_rel: (args.hub / DOMAIN / hub_rel).read_text(encoding="utf-8") for hub_rel in MAPPING}
+    sources = {
+        hub_rel: read_archived(args.hub, hub_rel, commit, args.archive_commit) if hub_rel in ARCHIVED
+        else (args.hub / DOMAIN / hub_rel).read_text(encoding="utf-8")
+        for hub_rel in MAPPING
+    }
+    # An archived file records the archive commit as its source and pins its
+    # own links to it; every other file uses --commit.
+    commits = {hub_rel: args.archive_commit if hub_rel in ARCHIVED else commit for hub_rel in MAPPING}
     # Pass 1 converts every file to learn how Hub lines move in the copies;
     # pass 2 converts again with the line maps to recompute #Lnnn anchors.
     # Pass 2 only edits link anchors and labels, so the maps stay valid.
     line_maps: LineMaps = {}
     for hub_rel, target in MAPPING.items():
-        copy = convert(sources[hub_rel], hub_rel, target, commit)
-        line_maps[target] = build_line_map(sources[hub_rel], copy, hub_rel, target, commit)
+        copy = convert(sources[hub_rel], hub_rel, target, commits[hub_rel])
+        line_maps[target] = build_line_map(sources[hub_rel], copy, hub_rel, target, commits[hub_rel])
     for hub_rel, target in MAPPING.items():
         destination = args.root / target
         destination.parent.mkdir(parents=True, exist_ok=True)
-        destination.write_text(convert(sources[hub_rel], hub_rel, target, commit, line_maps), encoding="utf-8")
+        destination.write_text(
+            convert(sources[hub_rel], hub_rel, target, commits[hub_rel], line_maps), encoding="utf-8",
+        )
         print(f"{hub_rel} -> {target}")
     for target in copy_provenance(args.hub, args.root, commit, line_maps):
         print(f"provenance -> {target}")

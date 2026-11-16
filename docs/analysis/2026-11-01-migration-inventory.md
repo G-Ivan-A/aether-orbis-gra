@@ -1,7 +1,7 @@
 ---
 status: reviewed
-version: 1.1
-updated: 2026-11-04
+version: 1.2
+updated: 2026-11-16
 temperature: 0.1
 type: analysis
 source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies"
@@ -58,7 +58,7 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/32b5fa524e542a
 | [`2026-09-30-course-sources-and-presentations-650.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-09-30-course-sources-and-presentations-650.md) | Исследование источников курса (глобальное исследование) | Коды `[650:X]` в материалах курса ведут на него |
 | `2026-10-07-day1-{lecturer-script,presentation}-653.md` | Ранние версии дня 1, заменены версиями 14.10 | — |
 | `2026-10-13-day1-rebuild-task-671.md` | Постановка задачи | — |
-| [`2026-10-14-day1-lecturer-gra-research.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-10-14-day1-lecturer-gra-research.md) | Исследование открытых данных о конкретном человеке (лекторе): персональные данные не тиражируются | Ссылка из колоды дня 2 |
+| `2026-10-14-day1-lecturer-gra-research.md` | Исследование открытых данных о конкретном человеке (лекторе): персональные данные не тиражируются. Ссылка снята по ответу Q-4 в issue #725 Хаба: файл удалён из дерева Хаба и не входит в архивный тег ([GRA-004](../../ops/backlog.md)) | Ссылка из колоды дня 2 |
 | `2026-10-30-day2-presentation.md`, `2026-11-02-day3-presentation.md` | Предыдущий формат колод (тезисы и промпты), заменён версиями для Gamma | — |
 | `2026-11-03-day4-presentation-gamma{,-v2,-v3,-v4}.md`, `…-lecturer-script{,-v3}.md`, `…-rationale-and-method{,-v2}.md` | Варианты 1–4 дня 4; вариант 1 — исторический документ провала интерпретации | — |
 | [`2026-11-03-rfc-presentation-update-v5.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/32b5fa524e542af23c1a8e67c919bd66d5f4e399/research/reputation-technologies/2026-11-03-rfc-presentation-update-v5.md) | Описание изменений колоды v4 → v5 (рабочий документ задачи) | Ссылка из справочника имидж-технологий |

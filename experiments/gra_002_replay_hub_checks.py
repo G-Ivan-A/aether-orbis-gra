@@ -23,11 +23,13 @@ step checks text the course still has here.
 Only Hub check scripts are executed, in a temporary detached worktree of a local
 Hub clone (python3 -I, 120 s timeout, 512 MiB address space); spoke files are
 copied as data. Nothing in this repository runs Hub code: the invariants chosen
-by GRA-002 are rewritten in tests/test_course_handouts.py.
+by GRA-002 are rewritten in tests/test_course_handouts.py. Failing lines keep at
+most 150 characters; the Hub prefix ``.../hybrid-Intelligence-lab/blob/main/`` in
+them is written as ``hub:main/``. The run takes about 25 minutes.
 
 Usage:
   git clone https://github.com/G-Ivan-A/hybrid-Intelligence-lab /tmp/hub-repo
-  python3 -I experiments/gra_002_replay_hub_checks.py /tmp/hub-repo \\
+  python3 -u -I experiments/gra_002_replay_hub_checks.py /tmp/hub-repo \\
       > experiments/gra-002-replay-hub-checks.log
 """
 from __future__ import annotations
@@ -45,6 +47,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 from import_from_hub import DOMAIN, MAPPING  # noqa: E402  (data only: the path table)
 
 PIN_SHA = "48ebe5230be87ca5bf8a08b385e296a2987e9958"
+HUB_MAIN = "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/"
 # The six steps of spoke-guard-replay.log at PIN_SHA with "ok | ok".
 BOTH_PASS = (
     "Check presentation UX coverage and preservation",
@@ -93,7 +96,9 @@ def run(tree: Path, command: str) -> tuple[int, str]:
     proc = subprocess.run([sys.executable, "-I", script, *args], cwd=tree, capture_output=True,
                           text=True, timeout=120, preexec_fn=limit)
     tail = (proc.stdout + proc.stderr).strip().splitlines()
-    return proc.returncode, tail[-1][:150] if tail else ""
+    # Hub scripts quote their floating links; shorten them so this log is not a
+    # floating link itself (tests/test_course_quotes.py) and the target stays visible.
+    return proc.returncode, tail[-1].replace(HUB_MAIN, "hub:main/")[:150] if tail else ""
 
 
 def condition(tree: Path, commands: list[str]) -> tuple[str, str]:

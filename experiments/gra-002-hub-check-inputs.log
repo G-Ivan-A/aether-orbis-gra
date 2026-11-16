@@ -1,0 +1,22 @@
+Hub commit: 48ebe5230be87ca5bf8a08b385e296a2987e9958
+step | Hub replay on spoke | current course files named by the script (spoke copy)
+Check presentation UX coverage and preservation | ok | -
+Check Days 1-3 logic RFC contract | FAIL | course-logic.md
+Check Day 2 against RFC v0.3 | FAIL | course-logic.md, day-02/lecturer-script.md, day-02/rationale-and-method.md
+Check Day 1 against RFC v0.3 | FAIL | course-logic.md, day-01/rationale-and-method.md
+Check Day 1 deck, lecturer script and gate of #677 | FAIL | day-01/lecturer-script.md, day-01/presentation.md, day-01/slide-standard-and-gate.md
+Check Day 2 Gamma deck and lecturer script of #679 | FAIL | day-02/lecturer-script.md, day-02/presentation.md
+Check Day 3 Gamma deck, lecturer script and gate of #681 | FAIL | day-03/lecturer-script.md, day-03/presentation.md, day-03/slide-standard-and-gate.md
+Check Day 4 rationale and method slide structure and gate of #685 | ok | -
+Check Day 4 Gamma deck and lecturer script of #687 | ok | -
+Check Day 4 correction files and unchanged Variant 1 of #689 | ok | course-logic.md, day-01/lecturer-script.md, day-01/presentation.md, day-01/rationale-and-method.md, day-02/lecturer-script.md, day-02/presentation.md, day-02/rationale-and-method.md, day-03/lecturer-script.md, day-03/presentation.md, day-03/rationale-and-method.md, day-03/slide-standard-and-gate.md
+Check Day 4 Variant 3 deck and lecturer script of #691 | ok | -
+Check Day 4 Variant 4 hypothesis-map deck and image-technologies module of #693 | FAIL | day-04/resources/image-technologies/00-introduction.md, day-04/resources/image-technologies/10-theory.md, day-04/resources/image-technologies/20-taxonomy.md, day-04/resources/image-technologies/30-decision-framework.md, day-04/resources/image-technologies/40-practice-and-cases.md, day-04/resources/image-technologies/50-open-research.md
+Check Day 4 Variant 5 point-diff RFC against the unchanged v4 deck of #695 | FAIL | day-04/resources/image-technologies/20-taxonomy.md
+Check Day 4 Variant 5 deck and lecturer script of #697 | FAIL | day-04/lecturer-script.md, day-04/presentation.md
+Check Day 4 image prompts v5 couturier constructor of #699 | FAIL | day-04/image-prompts.md, day-04/presentation.md
+Check handout materials master prompt registry of #700 | FAIL | course-logic.md, day-01/presentation.md, day-02/presentation.md, day-03/presentation.md, day-04/presentation.md, handouts/prompt-and-handout-registry.md
+Check cold-start OSINT pipeline of #709 | ok | handouts/prompt-and-handout-registry.md, handouts/ten-company-example.md
+Check course quote list (ALCE) of #711 | FAIL | course-sources-and-presentations.md, day-04/presentation.md, handouts/course-quotes-days-1-4-alce.md
+Check Day 3 rationale v0.3 of #683 | FAIL | day-03/lecturer-script.md, day-03/rationale-and-method.md
+course steps: 19; DOMAIN: research/reputation-technologies
